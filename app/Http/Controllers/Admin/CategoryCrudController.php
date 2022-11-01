@@ -71,7 +71,12 @@ class CategoryCrudController extends CrudController
 
         CRUD::field('internal_name')
             ->label('Internal Name')
-            ->wrapper(['class' => 'form-group col-md-12'])
+            ->wrapper(['class' => 'form-group col-md-6'])
+            ->tab('General');
+
+        CRUD::field('internal_code')
+            ->label('Internal Code')
+            ->wrapper(['class' => 'form-group col-md-6'])
             ->tab('General');
 
         CRUD::field('slug')

@@ -45,7 +45,16 @@ class ProductCrudController extends CrudController
 
         CRUD::column('name');
         CRUD::column('short_description');
-        CRUD::column('category_id');
+        CRUD::column('category_id')
+            ->searchLogic(function ($query, $column, $searchTerm) {
+                $query->orWhereHas('categories', function ($q) use ($column, $searchTerm) {
+                    $q->where('name', 'like', '%'.$searchTerm.'%')
+                    ->orWhere('internal_name', 'like', '%'.$searchTerm.'%')
+                    ->orWhere('internal_code', 'like', '%'.$searchTerm.'%');
+                });
+            });
+
+
         CRUD::column('ean');
         CRUD::column('price')->typo('number')->prefix('€ ')->decimals(2)->dec_point('.');
         CRUD::column('stock');
@@ -88,14 +97,7 @@ class ProductCrudController extends CrudController
         
         CRUD::field('category_id')
             ->label('Category')
-            ->tab('General')
-            ->searchLogic(function ($query, $column, $searchTerm) {
-                $query->orWhereHas('category', function ($q) use ($column, $searchTerm) {
-                    $q->where('name', 'like', '%'.$searchTerm.'%')
-                    ->orWhere('internal_name', 'like', '%'.$searchTerm.'%')
-                    ->orWhere('internal_code', 'like', '%'.$searchTerm.'%');
-                });
-            });
+            ->tab('General');
         
 
         CRUD::field('ean')

@@ -90,7 +90,7 @@ class ProductCrudController extends CrudController
             ->label('Category')
             ->tab('General')
             ->searchLogic(function ($query, $column, $searchTerm) {
-                $query->orWhereHas('categories', function ($q) use ($column, $searchTerm) {
+                $query->orWhereHas('category', function ($q) use ($column, $searchTerm) {
                     $q->where('name', 'like', '%'.$searchTerm.'%')
                     ->orWhere('internal_name', 'like', '%'.$searchTerm.'%')
                     ->orWhere('internal_code', 'like', '%'.$searchTerm.'%');

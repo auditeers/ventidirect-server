@@ -40,6 +40,7 @@ class ProductCrudController extends CrudController
     protected function setupListOperation()
     {
         CRUD::column('name');
+        CRUD::column('short_description');
         CRUD::column('category_id');
         CRUD::column('ean');
         CRUD::column('price');

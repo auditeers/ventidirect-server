@@ -42,11 +42,9 @@ class CategoryCrudController extends CrudController
         CRUD::column('name');
         CRUD::column('internal_name');
 
-        /**
-         * Columns can be defined using the fluent syntax or array syntax:
-         * - CRUD::column('price')->type('number');
-         * - CRUD::addColumn(['name' => 'price', 'type' => 'number']); 
-         */
+        CRUD::denyAccess('show');
+
+
     }
 
     /**
@@ -57,12 +55,35 @@ class CategoryCrudController extends CrudController
      */
     protected function setupCreateOperation()
     {
+        CRUD::setOperationSetting('contentClass', 'col-md-12');
+
         CRUD::setValidation([
             'name' => 'required|min:2',
+            'slug' => 'required|min:2'
         ]);
 
-        CRUD::field('name');
-        CRUD::field('slug');
+        CRUD::field('name')
+            ->label('Category Name')
+            ->wrapper(['class' => 'form-group col-md-12'])
+            ->tab('General');
+
+        CRUD::field('internal_name')
+            ->label('Internal Name')
+            ->wrapper(['class' => 'form-group col-md-12'])
+            ->tab('General');
+
+        CRUD::field('slug')
+            ->label('Slug')
+            ->wrapper(['class' => 'form-group col-md-12'])
+            ->tab('General');
+        
+         CRUD::field('description')
+            ->label('Description')
+            ->type('summernote')
+            ->options(['height'=> '400', 'lang' => 'nl-NL'])
+            ->wrapper(['class' => 'form-group col-md-12'])
+            ->tab('General');
+    
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:

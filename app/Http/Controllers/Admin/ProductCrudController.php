@@ -45,7 +45,13 @@ class ProductCrudController extends CrudController
 
         CRUD::column('name');
         CRUD::column('short_description');
-        CRUD::column('marge')->label('factor')->type('number')->decimals(2);
+        CRUD::column('marge')
+            ->label('factor')
+            ->type('number')
+            ->decimals(2)
+            ->orderLogic(function ($query, $column, $columnDirection) {
+                return $query->orderBy('((products.sales_price / 1.21) / (products.price))', $columnDirection);
+            });
 
         CRUD::column('category_id')
             ->searchLogic(function ($query, $column, $searchTerm) {

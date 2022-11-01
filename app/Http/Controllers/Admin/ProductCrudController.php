@@ -100,7 +100,7 @@ class ProductCrudController extends CrudController
             ->prefix('€ ')
             ->decimals(2)
             ->dec_point('.')
-            ->wrapper(['class' => 'form-group col-md-12'])
+            ->wrapper(['class' => 'form-group col-md-4'])
             ->tab('Financial');
 
         CRUD::field('competition_price')
@@ -109,7 +109,7 @@ class ProductCrudController extends CrudController
             ->prefix('€ ')
             ->decimals(2)
             ->dec_point('.')
-            ->wrapper(['class' => 'form-group col-md-12'])
+            ->wrapper(['class' => 'form-group col-md-4'])
             ->tab('Financial');
 
          CRUD::field('sales_price')
@@ -118,7 +118,7 @@ class ProductCrudController extends CrudController
             ->prefix('€ ')
             ->decimals(2)
             ->dec_point('.')
-            ->wrapper(['class' => 'form-group col-md-12'])
+            ->wrapper(['class' => 'form-group col-md-4'])
             ->tab('Financial');
 
 

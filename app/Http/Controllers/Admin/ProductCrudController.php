@@ -117,6 +117,7 @@ class ProductCrudController extends CrudController
         CRUD::field('visible')
             ->label('active')
             ->type('toggle')
+            ->view_namespace('toggle-field-for-backpack::fields')
             ->tab('General');
 
 

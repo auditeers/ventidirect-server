@@ -110,6 +110,14 @@ class ProductCrudController extends CrudController
             ->options(['height'=> '400', 'lang' => 'nl-NL'])
             ->wrapper(['class' => 'form-group col-md-12'])
             ->tab('General');
+
+        CRUD::field('image')
+            ->label('Afbeelding')
+            ->crop(true)
+            ->aspect_ratio(1)
+            ->type('image')
+            ->disk('local')
+            ->tab('General');
         
         CRUD::field('stock')
             ->tab('Stock');

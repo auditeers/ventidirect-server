@@ -41,12 +41,13 @@ class ProductCrudController extends CrudController
     {
 
         CRUD::setDefaultPageLength(50);
+        CRUD::denyAccess('show');
 
         CRUD::column('name');
         CRUD::column('short_description');
         CRUD::column('category_id');
         CRUD::column('ean');
-        CRUD::column('price');
+        CRUD::column('price')->typo('number')->prefix('€ ')->decimals(2)->dec_point('.');
         CRUD::column('stock');
   
 

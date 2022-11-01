@@ -18,6 +18,11 @@ class Product extends Model
         return $this->belongsTo(Category::class);
     }
 
+    public function getCatnameAtribute()
+    {
+        return $this->category->name;
+    }
+
     public function setImageAttribute($value)
     {
         $attribute_name = "image";

@@ -40,7 +40,7 @@ class CategoryCrudController extends CrudController
     protected function setupListOperation()
     {
         CRUD::setDefaultPageLength(50);
-        
+
         CRUD::column('name');
         CRUD::column('internal_name');
 
@@ -84,6 +84,14 @@ class CategoryCrudController extends CrudController
             ->type('summernote')
             ->options(['height'=> '400', 'lang' => 'nl-NL'])
             ->wrapper(['class' => 'form-group col-md-12'])
+            ->tab('General');
+
+         CRUD::field('image')
+            ->label('Afbeelding')
+            ->crop(true)
+            ->aspect_ratio(1)
+            ->type('image')
+            ->disk('local')
             ->tab('General');
     
 

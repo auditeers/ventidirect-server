@@ -39,6 +39,9 @@ class ProductCrudController extends CrudController
      */
     protected function setupListOperation()
     {
+
+        CRUD::setDefaultPageLength(50);
+
         CRUD::column('name');
         CRUD::column('short_description');
         CRUD::column('category_id');

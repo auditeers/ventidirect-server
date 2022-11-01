@@ -39,17 +39,12 @@ class ProductCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        CRUD::column('category_id');
-        CRUD::column('created_at');
-        CRUD::column('description');
-        CRUD::column('ean');
         CRUD::column('name');
+        CRUD::column('category_id');
+        CRUD::column('ean');
         CRUD::column('price');
-        CRUD::column('short_description');
-        CRUD::column('slug');
         CRUD::column('stock');
-        CRUD::column('updated_at');
-        CRUD::column('visible');
+  
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:

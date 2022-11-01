@@ -22,7 +22,7 @@ class Product extends Model
     protected function marge(): Attribute
     {
         return Attribute::make(
-            get: fn ($value, $attributes) => $attributes['price']
+            get: fn ($value, $attributes) => ($attributes['sales_price'] / ($attributes['price'] * 1.21)) - 1
         );
     }
 

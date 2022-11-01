@@ -79,20 +79,20 @@ class ProductCrudController extends CrudController
             ->wrapper(['class' => 'form-group col-md-12']);
         
         CRUD::field('slug')
-            ->tab('general');
+            ->tab('General');
 
         CRUD::field('short_description')
             ->label('Short Description')
             ->type('text')
-            ->tab('general');
+            ->tab('General');
         
         CRUD::field('category_id')
             ->label('Category')
-            ->tab('general');
+            ->tab('General');
         
 
         CRUD::field('ean')
-            ->tab('general');
+            ->tab('General');
         
         CRUD::field('price')
             ->label('Base Price')
@@ -112,11 +112,11 @@ class ProductCrudController extends CrudController
             ->tab('General');
         
         CRUD::field('stock')
-            ->tab('general');
+            ->tab('Stock');
 
         CRUD::field('visible')
             ->label('active')
-            ->tab('general');
+            ->tab('General');
 
 
      

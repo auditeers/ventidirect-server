@@ -45,9 +45,11 @@ class ProductCrudController extends CrudController
 
         CRUD::column('name');
         CRUD::column('short_description');
+        CRUD::column('catname');
+
         CRUD::column('category_id')
             ->searchLogic(function ($query, $column, $searchTerm) {
-                $query->orWhereHas('categories', function ($q) use ($column, $searchTerm) {
+                $query->orWhereHas('category', function ($q) use ($column, $searchTerm) {
                     $q->where('name', 'like', '%'.$searchTerm.'%')
                     ->orWhere('internal_name', 'like', '%'.$searchTerm.'%')
                     ->orWhere('internal_code', 'like', '%'.$searchTerm.'%');

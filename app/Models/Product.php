@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Product extends Model
@@ -18,9 +19,11 @@ class Product extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function getMargeAtribute()
+    protected function marge(): Attribute
     {
-        return 100;
+        return Attribute::make(
+            get: fn ($value, $attributes) => $attributes['price']
+        );
     }
 
     public function setImageAttribute($value)

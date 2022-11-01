@@ -42,6 +42,8 @@ class CategoryCrudController extends CrudController
         CRUD::setDefaultPageLength(50);
 
         CRUD::column('name');
+        CRUD::column('parent_id');
+
         CRUD::column('internal_name');
         CRUD::column('internal_code');
 
@@ -67,7 +69,12 @@ class CategoryCrudController extends CrudController
 
         CRUD::field('name')
             ->label('Category Name')
-            ->wrapper(['class' => 'form-group col-md-12'])
+            ->wrapper(['class' => 'form-group col-md-6'])
+            ->tab('General');
+
+        CRUD::field('parent_id')
+            ->label('Parent')
+            ->wrapper(['class' => 'form-group col-md-6'])
             ->tab('General');
 
         CRUD::field('internal_name')
@@ -75,10 +82,6 @@ class CategoryCrudController extends CrudController
             ->wrapper(['class' => 'form-group col-md-6'])
             ->tab('General');
         
-         CRUD::field('parent_id')
-            ->label('Parent')
-            ->wrapper(['class' => 'form-group col-md-6'])
-            ->tab('General');
 
         CRUD::field('internal_code')
             ->label('Internal Code')

@@ -95,7 +95,25 @@ class ProductCrudController extends CrudController
             ->tab('General');
         
         CRUD::field('price')
-            ->label('Base Price')
+            ->label('Purchase Price')
+            ->type('number')
+            ->prefix('€ ')
+            ->decimals(2)
+            ->dec_point('.')
+            ->wrapper(['class' => 'form-group col-md-12'])
+            ->tab('Financial');
+
+        CRUD::field('competition_price')
+            ->label('Competition Price')
+            ->type('number')
+            ->prefix('€ ')
+            ->decimals(2)
+            ->dec_point('.')
+            ->wrapper(['class' => 'form-group col-md-12'])
+            ->tab('Financial');
+
+         CRUD::field('sales_price')
+            ->label('Sales Price')
             ->type('number')
             ->prefix('€ ')
             ->decimals(2)

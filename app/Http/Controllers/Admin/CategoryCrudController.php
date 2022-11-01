@@ -43,6 +43,7 @@ class CategoryCrudController extends CrudController
 
         CRUD::column('name');
         CRUD::column('internal_name');
+        CRUD::column('internal_code');
 
         CRUD::denyAccess('show');
 

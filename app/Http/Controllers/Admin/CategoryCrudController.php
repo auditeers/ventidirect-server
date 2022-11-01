@@ -64,7 +64,7 @@ class CategoryCrudController extends CrudController
 
         CRUD::setValidation([
             'name' => 'required|min:2',
-            'slug' => 'required|min:2'
+            'slug' => 'required'
         ]);
 
         CRUD::field('name')

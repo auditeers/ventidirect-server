@@ -51,6 +51,8 @@ return [
     'styles' => [
         // 'packages/backpack/base/css/bundle.css', // has primary color electric purple (backpack default)
         'packages/backpack/base/css/blue-bundle.css', // has primary color blue
+        'assets/css/style.css', // modifications
+    
 
         // Here's what's inside the bundle:
         // 'packages/@digitallyhappy/backstrap/css/style.min.css',

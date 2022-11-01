@@ -39,10 +39,8 @@ class CategoryCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        CRUD::column('created_at');
         CRUD::column('name');
-        CRUD::column('slug');
-        CRUD::column('updated_at');
+        CRUD::column('internal_name');
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
@@ -60,7 +58,7 @@ class CategoryCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation([
-            // 'name' => 'required|min:2',
+            'name' => 'required|min:2',
         ]);
 
         CRUD::field('name');

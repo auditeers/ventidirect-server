@@ -66,25 +66,60 @@ class ProductCrudController extends CrudController
      */
     protected function setupCreateOperation()
     {
+        CRUD::setOperationSetting('contentClass', 'col-md-12');
+
         CRUD::setValidation([
-            // 'name' => 'required|min:2',
+            'name' => 'required|min:2',
+            'ean' => 'required',
+            'slug' => 'required',
         ]);
 
-        CRUD::field('category_id');
-        CRUD::field('description');
-        CRUD::field('ean');
-        CRUD::field('name');
-        CRUD::field('price');
-        CRUD::field('short_description');
-        CRUD::field('slug');
-        CRUD::field('stock');
-        CRUD::field('visible');
+        CRUD::field('name')
+            ->label('Product Name')
+            ->wrapper(['class' => 'form-group col-md-12']);
+        
+        CRUD::field('slug')
+            ->tab('general');
 
-        /**
-         * Fields can be defined using the fluent syntax or array syntax:
-         * - CRUD::field('price')->type('number');
-         * - CRUD::addField(['name' => 'price', 'type' => 'number'])); 
-         */
+        CRUD::field('short_description')
+            ->label('Short Description')
+            ->type('text')
+            ->tab('general');
+        
+        CRUD::field('category_id')
+            ->label('Category')
+            ->tab('general');
+        
+
+        CRUD::field('ean')
+            ->tab('general');
+        
+        CRUD::field('price')
+            ->label('Base Price')
+            ->type('number')
+            ->prefix('€ ')
+            ->decimals(2)
+            ->dec_point('.')
+            ->wrapper(['class' => 'form-group col-md-12'])
+            ->tab('Financial');
+
+
+        CRUD::field('description')
+            ->label('Description')
+            ->type('summernote')
+            ->options(['height'=> '400', 'lang' => 'nl-NL'])
+            ->wrapper(['class' => 'form-group col-md-12'])
+            ->tab('General');
+        
+        CRUD::field('stock')
+            ->tab('general');
+
+        CRUD::field('visible')
+            ->label('active')
+            ->tab('general');
+
+
+     
     }
 
     /**

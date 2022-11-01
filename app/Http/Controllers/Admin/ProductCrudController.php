@@ -99,7 +99,7 @@ class ProductCrudController extends CrudController
             ->type('number')
             ->prefix('€ ')
             ->decimals(2)
-            ->dec_point('.')
+            ->dec_point(',')
             ->wrapper(['class' => 'form-group col-md-4'])
             ->tab('Financial');
 
@@ -108,7 +108,7 @@ class ProductCrudController extends CrudController
             ->type('number')
             ->prefix('€ ')
             ->decimals(2)
-            ->dec_point('.')
+            ->dec_point(',')
             ->wrapper(['class' => 'form-group col-md-4'])
             ->tab('Financial');
 
@@ -117,7 +117,7 @@ class ProductCrudController extends CrudController
             ->type('number')
             ->prefix('€ ')
             ->decimals(2)
-            ->dec_point('.')
+            ->dec_point(',')
             ->wrapper(['class' => 'form-group col-md-4'])
             ->tab('Financial');
 

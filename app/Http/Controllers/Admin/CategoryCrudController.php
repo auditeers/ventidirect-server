@@ -74,6 +74,11 @@ class CategoryCrudController extends CrudController
             ->label('Internal Name')
             ->wrapper(['class' => 'form-group col-md-6'])
             ->tab('General');
+        
+         CRUD::field('parent_id')
+            ->label('Parent')
+            ->wrapper(['class' => 'form-group col-md-6'])
+            ->tab('General');
 
         CRUD::field('internal_code')
             ->label('Internal Code')
@@ -85,14 +90,14 @@ class CategoryCrudController extends CrudController
             ->wrapper(['class' => 'form-group col-md-12'])
             ->tab('General');
         
-         CRUD::field('description')
+        CRUD::field('description')
             ->label('Description')
             ->type('summernote')
             ->options(['height'=> '400', 'lang' => 'nl-NL'])
             ->wrapper(['class' => 'form-group col-md-12'])
             ->tab('General');
 
-         CRUD::field('image')
+        CRUD::field('image')
             ->label('Afbeelding')
             ->crop(true)
             ->aspect_ratio(1)

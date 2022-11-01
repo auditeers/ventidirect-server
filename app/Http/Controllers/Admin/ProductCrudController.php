@@ -45,7 +45,7 @@ class ProductCrudController extends CrudController
 
         CRUD::column('name');
         CRUD::column('short_description');
-        CRUD::column('marge');
+        CRUD::column('marge')->label('factor')->type('number')->decimals(2);
 
         CRUD::column('category_id')
             ->searchLogic(function ($query, $column, $searchTerm) {

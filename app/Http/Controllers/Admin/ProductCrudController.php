@@ -116,6 +116,7 @@ class ProductCrudController extends CrudController
 
         CRUD::field('visible')
             ->label('active')
+            ->type('toggle')
             ->tab('General');
 
 

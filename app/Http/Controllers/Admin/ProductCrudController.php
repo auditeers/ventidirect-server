@@ -49,6 +49,7 @@ class ProductCrudController extends CrudController
             ->label('factor')
             ->type('number')
             ->decimals(2)
+            ->orderable(true)
             ->orderLogic(function ($query, $column, $columnDirection) {
                 return $query->orderBy('((products.sales_price / 1.21) / (products.price))', $columnDirection);
             });

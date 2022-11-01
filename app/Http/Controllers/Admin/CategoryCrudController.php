@@ -39,6 +39,8 @@ class CategoryCrudController extends CrudController
      */
     protected function setupListOperation()
     {
+        CRUD::setDefaultPageLength(50);
+        
         CRUD::column('name');
         CRUD::column('internal_name');
 

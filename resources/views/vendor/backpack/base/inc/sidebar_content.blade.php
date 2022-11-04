@@ -3,16 +3,16 @@
 
 <li class="nav-title">Sales</li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('order') }}"><i class="nav-icon la la-cash-register"></i> Orders</a></li>
-<li class="nav-item"><a class="nav-link" href="{{ backpack_url('order') }}"><i class="nav-icon la la-truck"></i> Fulfillment</a></li>
+<li class="nav-item"><a class="nav-link" href="#"><i class="nav-icon la la-truck"></i> Fulfillment</a></li>
 
 <li class="nav-title">CRM</li>
-<li class="nav-item"><a class="nav-link" href="{{ backpack_url('order') }}"><i class="nav-icon la la-user-tag"></i> Clients</a></li>
-<li class="nav-item"><a class="nav-link" href="{{ backpack_url('order') }}"><i class="nav-icon la la-envelope"></i> Emails</a></li>
+<li class="nav-item"><a class="nav-link" href="#"><i class="nav-icon la la-user-tag"></i> Clients</a></li>
+<li class="nav-item"><a class="nav-link" href="#"><i class="nav-icon la la-envelope"></i> Emails</a></li>
 
 <li class="nav-title">Reports</li>
-<li class="nav-item"><a class="nav-link" href="{{ backpack_url('order') }}"><i class="nav-icon la la-box-open"></i> Sales</a></li>
-<li class="nav-item"><a class="nav-link" href="{{ backpack_url('order') }}"><i class="nav-icon la la-truck"></i> Fulfillment</a></li>
-<li class="nav-item"><a class="nav-link" href="{{ backpack_url('order') }}"><i class="nav-icon la la-headset"></i> Support</a></li>
+<li class="nav-item"><a class="nav-link" href="#"><i class="nav-icon la la-box-open"></i> Sales</a></li>
+<li class="nav-item"><a class="nav-link" href="#"><i class="nav-icon la la-truck"></i> Fulfillment</a></li>
+<li class="nav-item"><a class="nav-link" href="#"><i class="nav-icon la la-headset"></i> Support</a></li>
 
 
 <!-- li class="nav-item"><a class="nav-link" href="{{ backpack_url('address') }}"><i class="nav-icon la la-question"></i> Addresses</a></!-->
@@ -41,4 +41,4 @@
 
 <li class="nav-title">DevOps</li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('log') }}'><i class='nav-icon la la-terminal'></i> Logs</a></li>
-<li class='nav-item'><a class='nav-link' href='{{ backpack_url('log') }}'><i class='nav-icon la la-plug'></i> API Status</a></li>
+<li class='nav-item'><a class='nav-link' href='#'><i class='nav-icon la la-plug'></i> API Status</a></li>

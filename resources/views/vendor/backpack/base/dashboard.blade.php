@@ -9,7 +9,7 @@
             <div class="card">
 
                 <div class="card-header">
-                    TEST1
+                    SALES
                 </div>
 
                 <div class="card-body">
@@ -22,7 +22,7 @@
             <div class="card">
 
                 <div class="card-header">
-                    TEST2
+                    SENT
                 </div>
 
                 <div class="card-body">
@@ -35,7 +35,7 @@
             <div class="card">
 
                 <div class="card-header">
-                    TEST3
+                    RETOUR
                 </div>
 
                 <div class="card-body">
@@ -48,7 +48,7 @@
             <div class="card">
 
                 <div class="card-header">
-                    TEST4
+                    --
                 </div>
 
                 <div class="card-body">

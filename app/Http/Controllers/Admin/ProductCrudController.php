@@ -45,7 +45,7 @@ class ProductCrudController extends CrudController
         CRUD::denyAccess('show');
 
         CRUD::column('name')
-            ->prefix('<a href="/admin/product/' . $this->crud->id . '/edit">')
+            ->prefix('<a href="/admin/product/00/edit">')
             ->suffix('</a>');
 
         CRUD::column('short_description');

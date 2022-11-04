@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use Illuminate\Support\Facades\DB;
 use App\Http\Requests\ProductRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
@@ -51,7 +52,7 @@ class ProductCrudController extends CrudController
             ->decimals(2)
             ->orderable(true)
             ->orderLogic(function ($query, $column, $columnDirection) {
-                return $query->orderBy('products.sales_price / products.price', $columnDirection);
+                return $query->orderBy(DB::raw('products.sales_price / products.price'), $columnDirection);
             });
 
         CRUD::column('category_id')

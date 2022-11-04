@@ -40,12 +40,13 @@ class OrderCrudController extends CrudController
     protected function setupListOperation()
     {
         CRUD::column('code');
-        CRUD::column('created_at');
+       
         CRUD::column('shipping_address');
         CRUD::column('shipping_date');
+        
         CRUD::column('subtotal');
         CRUD::column('total');
-        CRUD::column('updated_at');
+
         CRUD::column('user_id');
 
         /**

@@ -7,8 +7,11 @@
 
 
 <li class="nav-title">Sales</li>
-<li class="nav-item"><a class="nav-link" href="{{ backpack_url('order') }}"><i class="nav-icon la la-question"></i> Orders</a></li>
-<li class="nav-item"><a class="nav-link" href="{{ backpack_url('address') }}"><i class="nav-icon la la-question"></i> Addresses</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('order') }}"><i class="nav-icon la la-cash-register"></i> Orders</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('order') }}"><i class="nav-icon la la-user-tag"></i> Clients</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('order') }}"><i class="nav-icon la la-envelope"></i> Emails</a></li>
+
+<!-- li class="nav-item"><a class="nav-link" href="{{ backpack_url('address') }}"><i class="nav-icon la la-question"></i> Addresses</a></!-->
 
 <li class="nav-title">Content</li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('page') }}'><i class='nav-icon la la-file-o'></i> <span>Pages</span></a></li>

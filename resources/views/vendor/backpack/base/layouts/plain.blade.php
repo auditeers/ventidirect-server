@@ -5,7 +5,7 @@
 </head>
 <body 
 class="app flex-row align-items-center"
-style="background-color;#0025E4;"
+style="background-color: #0025E4;"
 >
 
   @yield('header')

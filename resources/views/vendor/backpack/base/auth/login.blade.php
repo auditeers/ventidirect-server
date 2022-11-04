@@ -3,7 +3,7 @@
 @section('content')
 <div class="row justify-content-center">
     <div class="col-12 col-md-8 col-lg-4">
-        <h3 class="text-center mb-4">
+        <h3 class="text-center mb-4 text-white">
             <strong>venti</strong>direct
             <!--img src="/img/dashthree_logo.png" alt="DashThree" -->
         </h3>

@@ -44,7 +44,10 @@ class ProductCrudController extends CrudController
         CRUD::setDefaultPageLength(50);
         CRUD::denyAccess('show');
 
-        CRUD::column('name');
+        CRUD::column('name')
+            ->prefix('<a href="/admin/product/' . $this->crud->id . '/edit">')
+            ->suffix('</a>');
+
         CRUD::column('short_description');
         CRUD::column('marge')
             ->label('factor')

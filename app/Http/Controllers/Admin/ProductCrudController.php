@@ -49,8 +49,11 @@ class ProductCrudController extends CrudController
             ->label('factor')
             ->type('number')
             ->decimals(2)
-            ->orderable(true);
-            
+            ->orderable(true)
+            ->orderLogic(function ($query, $column, $columnDirection) {
+                return $query->orderBy('products.sales_price / products.price', $columnDirection);
+            });
+
         CRUD::column('category_id')
             ->searchLogic(function ($query, $column, $searchTerm) {
                 $query->orWhereHas('category', function ($q) use ($column, $searchTerm) {

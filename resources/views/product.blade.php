@@ -242,7 +242,7 @@
                 <span><i class="far fa-angle-left"></i></i></span> <a href="#" class="active">Mechanische ventilatie</a>
             </div>
             <div class="similar__main__title">
-                <h3>{{ $product->title }}</h3>
+                <h3>{{ $product->name }}</h3>
                 <div class="five__star">
                     <span><i class="fas fa-star"></i></span>
                     <span><i class="fas fa-star"></i></span>

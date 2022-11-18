@@ -1,0 +1,276 @@
+/* XL Device :1200px. */
+
+@media (min-width: 1200px) and (max-width: 1449px) {
+    .summer__sale__title h3 {
+        font-size: 48px;
+        line-height: 61px;
+    }
+}
+
+
+/* LG Device :992px. */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .main__menu__bottom__right__item p b {
+        display: none;
+    }
+
+    .finish__project__area {
+        display: none;
+    }
+
+    .product__details__content p {
+        font-size: 14px;
+    }
+
+    .owl-stage {
+        padding-left: 0 !important;
+    }
+
+    .details__product__thumb {
+        width: 100px;
+        padding-left: 20px;
+    }
+
+    .menu__area__blk {
+        display: none;
+    }
+
+    .header__searct__form form input {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .categorie__area .col-xl-2 {
+        width: 25%;
+    }
+
+    .category__bottom__area .main__menu__bottom__right__item {
+        display: none;
+    }
+
+    .footer__bottom__inner__blk {
+        flex-direction: column;
+    }
+
+    .footer__payment {
+        margin-bottom: 15px;
+    }
+
+    .profile__content h5 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .profile__content p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer__top__area .col-lg-3.d-md-none {
+        display: none !important;
+    }
+
+    .footer__top__area .row {
+        justify-content: center;
+    }
+
+    .footer__list ul li a {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 9px;
+    }
+
+    .profile__content h5 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .profile__content p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer__top__contact__ico img {
+        height: 15px;
+    }
+
+    .footer__top__contact__ico {
+        height: 46px;
+        width: 46px;
+    }
+
+    .pricing__content>p {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 5px;
+    }
+
+    .price__content h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .cart__wrap a {
+        width: 43px;
+        height: 36px;
+    }
+
+    .cart__wrap a img {
+        height: 18px;
+    }
+
+    .categorie__content p {
+        font-size: 15px;
+        line-height: 21px;
+        margin-top: 20px;
+    }
+}
+
+
+/* MD Device :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main__menu__bottom__right__item p b {
+        display: none;
+    }
+
+    .finish__project__area {
+        display: none;
+    }
+
+    .product__details__content p {
+        font-size: 14px;
+    }
+
+    .owl-stage {
+        padding-left: 0 !important;
+    }
+
+    .details__product__thumb {
+        width: 77px;
+        padding-left: 20px;
+    }
+
+    .menu__area__blk {
+        display: none;
+    }
+
+    .header__searct__form form input {
+        padding: 6px 20px;
+        font-size: 13px;
+    }
+
+    .categorie__area .col-xl-2 {
+        width: 33.33%;
+    }
+
+    .category__bottom__area .main__menu__bottom__right__item {
+        display: none;
+    }
+
+    .footer__bottom__inner__blk {
+        flex-direction: column;
+    }
+
+    .footer__payment {
+        margin-bottom: 15px;
+    }
+
+    .profile__content h5 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .profile__content p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer__top__area .col-lg-3.d-md-none {
+        display: none !important;
+    }
+
+    .footer__top__area .row {
+        justify-content: center;
+    }
+
+    .footer__list ul li a {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 9px;
+    }
+
+    .profile__content h5 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .profile__content p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer__top__contact__ico img {
+        height: 15px;
+    }
+
+    .footer__top__contact__ico {
+        height: 46px;
+        width: 46px;
+    }
+
+    .pricing__content>p {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 5px;
+    }
+
+    .price__content h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .cart__wrap a {
+        width: 43px;
+        height: 36px;
+    }
+
+    .cart__wrap a img {
+        height: 18px;
+    }
+
+    .categorie__content p {
+        font-size: 15px;
+        line-height: 21px;
+        margin-top: 20px;
+    }
+    .main__menu__bottom__left__item p {
+        font-size: 12px;
+        line-height: 16px;
+        margin-right: 10px;
+    }
+    .main__menu__bottom__left__item p i {
+        margin-right: 2px;
+        font-size: 10px;
+    }
+    .main__menu__bottom__right__item p img {
+        margin-right: 2px;
+    }
+    .header__right__single__item span {
+        display: none;
+    }
+    .logo img {
+        height: 15px;
+    }
+}
+
+
+/* SM Small Device :320px. */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {}
+
+
+/* SM Small Device :550px. */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {}

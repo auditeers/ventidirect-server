@@ -520,7 +520,7 @@
                     <div class="ventilation__area">
                         <div class="ventilation__inner__blk">
                             <div class="categoti__top__link__text">
-                                <a href="#" class="active">VentiDirect.nl</a> <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">Categorieën</a> <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">Ventilatiesystemen en ventilatieboxen</a>                                <span><i class="fas fa-angle-right"></i></span> <a href="#">{{ $categoty->name }}</a>
+                                <a href="#" class="active">VentiDirect.nl</a> <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">Categorieën</a> <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">Ventilatiesystemen en ventilatieboxen</a>                                <span><i class="fas fa-angle-right"></i></span> <a href="#">{{ $category->name }}</a>
                             </div>
 
                             <div class="similar__main__title">

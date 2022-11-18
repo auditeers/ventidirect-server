@@ -18,4 +18,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 
 
 // Cats
-Route::get('/producten/{slug}', [App\Http\Controllers\CategoryController::class, 'index']);
+Route::get('/producten/{slug}', [App\Http\Controllers\CategoryController::class, 'show']);
+
+// Products
+Route::get('/product/{slug}', [App\Http\Controllers\ProductController::class, 'show']);

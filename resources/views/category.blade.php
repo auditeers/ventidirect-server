@@ -591,6 +591,43 @@
 
                             <div class="ventilation__product__area">
                                 <div class="single__pricing__slide__blk">
+                                    @foreach($categoty->products as $product)
+
+                                    <div class="single__pricing__slide__blk ventilation__pricing__slide__blk">
+                                        <div class="pricing__slide__thumb">
+                                            <a href="{{ $product->slug }}"><img src="/assets/img/pricing_2.png" alt=""></a>
+                                        </div>
+
+                                        <div class="pricing__content">
+                                            <a href="{{ $product->slug }}">
+                                                <p>{{ $product->name }}</p>
+                                            </a>
+                                            <div class="five__star">
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <small>241 reviews</small>
+                                            </div>
+                                            <div class="ventilation__product__like__blk none__phone">
+                                                <div class="like__blk">
+                                                    <a href="#"><img src="/assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
+                                                </div>
+                                                <div class="ventilation__list">
+                                                    <ul>
+                                                        <li>SET incl. afstandsbediening & vochtsensor</li>
+                                                        <li>Zeer krachtige motor: capaciteit 400 m3/h</li>
+                                                        <li>Voorzien van randaarde stekker</li>
+                                                    </ul>
+                                                    <span>Artikelnr.: 0000-4639</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    @endforeach
+
                                     <div class="single__pricing__slide__blk ventilation__pricing__slide__blk">
                                         <div class="pricing__slide__thumb">
                                             <a href="#"><img src="/assets/img/pricing_2.png" alt=""></a>

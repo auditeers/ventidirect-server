@@ -349,6 +349,7 @@
             </div>
 
             <div class="row g-3">
+                
                 @foreach($cats as $cat)
                 <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                     <a href="#">
@@ -376,6 +377,7 @@
                     </a>
                 </div>
                 @endforeach
+
                 <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                     <a href="#">
                         <div class="categorie__inner__blk">

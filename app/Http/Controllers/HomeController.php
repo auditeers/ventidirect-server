@@ -10,6 +10,8 @@ class HomeController extends Controller
     public function index()
     {
         $cats = Category::all();
+
+        print_r($cats);
         return view('home', ["cats" => $cats]);
     }
 }

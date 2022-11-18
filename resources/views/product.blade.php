@@ -20,7 +20,7 @@
     <link href="/assets/css/style.css" rel="stylesheet" />
     <link href="/assets/css/responsive.css" rel="stylesheet" />
 
-    <title>Hello, world!</title>
+    <title>VentiDirect, Alles voor binnenklimaat</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                                 <img src="/assets/img/bar_ico.svg" alt="">
                             </div>
                             <div class="logo">
-                                <a href="#"><img src="/assets/img/logo.svg" alt=""></a>
+                                <a href="/"><img src="/assets/img/logo.svg" alt=""></a>
                             </div>
                         </div>
                         <div class="header__mid__blk">

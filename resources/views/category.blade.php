@@ -524,8 +524,9 @@
                             </div>
 
                             <div class="similar__main__title">
-                                <h3>Mechanische ventilatieboxen</h3>
-                                <p>Heeft u mechanische ventilatie (ook wel centrale afzuiging genoemd) in uw huis en bent u op zoek naar een nieuwe.. <a href="#">Toon meer</a></p>
+                                <h3>{{ $category->name }}</h3>
+                                <p></p>
+                                <p>{{ $category->description }}<a href="#">Toon meer</a></p>
                             </div>
                             <div class="ventilation__brand__slide__wrap">
                                 <div class="similar__listing__title">

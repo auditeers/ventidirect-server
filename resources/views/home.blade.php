@@ -18,7 +18,7 @@
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/responsive.css" rel="stylesheet" />
 
-    <title>Hello, world!</title>
+    <title>VentiDirect, Alles voor binnenklimaat</title>
 </head>
 
 <body>
@@ -349,10 +349,10 @@
             </div>
 
             <div class="row g-3">
-                
+
                 @foreach($cats as $cat)
                 <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                    <a href="#">
+                    <a href="/producten/{{ $cat->slug }}">
                         <div class="categorie__inner__blk">
                             <div class="categorie__body">
                                 <div class="tab-content">

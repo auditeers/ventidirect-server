@@ -9,9 +9,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $cats = Category::all();
+        $cats = Category::whereNotNull('parent_id')->get();
 
-        print_r($cats);
         return view('home', ["cats" => $cats]);
     }
 }

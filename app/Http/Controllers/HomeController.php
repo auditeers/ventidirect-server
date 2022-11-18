@@ -8,6 +8,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('home', []);
+        $cats = Category::all();
+        return view('home', ["cats" => $cats]);
     }
 }

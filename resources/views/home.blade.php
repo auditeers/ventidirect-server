@@ -349,6 +349,33 @@
             </div>
 
             <div class="row g-3">
+                @foreach($cats as $cat)
+                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <a href="#">
+                        <div class="categorie__inner__blk">
+                            <div class="categorie__body">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active">
+                                        <div class="categorie__big__thumb">
+                                            <img src="assets/img/categorie_big_1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categorie__btn">
+                                <div class="nav nav-tabs" id="nav-tab">
+                                    <button class="nav-link"><img src="assets/img/categorie__small_1.png" alt=""></button>
+                                    <button class="nav-link"><img src="assets/img/categorie__small_2.png" alt=""></button>
+                                    <button class="nav-link"><img src="assets/img/categorie__small_3.png" alt=""></button>
+                                </div>
+                            </div>
+                            <div class="categorie__content">
+                                <p>{{ $cat->name }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                @endforeach
                 <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                     <a href="#">
                         <div class="categorie__inner__blk">

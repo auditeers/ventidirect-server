@@ -242,7 +242,7 @@
                 <span><i class="far fa-angle-left"></i></i></span> <a href="#" class="active">Mechanische ventilatie</a>
             </div>
             <div class="similar__main__title">
-                <h3>DucoBox Silent All-In-One RH & BD - vocht boxsensor + bedienings-schakelaar RF batterij</h3>
+                <h3>{{ $product->title }}</h3>
                 <div class="five__star">
                     <span><i class="fas fa-star"></i></span>
                     <span><i class="fas fa-star"></i></span>
@@ -337,7 +337,7 @@
                             <div class="main__price flex-column align-items-start">
                                 <div class="price__content">
                                     <span>Adviesprijs 454,97</span>
-                                    <h4>344,00</h4>
+                                    <h4>{{ $product->price }}</h4>
                                     <span>284,30 excl. BTW</span>
                                 </div>
                                 <div class="cart__top__content">

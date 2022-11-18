@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/fontawesome.css" rel="stylesheet" />
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="assets/css/nice-select.css" rel="stylesheet" />
-    <link href="assets/css/default.css" rel="stylesheet" />
-    <link href="assets/fonts/stylesheet.css" rel="stylesheet" />
-    <link href="assets/fonts/subfont/stylesheet.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/all.min.css" rel="stylesheet" />
+    <link href="/assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="/assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="/assets/css/nice-select.css" rel="stylesheet" />
+    <link href="/assets/css/default.css" rel="stylesheet" />
+    <link href="/assets/fonts/stylesheet.css" rel="stylesheet" />
+    <link href="/assets/fonts/subfont/stylesheet.css" rel="stylesheet" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link href="/assets/css/responsive.css" rel="stylesheet" />
 
     <title>Hello, world!</title>
 </head>
@@ -33,10 +33,10 @@
                     <div class="heder__inner__blk">
                         <div class="header__left__blk">
                             <div class="open__menu">
-                                <img src="assets/img/bar_ico.svg" alt="">
+                                <img src="/assets/img/bar_ico.svg" alt="">
                             </div>
                             <div class="logo">
-                                <a href="#"><img src="assets/img/logo.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/logo.svg" alt=""></a>
                             </div>
                         </div>
                         <div class="header__mid__blk">
@@ -56,7 +56,7 @@
                                             <h5>Account</h5>
                                         </div>
                                         <div class="close__account__ntm d-none">
-                                            <img src="assets/img/cros.png" alt="">
+                                            <img src="/assets/img/cros.png" alt="">
                                         </div>
                                     </div>
                                     <div class="account__user__inner__blk">
@@ -96,7 +96,7 @@
                                         <div class="single__shopping__cart__details__wrap">
                                             <div class="single__shopping__cart__details">
                                                 <div class="shopping__cart__details__thumb">
-                                                    <img src="assets/img/pricing_2.png" alt="">
+                                                    <img src="/assets/img/pricing_2.png" alt="">
                                                 </div>
                                                 <div class="shopping__cart__details__text">
                                                     <p>DucoBox Silent All-In-One RH & BD vocht boxsensor + bedienings-schakelaar RF batterij</p>
@@ -110,7 +110,7 @@
                                         <div class="single__shopping__cart__details__wrap">
                                             <div class="single__shopping__cart__details">
                                                 <div class="shopping__cart__details__thumb">
-                                                    <img src="assets/img/product__added__img_2.png" alt="">
+                                                    <img src="/assets/img/product__added__img_2.png" alt="">
                                                 </div>
                                                 <div class="shopping__cart__details__text">
                                                     <p>Korte bocht 90º met afdichtingsrubber geperst - Ø 100mm</p>
@@ -124,7 +124,7 @@
                                         <div class="single__shopping__cart__details__wrap">
                                             <div class="single__shopping__cart__details">
                                                 <div class="shopping__cart__details__thumb">
-                                                    <img src="assets/img/product__added__img_3.png" alt="">
+                                                    <img src="/assets/img/product__added__img_3.png" alt="">
                                                 </div>
                                                 <div class="shopping__cart__details__text">
                                                     <p>Duco Ducovent Design afgerond vierkant XL ventilatieventiel Ø125mm WIT RAL9016</p>
@@ -217,7 +217,7 @@
                             <p><i class="far fa-check"></i> Altijd de laagste prijs</p>
                         </div>
                         <div class="main__menu__bottom__right__item">
-                            <p><img src="assets/img/divaided.svg" alt=""> <span>Zakelijk bestellen?</span> <b>Krijg 5% Cashcack p.m.</b></p>
+                            <p><img src="/assets/img/divaided.svg" alt=""> <span>Zakelijk bestellen?</span> <b>Krijg 5% Cashcack p.m.</b></p>
                         </div>
                     </div>
                 </div>
@@ -237,7 +237,7 @@
                             <div class="listing__product__tab__top__blk">
                                 <h4>Filteren</h4>
                                 <div class="filter__close__blk">
-                                    <span>Wis filters <img src="assets/img/cros.png" alt=""></span>
+                                    <span>Wis filters <img src="/assets/img/cros.png" alt=""></span>
                                 </div>
                             </div>
 
@@ -533,31 +533,31 @@
                                 </div>
                                 <div class="ventilation__brand__slide owl-carousel">
                                     <div class="single__brand">
-                                        <a href="#"><img src="assets/img/brand_1.svg" alt=""></a>
+                                        <a href="#"><img src="/assets/img/brand_1.svg" alt=""></a>
                                     </div>
                                     <div class="single__brand">
-                                        <a href="#"><img src="assets/img/brand_2.svg" alt=""></a>
+                                        <a href="#"><img src="/assets/img/brand_2.svg" alt=""></a>
                                     </div>
                                     <div class="single__brand">
-                                        <a href="#"><img src="assets/img/brand_3.svg" alt=""></a>
+                                        <a href="#"><img src="/assets/img/brand_3.svg" alt=""></a>
                                     </div>
                                     <div class="single__brand">
-                                        <a href="#"><img src="assets/img/brand_4.svg" alt=""></a>
+                                        <a href="#"><img src="/assets/img/brand_4.svg" alt=""></a>
                                     </div>
                                     <div class="single__brand">
-                                        <a href="#"><img src="assets/img/brand_5.svg" alt=""></a>
+                                        <a href="#"><img src="/assets/img/brand_5.svg" alt=""></a>
                                     </div>
                                     <div class="single__brand">
-                                        <a href="#"><img src="assets/img/brand_6.svg" alt=""></a>
+                                        <a href="#"><img src="/assets/img/brand_6.svg" alt=""></a>
                                     </div>
                                     <div class="single__brand">
-                                        <a href="#"><img src="assets/img/brand_7.svg" alt=""></a>
+                                        <a href="#"><img src="/assets/img/brand_7.svg" alt=""></a>
                                     </div>
                                     <div class="single__brand">
-                                        <a href="#"><img src="assets/img/brand_8.svg" alt=""></a>
+                                        <a href="#"><img src="/assets/img/brand_8.svg" alt=""></a>
                                     </div>
                                     <div class="single__brand">
-                                        <a href="#"><img src="assets/img/brand_9.svg" alt=""></a>
+                                        <a href="#"><img src="/assets/img/brand_9.svg" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -566,7 +566,7 @@
                                 <div class="page__filter__blk">
                                     <div class="result__blk">
                                         <div class="filter__open__btn">
-                                            <span><img src="assets/img/open__filter.png" alt=""> Filter</span>
+                                            <span><img src="/assets/img/open__filter.png" alt=""> Filter</span>
                                         </div>
                                         <span>24 resultaten</span>
                                     </div>
@@ -582,7 +582,7 @@
                                             </select>
                                         </div>
                                         <div class="filter__btn">
-                                            <span><img src="assets/img/filter_1.png" alt=""></span>
+                                            <span><img src="/assets/img/filter_1.png" alt=""></span>
                                         </div>
                                     </div>
                                 </div>
@@ -592,7 +592,7 @@
                                 <div class="single__pricing__slide__blk">
                                     <div class="single__pricing__slide__blk ventilation__pricing__slide__blk">
                                         <div class="pricing__slide__thumb">
-                                            <a href="#"><img src="assets/img/pricing_2.png" alt=""></a>
+                                            <a href="#"><img src="/assets/img/pricing_2.png" alt=""></a>
                                         </div>
 
                                         <div class="pricing__content">
@@ -609,7 +609,7 @@
                                             </div>
                                             <div class="ventilation__product__like__blk none__phone">
                                                 <div class="like__blk">
-                                                    <a href="#"><img src="assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
+                                                    <a href="#"><img src="/assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
                                                 </div>
                                                 <div class="ventilation__list">
                                                     <ul>
@@ -625,7 +625,7 @@
 
                                     <div class="ventilation__product__like__blk phone__blk">
                                         <div class="like__blk">
-                                            <a href="#"><img src="assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
+                                            <a href="#"><img src="/assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
                                         </div>
                                         <div class="ventilation__list">
                                             <ul>
@@ -653,7 +653,7 @@
                                                 <span>284,30 excl. BTW</span>
                                             </div>
                                             <div class="cart__wrap none__phone">
-                                                <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
+                                                <a href="#"><img src="/assets/img/cart_ico.svg" alt=""></a>
                                             </div>
                                             <div class="price__bottom__text">
                                                 <span>Artikelnr.: 0000-4639</span>
@@ -661,7 +661,7 @@
                                         </div>
 
                                         <div class="cart__wrap phone__blk">
-                                            <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
+                                            <a href="#"><img src="/assets/img/cart_ico.svg" alt=""></a>
                                         </div>
                                     </div>
                                 </div>
@@ -671,7 +671,7 @@
                                 <div class="single__pricing__slide__blk">
                                     <div class="single__pricing__slide__blk ventilation__pricing__slide__blk">
                                         <div class="pricing__slide__thumb">
-                                            <a href="#"><img src="assets/img/pricing_3.png" alt=""></a>
+                                            <a href="#"><img src="/assets/img/pricing_3.png" alt=""></a>
                                         </div>
 
                                         <div class="pricing__content">
@@ -701,7 +701,7 @@
 
                                     <div class="ventilation__product__like__blk phone__blk">
                                         <div class="like__blk">
-                                            <a href="#"><img src="assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
+                                            <a href="#"><img src="/assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
                                         </div>
                                         <div class="ventilation__list">
                                             <ul>
@@ -729,7 +729,7 @@
                                                 <span>284,30 excl. BTW</span>
                                             </div>
                                             <div class="cart__wrap none__phone">
-                                                <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
+                                                <a href="#"><img src="/assets/img/cart_ico.svg" alt=""></a>
                                             </div>
                                             <div class="price__bottom__text">
                                                 <span>Artikelnr.: 0000-4639</span>
@@ -737,7 +737,7 @@
                                         </div>
 
                                         <div class="cart__wrap phone__blk">
-                                            <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
+                                            <a href="#"><img src="/assets/img/cart_ico.svg" alt=""></a>
                                         </div>
                                     </div>
                                 </div>
@@ -747,7 +747,7 @@
                                 <div class="single__pricing__slide__blk">
                                     <div class="single__pricing__slide__blk ventilation__pricing__slide__blk">
                                         <div class="pricing__slide__thumb">
-                                            <a href="#"><img src="assets/img/pricing_1.png" alt=""></a>
+                                            <a href="#"><img src="/assets/img/pricing_1.png" alt=""></a>
                                         </div>
 
                                         <div class="pricing__content">
@@ -764,7 +764,7 @@
                                             </div>
                                             <div class="ventilation__product__like__blk none__phone">
                                                 <div class="like__blk">
-                                                    <a href="#"><img src="assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
+                                                    <a href="#"><img src="/assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
                                                 </div>
                                                 <div class="ventilation__list">
                                                     <ul>
@@ -780,7 +780,7 @@
 
                                     <div class="ventilation__product__like__blk phone__blk">
                                         <div class="like__blk">
-                                            <a href="#"><img src="assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
+                                            <a href="#"><img src="/assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
                                         </div>
                                         <div class="ventilation__list">
                                             <ul>
@@ -808,7 +808,7 @@
                                                 <span>284,30 excl. BTW</span>
                                             </div>
                                             <div class="cart__wrap none__phone">
-                                                <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
+                                                <a href="#"><img src="/assets/img/cart_ico.svg" alt=""></a>
                                             </div>
                                             <div class="price__bottom__text">
                                                 <span>Artikelnr.: 0000-4639</span>
@@ -816,7 +816,7 @@
                                         </div>
 
                                         <div class="cart__wrap phone__blk">
-                                            <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
+                                            <a href="#"><img src="/assets/img/cart_ico.svg" alt=""></a>
                                         </div>
                                     </div>
                                 </div>
@@ -850,7 +850,7 @@
                 <div class="col-lg-3 d-md-none d-lg-block">
                     <div class="footer__top__profile">
                         <div class="footer__top__profile__thumb">
-                            <img src="assets/img/profile_1.png" alt="">
+                            <img src="/assets/img/profile_1.png" alt="">
                         </div>
                         <div class="profile__content">
                             <h5>Hulp nodig?</h5>
@@ -863,7 +863,7 @@
                     <a href="tell:310800534515">
                         <div class="footer__top__contact">
                             <div class="footer__top__contact__ico">
-                                <img src="assets/img/phone.png" alt="">
+                                <img src="/assets/img/phone.png" alt="">
                             </div>
                             <div class="profile__content">
                                 <h5>+31 0800 534515</h5>
@@ -877,7 +877,7 @@
                     <a href="#">
                         <div class="footer__top__contact">
                             <div class="footer__top__contact__ico">
-                                <img src="assets/img/massage.png" alt="">
+                                <img src="/assets/img/massage.png" alt="">
                             </div>
                             <div class="profile__content">
                                 <h5>Mail ons</h5>
@@ -891,7 +891,7 @@
                     <a href="#">
                         <div class="footer__top__contact">
                             <div class="footer__top__contact__ico">
-                                <img src="assets/img/badges.png" alt="">
+                                <img src="/assets/img/badges.png" alt="">
                             </div>
                             <div class="profile__content">
                                 <h5>Instructies</h5>
@@ -1077,25 +1077,25 @@
                     <div class="footer__bottom__inner__blk">
                         <div class="footer__payment">
                             <div class="single__payment__blk">
-                                <a href="#"><img src="assets/img/pay_1.png" alt=""></a>
+                                <a href="#"><img src="/assets/img/pay_1.png" alt=""></a>
                             </div>
                             <div class="single__payment__blk">
-                                <a href="#"><img src="assets/img/pay_2.png" alt=""></a>
+                                <a href="#"><img src="/assets/img/pay_2.png" alt=""></a>
                             </div>
                             <div class="single__payment__blk">
-                                <a href="#"><img src="assets/img/pay_3.png" alt=""></a>
+                                <a href="#"><img src="/assets/img/pay_3.png" alt=""></a>
                             </div>
                             <div class="single__payment__blk">
-                                <a href="#"><img src="assets/img/pay_4.png" alt=""></a>
+                                <a href="#"><img src="/assets/img/pay_4.png" alt=""></a>
                             </div>
                             <div class="single__payment__blk">
-                                <a href="#"><img src="assets/img/pay_5.png" alt=""></a>
+                                <a href="#"><img src="/assets/img/pay_5.png" alt=""></a>
                             </div>
                             <div class="single__payment__blk">
-                                <a href="#"><img src="assets/img/pay_6.png" alt=""></a>
+                                <a href="#"><img src="/assets/img/pay_6.png" alt=""></a>
                             </div>
                             <div class="single__payment__blk">
-                                <a href="#"><img src="assets/img/pay_7.png" alt=""></a>
+                                <a href="#"><img src="/assets/img/pay_7.png" alt=""></a>
                             </div>
                         </div>
 
@@ -1118,12 +1118,12 @@
 
 
     <!-- Optional JavaScript; choose one of the two! -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/jquery.nice-select.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/popper.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/jquery.nice-select.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

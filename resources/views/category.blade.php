@@ -569,7 +569,7 @@
                                         <div class="filter__open__btn">
                                             <span><img src="/assets/img/open__filter.png" alt=""> Filter</span>
                                         </div>
-                                        <span>24 resultaten</span>
+                                        <span>{{ $category->products->count() }} resultaten</span>
                                     </div>
                                     <div class="page__filter__right__blk">
                                         <span>Sorteer op</span>

@@ -591,7 +591,7 @@
 
                             <div class="ventilation__product__area">
                                 <div class="single__pricing__slide__blk">
-                                    @foreach($categoty->products as $product)
+                                    @foreach($category->products as $product)
 
                                     <div class="single__pricing__slide__blk ventilation__pricing__slide__blk">
                                         <div class="pricing__slide__thumb">

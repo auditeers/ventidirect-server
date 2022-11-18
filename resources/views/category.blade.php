@@ -595,12 +595,12 @@
 
                                     <div class="single__pricing__slide__blk ventilation__pricing__slide__blk">
                                         <div class="pricing__slide__thumb">
-                                            <a href="#"><img src="/assets/img/pricing_2.png" alt=""></a>
+                                            <a href="/product/{{ $product->slug }}"><img src="/assets/img/pricing_2.png" alt=""></a>
                                         </div>
 
                                         <div class="pricing__content">
-                                            <a href="#">
-                                                <p>DucoBox Silent All-In-One RH & BD - vocht boxsensor + bedieningsschakelaar RF batterij</p>
+                                            <a href="/product/{{ $product->slug }}">
+                                                <p>{{ $product->name }}</p>
                                             </a>
                                             <div class="five__star">
                                                 <span><i class="fas fa-star"></i></span>
@@ -612,7 +612,7 @@
                                             </div>
                                             <div class="ventilation__product__like__blk none__phone">
                                                 <div class="like__blk">
-                                                    <a href="#"><img src="/assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
+                                                    <a href="/product/{{ $product->slug }}"><img src="/assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
                                                 </div>
                                                 <div class="ventilation__list">
                                                     <ul>
@@ -628,7 +628,7 @@
 
                                     <div class="ventilation__product__like__blk phone__blk">
                                         <div class="like__blk">
-                                            <a href="#"><img src="/assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
+                                            <a href="/product/{{ $product->slug }}"><img src="/assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
                                         </div>
                                         <div class="ventilation__list">
                                             <ul>
@@ -644,7 +644,7 @@
                                         <div class="main__price">
                                             <div class="price__content tab__none">
                                                 <span>Adviesprijs 454,97</span>
-                                                <h4>344,00</h4>
+                                                <h4>{{ $product->price }}</h4>
                                                 <span>284,30 excl. BTW</span>
                                             </div>
                                             <div class="cart__top__content">

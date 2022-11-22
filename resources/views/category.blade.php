@@ -23,8 +23,6 @@
 
 <body>
 
-
-
     <!-- =================== HEADER AREA START ===================== -->
     <header class="header__area">
         <div class="container">
@@ -526,7 +524,7 @@
                             <div class="similar__main__title">
                                 <h3>{{ $category->name }}</h3>
                                 <p></p>
-                                <p>{!! $category->description !!}<a href="#">Toon meer</a></p>
+                                <p>{{ $category->intro }}<a href="#description">Toon meer</a></p>
                             </div>
                             <div class="ventilation__brand__slide__wrap">
                                 <div class="similar__listing__title">
@@ -840,6 +838,8 @@
                             </ul>
                         </nav>
                     </div>
+
+                    <p>{{ $category->intro }}</p>
                 </div>
             </div>
         </div>

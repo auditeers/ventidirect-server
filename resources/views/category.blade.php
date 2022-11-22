@@ -839,7 +839,7 @@
                         </nav>
                     </div>
 
-                    <p id="description">{{ $category->description }}</p>
+                    <p id="description">{!! $category->description !!}</p>
                 </div>
             </div>
         </div>

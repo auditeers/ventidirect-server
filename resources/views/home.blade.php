@@ -360,7 +360,6 @@
                                 <div class="tab-content">
                                     <div class="tab-pane fade show active">
                                         <div class="categorie__big__thumb">
-                                            @if
                                             <img src="/storage/{{ $cat->img ?? "/placeholder.jpg"}}" alt="">
                                         </div>
                                     </div>

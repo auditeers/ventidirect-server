@@ -593,7 +593,7 @@
 
                                     <div class="single__pricing__slide__blk ventilation__pricing__slide__blk">
                                         <div class="pricing__slide__thumb">
-                                            <a href="/product/{{ $product->slug }}"><img src="/assets/img/pricing_2.png" alt=""></a>
+                                            <a href="/product/{{ $product->slug }}"><img src="/storage/{{ $product->image ?? "/placeholder.jpg"}}" alt="{{ $cproduct->seo_title ?? '' }}"></a>
                                         </div>
 
                                         <div class="pricing__content">

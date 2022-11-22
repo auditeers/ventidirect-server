@@ -360,7 +360,7 @@
                                 <div class="tab-content">
                                     <div class="tab-pane fade show active">
                                         <div class="categorie__big__thumb">
-                                            <img src="/storage/{{ $cat->image ?? "/placeholder.jpg"}}" alt="">
+                                            <img src="/storage/{{ $cat->image ?? "/placeholder.jpg"}}" alt="{{ $cat->seo_title }}">
                                         </div>
                                     </div>
                                 </div>

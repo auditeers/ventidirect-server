@@ -28,6 +28,12 @@ class Category extends Model
         return $this->belongsTo(Category::class, 'parent_id');
     }
 
+    public function setDescriptionAttribute($value)
+    {
+        $this->attributes['description'] =  clean($value);
+        
+    }
+
     public function setImageAttribute($value)
     {
         $attribute_name = "image";

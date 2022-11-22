@@ -17,7 +17,8 @@
         "intervention/image": "^2.7",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
-        "laravel/tinker": "^2.7"
+        "laravel/tinker": "^2.7",
+        "mews/purifier": "^3.3"
     },
     "require-dev": {
         "backpack/generators": "^3.3",

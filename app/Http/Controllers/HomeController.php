@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $cats = Category::whereNotNull('parent_id')->get();
+        $cats = Category::whereNull('parent_id')->get();
 
         return view('home', ["cats" => $cats]);
     }

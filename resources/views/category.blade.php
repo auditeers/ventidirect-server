@@ -526,7 +526,7 @@
                             <div class="similar__main__title">
                                 <h3>{{ $category->name }}</h3>
                                 <p></p>
-                                <p>{{ $category->description }}<a href="#">Toon meer</a></p>
+                                <p>{!! $category->description !!}<a href="#">Toon meer</a></p>
                             </div>
                             <div class="ventilation__brand__slide__wrap">
                                 <div class="similar__listing__title">

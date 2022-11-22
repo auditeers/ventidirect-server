@@ -93,6 +93,12 @@ class CategoryCrudController extends CrudController
             ->wrapper(['class' => 'form-group col-md-12'])
             ->tab('General');
         
+        CRUD::field('intro')
+            ->label('Introductie')
+            ->type('text')
+            ->wrapper(['class' => 'form-group col-md-12'])
+            ->tab('General');
+
         CRUD::field('description')
             ->label('Description')
             ->type('summernote')
@@ -107,6 +113,18 @@ class CategoryCrudController extends CrudController
             ->type('image')
             ->disk('local')
             ->tab('General');
+        
+        CRUD::field('seo_title')
+            ->label('Seo Title')
+            ->type('text')
+            ->wrapper(['class' => 'form-group col-md-12'])
+            ->tab('SEO');
+
+        CRUD::field('seo_description')
+            ->label('Seo Description')
+            ->type('text')
+            ->wrapper(['class' => 'form-group col-md-12'])
+            ->tab('SEO');
     
 
         /**

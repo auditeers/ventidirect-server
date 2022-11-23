@@ -685,7 +685,10 @@
                         </nav>
                     </div>
 
-                    <p id="description">{!! $category->description !!}</p>
+                    <div class="similar__main__title">
+                        <p id="description">{!! $category->description !!}</p>
+                    </div>
+                
                 </div>
             </div>
         </div>

@@ -162,6 +162,24 @@ class ProductCrudController extends CrudController
             ])
             ->tab('General');
         
+        CRUD::field('pros')
+            ->label('Pros')
+            ->type('table')
+            ->wrapper(['class' => 'form-group col-md-6'])
+            ->columns([
+                'value' => 'Value'
+            ])
+            ->tab('General');
+
+         CRUD::field('cons')
+            ->label('Cons')
+            ->type('table')
+            ->wrapper(['class' => 'form-group col-md-6'])
+            ->columns([
+                'value' => 'Value'
+            ])
+            ->tab('General');
+        
 
         CRUD::field('image')
             ->label('Afbeelding')

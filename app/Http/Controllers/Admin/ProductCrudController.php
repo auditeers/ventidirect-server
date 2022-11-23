@@ -182,12 +182,13 @@ class ProductCrudController extends CrudController
         
 
         CRUD::field('image')
-            ->label('Afbeelding')
+            ->label('Main Image')
             ->crop(true)
             ->aspect_ratio(1)
             ->type('image')
             ->disk('local')
             ->tab('General');
+        
         
         CRUD::field('stock')
             ->tab('Stock');

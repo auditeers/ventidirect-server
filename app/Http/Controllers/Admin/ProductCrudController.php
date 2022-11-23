@@ -161,9 +161,6 @@ class ProductCrudController extends CrudController
                 'value' => 'Value'
             ])
             ->tab('General');
-
-  
-],
         
 
         CRUD::field('image')

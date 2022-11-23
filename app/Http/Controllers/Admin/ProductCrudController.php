@@ -152,6 +152,18 @@ class ProductCrudController extends CrudController
             ->wrapper(['class' => 'form-group col-md-12'])
             ->tab('General');
 
+        CRUD::field('features')
+            ->label('Features')
+            ->type('table')
+            ->wrapper(['class' => 'form-group col-md-12'])
+            ->columns([
+                'name' => 'Name',
+                'value' => 'Value'
+            ])
+            ->tab('General');
+
+  
+],
         
 
         CRUD::field('image')

@@ -87,33 +87,6 @@
                                         
                                         @endforeach
 
-                                        <div class="single__shopping__cart__details__wrap">
-                                            <div class="single__shopping__cart__details">
-                                                <div class="shopping__cart__details__thumb">
-                                                    <img src="/assets/img/product__added__img_2.png" alt="">
-                                                </div>
-                                                <div class="shopping__cart__details__text">
-                                                    <p>Korte bocht 90º met afdichtingsrubber geperst - Ø 100mm</p>
-                                                </div>
-                                            </div>
-                                            <div class="cart_price">
-                                                <h4>€ 352,00</h4>
-                                            </div>
-                                        </div>
-
-                                        <div class="single__shopping__cart__details__wrap">
-                                            <div class="single__shopping__cart__details">
-                                                <div class="shopping__cart__details__thumb">
-                                                    <img src="/assets/img/product__added__img_3.png" alt="">
-                                                </div>
-                                                <div class="shopping__cart__details__text">
-                                                    <p>Duco Ducovent Design afgerond vierkant XL ventilatieventiel Ø125mm WIT RAL9016</p>
-                                                </div>
-                                            </div>
-                                            <div class="cart_price">
-                                                <h4>€ 352,00</h4>
-                                            </div>
-                                        </div>
 
                                         <div class="subtotal__content">
                                             <div class="subtotal__light__content">
@@ -123,7 +96,7 @@
                                             <div class="subtotal__bold__content">
                                                 <h4>Totaal excl. btw <span>€ 325,00</span></h4>
                                                 <h3>BTW <span>€ 86</span></h3>
-                                                <h4>Totaal excl. btw <span>€ 325,00</span></h4>
+                                                <h4>Totaal incl. btw <span>€ {{ /Cart::getTotal() }}</span></h4>
                                             </div>
                                             <div class="subtotal__btn">
                                                 <a class="second_similar_btn" href="#">Wijzig winkelwagen</a>

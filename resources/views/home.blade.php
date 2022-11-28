@@ -199,9 +199,9 @@
 
                         <div class="single__pricing__slide__blk">
                             <div class="pricing__slide__thumb">
-                                <a href="/product/{{ $product->slug }}">
-                                    <img src="/storage/{{ $product->image ?? "/placeholder.jpg"}}" alt="{{ $product->seo_title ?? '' }}">
-                                </a>
+                                
+                                <img src="/storage/{{ $product->image ?? "/placeholder.jpg"}}" alt="{{ $product->seo_title ?? '' }}">
+                                
                             </div>
 
                             <div class="pricing__content">

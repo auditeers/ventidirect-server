@@ -66,19 +66,24 @@
                                         <h5>Winkelwagen</h5>
                                     </div>
                                     <div class="shopping__cart__details border-0">
+                                        
+                                        @foreach($cart_items as $cart_item)
+                                        
                                         <div class="single__shopping__cart__details__wrap">
                                             <div class="single__shopping__cart__details">
                                                 <div class="shopping__cart__details__thumb">
-                                                    <img src="/assets/img/pricing_2.png" alt="">
+                                                    <img src="/resources/{{ $cart_item->product->image }}" alt="{{ $cart_item->name }}">
                                                 </div>
                                                 <div class="shopping__cart__details__text">
-                                                    <p>DucoBox Silent All-In-One RH & BD vocht boxsensor + bedienings-schakelaar RF batterij</p>
+                                                    <p>{{ $cart_item->name }}</p>
                                                 </div>
                                             </div>
                                             <div class="cart_price">
-                                                <h4>€ 352,00</h4>
+                                                <h4>€ {{ $cart_item->price }}</h4>
                                             </div>
                                         </div>
+                                        
+                                        @endforeach
 
                                         <div class="single__shopping__cart__details__wrap">
                                             <div class="single__shopping__cart__details">

@@ -1,5 +1,5 @@
 
-<div class="ventilation__brand__slide__wrap">
+{{-- <div class="ventilation__brand__slide__wrap">
     <div class="similar__listing__title">
         <h5>Populaire merken</h5>
     </div>
@@ -33,5 +33,5 @@
         </div>
     </div>
 </div>
-
+--}}
                             

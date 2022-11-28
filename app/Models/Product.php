@@ -15,6 +15,16 @@ class Product extends Model
 
     protected $guarded = [];
 
+    /**
+     * Get the name of the index associated with the model.
+     *
+     * @return string
+     */
+    public function searchableAs()
+    {
+        return 'products_index';
+    }
+
     public function category()
     {
         return $this->belongsTo(Category::class);

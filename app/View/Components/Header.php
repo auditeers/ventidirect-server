@@ -6,7 +6,7 @@ use Illuminate\View\Component;
 
 class Header extends Component
 {
-    use Cart;
+    use \Cart;
 
     /**
      * Create a new component instance.

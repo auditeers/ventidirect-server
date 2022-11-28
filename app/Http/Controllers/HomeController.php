@@ -11,6 +11,11 @@ class HomeController extends Controller
     {
         $cats = Category::whereNull('parent_id')->get();
 
-        return view('home', ["cats" => $cats]);
+        $popular = Product::whereNotNull('image')->get(5);
+
+        return view('home', [
+            "cats" => $cats,
+            "popular" => $popular
+        ]);
     }
 }

@@ -19,7 +19,7 @@ class CartController extends Controller
             'price' => $product->price,
             'quantity' => 1,
             'attributes' => [],
-            'associatedModel' => $product
+            'associatedModel' => 'Product'
         ]);
 
         return back()->with('cart', 'added');

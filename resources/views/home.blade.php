@@ -194,14 +194,20 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="pricing__slide__blk owl-carousel">
+                        
                         @foreach($popular as $item)
+
                         <div class="single__pricing__slide__blk">
                             <div class="pricing__slide__thumb">
-                                <img src="assets/img/pricing_1.png" alt="">
+                                <a href="/product/{{ $product->slug }}">
+                                    <img src="/storage/{{ $product->image ?? "/placeholder.jpg"}}" alt="{{ $cproduct->seo_title ?? '' }}">
+                                </a>
                             </div>
 
                             <div class="pricing__content">
-                                <p>Stork Woonhuisventilator ComfoFan SRP (perilex) - incl. RFZ zender..</p>
+                                <a href="/product/{{ $product->slug }}">
+                                    <p>{{ $product->name }}</p>
+                                </a>
                                 <div class="five__star">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -215,7 +221,7 @@
                             <div class="main__price">
                                 <div class="price__content">
                                     <span>Adviesprijs 454,97</span>
-                                    <h4>344,00</h4>
+                                    <h4>{{ $product->price }}</h4>
                                     <span>284,30 excl. BTW</span>
                                 </div>
                                 <div class="cart__wrap">
@@ -226,6 +232,7 @@
                                 <span>Artikelnr.: 0000-4639</span>
                             </div>
                         </div>
+
                         @endforeach
 
                     </div>

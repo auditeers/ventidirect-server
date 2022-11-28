@@ -348,7 +348,7 @@
 
 
     <!-- =================== SERVICE AREA START ===================== -->
-    <section class="service__area">
+    <section class="service__area mb-3">
         <div class="container">
             <div class="similar__title">
                 <h5>Handig om te weten</h5>

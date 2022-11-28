@@ -194,6 +194,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="pricing__slide__blk owl-carousel">
+                        @foreach($popular as $item)
                         <div class="single__pricing__slide__blk">
                             <div class="pricing__slide__thumb">
                                 <img src="assets/img/pricing_1.png" alt="">
@@ -225,102 +226,8 @@
                                 <span>Artikelnr.: 0000-4639</span>
                             </div>
                         </div>
+                        @endforeach
 
-                        <div class="single__pricing__slide__blk">
-                            <div class="pricing__slide__thumb">
-                                <img src="assets/img/pricing_2.png" alt="">
-                            </div>
-
-                            <div class="pricing__content">
-                                <p>DucoBox Silent All-In-One RH & BD - vocht boxsensor + RF batterij..</p>
-                                <div class="five__star">
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <small>241 reviews</small>
-                                </div>
-                            </div>
-
-                            <div class="main__price">
-                                <div class="price__content">
-                                    <span>Adviesprijs 454,97</span>
-                                    <h4>344,00</h4>
-                                    <span>284,30 excl. BTW</span>
-                                </div>
-                                <div class="cart__wrap">
-                                    <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="price__bottom__text">
-                                <span>Artikelnr.: 0000-4639</span>
-                            </div>
-                        </div>
-
-                        <div class="single__pricing__slide__blk">
-                            <div class="pricing__slide__thumb">
-                                <img src="assets/img/pricing_3.png" alt="">
-                            </div>
-
-                            <div class="pricing__content">
-                                <p>Orcon woonhuisventilator MVS-15R - 600 m3/h - met afstandsbediening RF</p>
-                                <div class="five__star">
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <small>241 reviews</small>
-                                </div>
-                            </div>
-
-                            <div class="main__price">
-                                <div class="price__content">
-                                    <span>Adviesprijs 454,97</span>
-                                    <h4>344,00</h4>
-                                    <span>284,30 excl. BTW</span>
-                                </div>
-                                <div class="cart__wrap">
-                                    <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="price__bottom__text">
-                                <span>Artikelnr.: 0000-4639</span>
-                            </div>
-                        </div>
-
-                        <div class="single__pricing__slide__blk">
-                            <div class="pricing__slide__thumb">
-                                <img src="assets/img/pricing_4.png" alt="">
-                            </div>
-
-                            <div class="pricing__content">
-                                <p>Itho woonhuisventilator met vochtsensor CVE-S ECO RFT SE - ..</p>
-                                <div class="five__star">
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <small>241 reviews</small>
-                                </div>
-                            </div>
-
-                            <div class="main__price">
-                                <div class="price__content">
-                                    <span>Adviesprijs 454,97</span>
-                                    <h4>344,00</h4>
-                                    <span>284,30 excl. BTW</span>
-                                </div>
-                                <div class="cart__wrap">
-                                    <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="price__bottom__text">
-                                <span>Artikelnr.: 0000-4639</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

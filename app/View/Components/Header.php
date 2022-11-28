@@ -6,7 +6,6 @@ use Illuminate\View\Component;
 
 class Header extends Component
 {
-    use \Cart;
 
     /**
      * Create a new component instance.
@@ -26,7 +25,7 @@ class Header extends Component
     public function render()
     {
 
-        $cart_items = Cart::getContent();
+        $cart_items = \Cart::getContent();
 
         return view('components.header', [
             "cart_items" => $cart_items

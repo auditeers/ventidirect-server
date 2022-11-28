@@ -15,7 +15,7 @@
                         <div class="header__mid__blk">
                             <div class="header__searct__form">
                                 <form action="#">
-                                    <input type="text" placeholder="Zoeken naar..">
+                                    <input type="text" id="search-input" placeholder="Zoeken naar..">
                                     <button type="button"><i class="far fa-search"></i></button>
                                 </form>
                             </div>

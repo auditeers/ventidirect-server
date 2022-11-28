@@ -402,6 +402,31 @@
     <script src="/assets/js/owl.carousel.min.js"></script>
     <script src="/assets/js/jquery.nice-select.js"></script>
     <script src="/assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+    <script>
+
+    var client = algoliasearch( 'ALGOLIA_APP_ID' , 'ALGOLIA_SEARCH' );
+
+    var index = client.initIndex('posts');
+    autocomplete('#search-input', { hint: true }, [
+        {
+        autofocus:false,
+        source: autocomplete.sources.hits(index, { hitsPerPage: 3 }),
+        displayKey: 'title',
+        templates: {
+            suggestion: function(suggestion) {
+            return suggestion._highlightResult.title.value;
+            },
+            footer: '<div class="aa-dropdown-footer">Search by<img class="aa-logo" src="https://www.algolia.com/assets/algolia128x40.png" width=80/></div>'
+        }
+        }
+    ])
+    .on('autocomplete:selected', function(event, suggestion, dataset, context) {
+            window.location = suggestion.slug
+    });
+    </script>
 </body>
 
 </html>

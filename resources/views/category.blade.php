@@ -413,7 +413,9 @@
                                         </div>
 
                                         <div class="cart__wrap phone__blk">
-                                            <a href="#"><img src="/assets/img/cart_ico.svg" alt=""></a>
+                                            <a href="/cart/add/{{ $product->id }}">
+                                                <img src="/assets/img/cart_ico.svg" alt="In Winkelmandje">
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

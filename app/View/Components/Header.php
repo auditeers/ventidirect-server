@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use Darryldecode\Cart\Cart;
 use Illuminate\View\Component;
 
 class Header extends Component
@@ -23,6 +24,11 @@ class Header extends Component
      */
     public function render()
     {
-        return view('components.header');
+
+        $cart_items = Cart::getContent();
+
+        return view('components.header', [
+            "cart_items" => $cart_items
+        ]);
     }
 }

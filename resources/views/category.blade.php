@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl">
 
-<x-doc-head/>
+<c-doc.head/>
 
 <body>
 
@@ -451,7 +451,7 @@
     <div class="overlay"></div>
 
 
-    <x-doc-script/>
+    <c-doc.script/>
 
 </body>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl">
 
-<x-doc-head/>
+<c-doc.head/>
 
 <body>
 
@@ -378,7 +378,7 @@
     <x-footer/>
 
 
-   <x-doc-script/>
+   <c-doc.script/>
 
 
 </body>

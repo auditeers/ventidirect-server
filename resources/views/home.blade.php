@@ -1,28 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/fontawesome.css" rel="stylesheet" />
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="assets/css/nice-select.css" rel="stylesheet" />
-    <link href="assets/css/default.css" rel="stylesheet" />
-    <link href="assets/fonts/stylesheet.css" rel="stylesheet" />
-    <link href="assets/fonts/subfont/stylesheet.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/responsive.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.4.5/themes/reset-min.css" integrity="sha256-QlHlZdbSVxaYkUHxhMFhAj/L3pJiW1LuomSCONXBWms=" crossorigin="anonymous">
-
-
-    <title>VentiDirect, Alles voor binnenklimaat</title>
-</head>
+<x-doc-head/>
 
 <body>
 
@@ -399,34 +378,9 @@
     <x-footer/>
 
 
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/popper.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/owl.carousel.min.js"></script>
-    <script src="/assets/js/jquery.nice-select.js"></script>
-    <script src="/assets/js/main.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.2/dist/algoliasearch-lite.umd.js" integrity="sha256-dImjLPUsG/6p3+i7gVKBiDM8EemJAhQ0VvkRK2pVsQY=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.49.1/dist/instantsearch.production.min.js" integrity="sha256-3s8yn/IU/hV+UjoqczP+9xDS1VXIpMf3QYRUi9XoG0Y=" crossorigin="anonymous"></script>
-
-    <script>
-
-    const searchClient = algoliasearch('M8TQL8IKRW', '1a4bf7ce6798d148af5aa95c7ac38aa4');
-
-    const search = instantsearch({
-    indexName: 'demo_ecommerce',
-    searchClient,
-    });
-
-    search.addWidgets([
-    instantsearch.widgets.searchBox({
-        container: '#search-input',
-    }),
+   <x-doc-script/>
 
 
-    search.start();
-
-    </script>
 </body>
 
 </html>

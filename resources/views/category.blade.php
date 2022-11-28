@@ -401,11 +401,11 @@
                                             </div>
                                             <div class="price__content tab__blk">
                                                 <span>Adviesprijs 454,97</span>
-                                                <h4>344,00</h4>
+                                                <h4>{{ $product->price }}</h4>
                                                 <span>284,30 excl. BTW</span>
                                             </div>
                                             <div class="cart__wrap none__phone">
-                                                <a href="#"><img src="/assets/img/cart_ico.svg" alt=""></a>
+                                                <a href="/cart/add/{{ $product->id }}"><img src="/assets/img/cart_ico.svg" alt=""></a>
                                             </div>
                                             <div class="price__bottom__text">
                                                 <span>Artikelnr.: 0000-4639</span>

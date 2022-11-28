@@ -195,12 +195,12 @@
                 <div class="col-lg-12">
                     <div class="pricing__slide__blk owl-carousel">
                         
-                        @foreach($popular as $item)
+                        @foreach($popular as $product)
 
                         <div class="single__pricing__slide__blk">
                             <div class="pricing__slide__thumb">
                                 <a href="/product/{{ $product->slug }}">
-                                    <img src="/storage/{{ $product->image ?? "/placeholder.jpg"}}" alt="{{ $cproduct->seo_title ?? '' }}">
+                                    <img src="/storage/{{ $product->image ?? "/placeholder.jpg"}}" alt="{{ $product->seo_title ?? '' }}">
                                 </a>
                             </div>
 

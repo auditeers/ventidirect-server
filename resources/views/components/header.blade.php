@@ -72,7 +72,7 @@
                                         <div class="single__shopping__cart__details__wrap">
                                             <div class="single__shopping__cart__details">
                                                 <div class="shopping__cart__details__thumb">
-                                                    <img src="/resources/{{ $cart_item->product->image }}" alt="{{ $cart_item->name }}">
+                                                    <img src="/resources/{{ $cart_item->model->image }}" alt="{{ $cart_item->name }}">
                                                 </div>
                                                 <div class="shopping__cart__details__text">
                                                     <p>{{ $cart_item->name }}</p>

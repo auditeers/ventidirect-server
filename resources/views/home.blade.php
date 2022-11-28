@@ -18,6 +18,9 @@
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/responsive.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.4.5/themes/reset-min.css" integrity="sha256-QlHlZdbSVxaYkUHxhMFhAj/L3pJiW1LuomSCONXBWms=" crossorigin="anonymous">
+
+
     <title>VentiDirect, Alles voor binnenklimaat</title>
 </head>
 
@@ -403,29 +406,26 @@
     <script src="/assets/js/jquery.nice-select.js"></script>
     <script src="/assets/js/main.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.2/dist/algoliasearch-lite.umd.js" integrity="sha256-dImjLPUsG/6p3+i7gVKBiDM8EemJAhQ0VvkRK2pVsQY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.49.1/dist/instantsearch.production.min.js" integrity="sha256-3s8yn/IU/hV+UjoqczP+9xDS1VXIpMf3QYRUi9XoG0Y=" crossorigin="anonymous"></script>
+
     <script>
 
-    var client = algoliasearch( 'ALGOLIA_APP_ID' , 'ALGOLIA_SEARCH' );
+    const searchClient = algoliasearch('M8TQL8IKRW', '1a4bf7ce6798d148af5aa95c7ac38aa4');
 
-    var index = client.initIndex('posts');
-    autocomplete('#search-input', { hint: true }, [
-        {
-        autofocus:false,
-        source: autocomplete.sources.hits(index, { hitsPerPage: 3 }),
-        displayKey: 'title',
-        templates: {
-            suggestion: function(suggestion) {
-            return suggestion._highlightResult.title.value;
-            },
-            footer: '<div class="aa-dropdown-footer">Search by<img class="aa-logo" src="https://www.algolia.com/assets/algolia128x40.png" width=80/></div>'
-        }
-        }
-    ])
-    .on('autocomplete:selected', function(event, suggestion, dataset, context) {
-            window.location = suggestion.slug
+    const search = instantsearch({
+    indexName: 'demo_ecommerce',
+    searchClient,
     });
+
+    search.addWidgets([
+    instantsearch.widgets.searchBox({
+        container: '#search-input',
+    }),
+
+
+    search.start();
+
     </script>
 </body>
 

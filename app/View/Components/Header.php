@@ -2,7 +2,6 @@
 
 namespace App\View\Components;
 
-use Darryldecode\Cart\Cart;
 use Illuminate\View\Component;
 
 class Header extends Component

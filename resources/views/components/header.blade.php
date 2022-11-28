@@ -96,7 +96,7 @@
                                             <div class="subtotal__bold__content">
                                                 <h4>Totaal excl. btw <span>€ 325,00</span></h4>
                                                 <h3>BTW <span>€ 86</span></h3>
-                                                <h4>Totaal incl. btw <span>€ {{ /Cart::getTotal() }}</span></h4>
+                                                <h4>Totaal incl. btw <span>€ {{ \Cart::getTotal() }}</span></h4>
                                             </div>
                                             <div class="subtotal__btn">
                                                 <a class="second_similar_btn" href="#">Wijzig winkelwagen</a>

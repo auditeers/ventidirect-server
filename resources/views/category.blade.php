@@ -387,15 +387,25 @@
                                     </div>
 
                                     <div class="ventilation__product__like__blk phone__blk">
+                                        
+                                        @if(!empty($product->pros))
                                         <div class="like__blk">
-                                            <a href="/product/{{ $product->slug }}"><img src="/assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
+                                            <a href="/product/{{ $product->slug }}"><img src="/assets/img/LIKE.png" alt="">{{ $product->pros[0]['value'] }}</a>
                                         </div>
+                                        @endif
+
                                         <div class="ventilation__list">
+                                            
+                                            @if(!empty($product->pros) && count($product->pros) > 1)
                                             <ul>
-                                                <li>SET incl. afstandsbediening & vochtsensor</li>
-                                                <li>Zeer krachtige motor: capaciteit 400 m3/h</li>
-                                                <li>Voorzien van randaarde stekker</li>
+                                                @for ($i = 1; $i < 4; $i++)
+                                                    @if(!empty($product->pros[$i]))
+                                                    <li>{{ $product->pros[$i]['value'] }}</li>
+                                                    @endif
+                                                @endfor
                                             </ul>
+                                            @endif
+                                            
                                             <span>Artikelnr.: 0000-4639</span>
                                         </div>
                                     </div>

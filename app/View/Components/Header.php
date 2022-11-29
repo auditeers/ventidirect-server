@@ -26,6 +26,7 @@ class Header extends Component
     {
 
         $cart_items = \Cart::getContent();
+    
 
         return view('components.header', [
             "cart_items" => $cart_items

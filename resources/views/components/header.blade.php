@@ -90,12 +90,12 @@
 
                                         <div class="subtotal__content">
                                             <div class="subtotal__light__content">
-                                                <p>Subtotaal <span>€ 425,00</span></p>
+                                                <p>Subtotaal <span>€ {{ \Cart::getTotal() }}</span></p>
                                                 <p>Verzending <span class="free">gratis</span></p>
                                             </div>
                                             <div class="subtotal__bold__content">
-                                                <h4>Totaal excl. btw <span>€ 325,00</span></h4>
-                                                <h3>BTW <span>€ 86</span></h3>
+                                                <h4>Totaal excl. btw <span>€ {{ \Cart::getTotal() - (\Cart::getTotal() * 0.21) }}</span></h4>
+                                                <h3>BTW <span>€ {{ \Cart::getTotal() * 0.21 }}</span></h3>
                                                 <h4>Totaal incl. btw <span>€ {{ \Cart::getTotal() }}</span></h4>
                                             </div>
                                             <div class="subtotal__btn">

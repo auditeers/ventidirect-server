@@ -94,16 +94,26 @@
                     </div>
                     <div class="col-lg-5">
                         <div class="market__content__area">
+                            
+                            @if(!empty($product->pros))
                             <div class="like__blk">
-                                <a href="#"><img src="/assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
+                                <a href="/product/{{ $product->slug }}"><img src="/assets/img/LIKE.png" alt="">{{ $product->pros[0]['value'] }}</a>
                             </div>
+                            @endif
+
                             <div class="ventilation__list">
+                                @if(!empty($product->pros) && count($product->pros) > 1)
                                 <ul>
-                                    <li>SET incl. afstandsbediening &amp; vochtsensor</li>
-                                    <li>Zeer krachtige motor: capaciteit 400 m3/h</li>
-                                    <li>Voorzien van randaarde stekker</li>
+                                    @for ($i = 1; $i < 4; $i++)
+                                        @if(!empty($product->pros[$i]))
+                                        <li>{{ $product->pros[$i]['value'] }}</li>
+                                        @endif
+                                    @endfor
                                 </ul>
+                                @endif
                             </div>
+
+                            {{--
                             <div class="variant_blk mt-20">
                                 <h4>Kies je variant</h4>
                                 <div class="page__filter__select">
@@ -116,11 +126,16 @@
                                     </select>
                                 </div>
                             </div>
+                            --}}
+
                             <div class="main__price flex-column align-items-start">
                                 <div class="price__content">
-                                    <span>Adviesprijs 454,97</span>
-                                    <h4>{{ $product->price }}</h4>
-                                    <span>284,30 excl. BTW</span>
+                                    @if(!empty($product->price_from))
+                                    <span>Adviesprijs &euro; {{ $product->price_from }}</span>
+                                    @endif
+
+                                    <h4>&euro; {{ $product->price }}</h4>
+                                    <span>&euro; {{ $product->price - $product->vat }} excl. BTW</span>
                                 </div>
                                 <div class="cart__top__content">
                                     <h5>Voor 23:59 besteld, morgen gratis bezorgd</h5>
@@ -128,15 +143,15 @@
                                 <div class="buy__item">
                                     <div class="page__filter__select">
                                         <select>
-                                            <option data-display="">1</option>
-                                            <option value="1">2</option>
-                                            <option value="2">3</option>
-                                            <option value="3" disabled>4</option>
-                                            <option value="4">5</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
                                         </select>
                                     </div>
                                     <div class="cart__wrap">
-                                        <a href="#"><img src="/assets/img/cart_ico.svg" alt=""> In mijn winkelwagen</a>
+                                        <a href="/cart/add/{{ $product->id }}"><img src="/assets/img/cart_ico.svg" alt=""> In mijn winkelwagen</a>
                                     </div>
                                 </div>
                                 <div class="check__listing__blk mt-20">
@@ -147,7 +162,7 @@
                                     </ul>
                                 </div>
                                 <div class="price__bottom__text">
-                                    <span>Artikelnr.: 0000-4639</span>
+                                    <span>Artikelnr.: {{ $product->ean }}</span>
                                 </div>
                             </div>
                         </div>
@@ -323,11 +338,12 @@
                         </div>
                         <div class="pros_and_cons_listing">
                             <ul>
-                                <li><img src="/assets/img/plus__icon.svg" alt="">Stilste en krachtigste mechanische ventilatiebox in de markt</li>
-                                <li><img src="/assets/img/plus__icon.svg" alt="">Maximale lucht opbrengst van 400 m3/h bij 150 Pa</li>
-                                <li><img src="/assets/img/plus__icon.svg" alt="">Energiezuinige gelijkstroom motor 230V (maar 10W verbruik in de laagste stand) piekvermogen 84W</li>
-                                <li><img src="/assets/img/minus__icon.svg" alt="">Heeft maar 7 aansluitingen Ø 125 voor afzuiging en 1 afvoerkanaal 125mm</li>
-                                <li><img src="/assets/img/minus__icon.svg" alt="">Breedte x Hoogte x Diepte : 480 x 480 x 194 mm</li>
+                                @foreach($product->pros as $pro)
+                                <li><img src="/assets/img/plus__icon.svg" alt="">{{ $pro['value'] }}</li>
+                                @endforeach
+                                @foreach($product->cons as $con)
+                                <li><img src="/assets/img/minus__icon.svg" alt="">{{ $can['value']}}</li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>

@@ -13,7 +13,7 @@
         <div class="container">
             <div class="categoti__top__link__text none_link_mobile">
                 <a href="#" class="active">VentiDirect.nl</a> <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">Categorieën</a> 
-                <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">Ventilatiesystemen en ventilatieboxen</a> <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">Mechanische ventilatieboxen</a> <span><i class="fas fa-angle-right"></i></span>
+                <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">{{ $product->category->name ?? 'Overig' }}</a> <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">Mechanische ventilatieboxen</a> <span><i class="fas fa-angle-right"></i></span>
                  <a href="#">Duco ventilatiebox</a>
             </div>
             <div class="categoti__top__link__text mb-0 blue__ico black_link_mobile mb-15">
@@ -21,6 +21,7 @@
             </div>
             <div class="similar__main__title">
                 <h3>{{ $product->name }}</h3>
+                {{--
                 <div class="five__star">
                     <span><i class="fas fa-star"></i></span>
                     <span><i class="fas fa-star"></i></span>
@@ -29,6 +30,7 @@
                     <span><i class="fas fa-star"></i></span>
                     <small>241 reviews</small>
                 </div>
+                --}}
             </div>
             
             <div class="product__info__slide__area">

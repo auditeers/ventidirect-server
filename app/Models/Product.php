@@ -51,6 +51,13 @@ class Product extends Model
         );
     }
 
+    protected function cons(): Attribute
+    {
+        return Attribute::make(
+            get: fn ($value, $attributes) => json_decode($value, true)
+        );
+    }
+
     public function setImageAttribute($value)
     {
         $attribute_name = "image";

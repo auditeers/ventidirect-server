@@ -47,7 +47,7 @@ class Product extends Model
     protected function pros(): Attribute
     {
         return Attribute::make(
-            get: fn ($value, $attributes) => json_decode($value)
+            get: fn ($value, $attributes) => json_decode($value, true)
         );
     }
 

@@ -351,6 +351,8 @@
                                             <a href="/product/{{ $product->slug }}">
                                                 <p>{{ $product->name }}</p>
                                             </a>
+                                            {{--
+                                            <!-- PRODUCT REVIEW START -->
                                             <div class="five__star">
                                                 <span><i class="fas fa-star"></i></span>
                                                 <span><i class="fas fa-star"></i></span>
@@ -359,6 +361,7 @@
                                                 <span><i class="fas fa-star"></i></span>
                                                 <small>241 reviews</small>
                                             </div>
+                                            --}}
                                             <div class="ventilation__product__like__blk none__phone">
                                                 <div class="like__blk">
                                                     <a href="/product/{{ $product->slug }}"><img src="/assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
@@ -392,16 +395,16 @@
                                     <div class="ventilation__main__price__blk">
                                         <div class="main__price">
                                             <div class="price__content tab__none">
-                                                <span>Adviesprijs 454,97</span>
-                                                <h4>{{ $product->price }}</h4>
+                                                <span>Adviesprijs &euro; 454,97</span>
+                                                <h4>&euro; {{ $product->price }}</h4>
                                                 <span>&euro; {{ $product->price - $product->vat }} excl. BTW</span>
                                             </div>
                                             <div class="cart__top__content">
                                                 <h5>Voor 23:59 besteld, morgen gratis bezorgd</h5>
                                             </div>
                                             <div class="price__content tab__blk">
-                                                <span>Adviesprijs 454,97</span>
-                                                <h4>{{ $product->price }}</h4>
+                                                <span>&euro; Adviesprijs 454,97</span>
+                                                <h4>&euro;  {{ $product->price }}</h4>
                                                 <span>&euro; {{ $product->price - $product->vat }} excl. BTW</span>
                                             </div>
                                             <div class="cart__wrap none__phone">

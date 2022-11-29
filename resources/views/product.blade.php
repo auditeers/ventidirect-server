@@ -41,7 +41,7 @@
                         <div class="product__info__slide__blk">
                             <div class="product__info__for__slide slider-for">
                                 <div class="single__info__for__slide">
-                                    <img src="/assets/img/pricing_2.png" alt="">
+                                    <img src="/storage/{{ $product->image ?? "/placeholder.jpg"}}" alt="{{ $product->seo_title ?? '' }}">
                                 </div>
                                 {{--
                                 <div class="single__info__for__slide">
@@ -52,7 +52,7 @@
                             {{--
                             <div class="product__info__nav__slide slider-nav">
                                 <div class="single__info__nav__slide">
-                                    <img src="/assets/img/pricing_2.png" alt="">
+                                    <img src="/storage/{{ $product->image ?? "/placeholder.jpg"}}" alt="{{ $product->seo_title ?? '' }}">
                                 </div>
                                 <div class="single__info__nav__slide">
                                     <img src="/assets/img/slick_2.png" alt="">

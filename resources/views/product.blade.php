@@ -43,11 +43,13 @@
                                 <div class="single__info__for__slide">
                                     <img src="/assets/img/pricing_2.png" alt="">
                                 </div>
+                                {{--
                                 <div class="single__info__for__slide">
                                     <img src="/assets/img/slick_2.png" alt="">
                                 </div>
+                                --}}
                             </div>
-
+                            {{--
                             <div class="product__info__nav__slide slider-nav">
                                 <div class="single__info__nav__slide">
                                     <img src="/assets/img/pricing_2.png" alt="">
@@ -56,6 +58,7 @@
                                     <img src="/assets/img/slick_2.png" alt="">
                                 </div>
                             </div>
+                            --}}
                         </div>
                     </div>
                     <div class="col-lg-5">

@@ -4,7 +4,7 @@ namespace App\View\Components\Product;
 
 use Illuminate\View\Component;
 
-class List extends Component
+class List extends Component 
 {
     
     /**

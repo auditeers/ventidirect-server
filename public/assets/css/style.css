@@ -1809,6 +1809,7 @@ b {
 .pagination .page-item-text a i {
     font-size: 25px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .pagination__blk .page-link.active {

@@ -417,7 +417,11 @@
                                     <div class="ventilation__main__price__blk">
                                         <div class="main__price">
                                             <div class="price__content tab__none">
-                                                <span>Adviesprijs &euro; 454,97</span>
+
+                                                @if(!empty($product->price_from))
+                                                <span>Adviesprijs &euro; {{ $product->price_from }}</span>
+                                                @endif
+
                                                 <h4>&euro; {{ $product->price }}</h4>
                                                 <span>&euro; {{ $product->price - $product->vat }} excl. BTW</span>
                                             </div>
@@ -425,7 +429,11 @@
                                                 <h5>Voor 23:59 besteld, morgen gratis bezorgd</h5>
                                             </div>
                                             <div class="price__content tab__blk">
-                                                <span>&euro; Adviesprijs 454,97</span>
+                                                
+                                                @if(!empty($product->price_from))
+                                                <span>Adviesprijs &euro; {{ $product->price_from }}</span>
+                                                @endif
+                                                
                                                 <h4>&euro;  {{ $product->price }}</h4>
                                                 <span>&euro; {{ $product->price - $product->vat }} excl. BTW</span>
                                             </div>

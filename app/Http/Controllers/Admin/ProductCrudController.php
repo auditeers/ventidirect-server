@@ -121,7 +121,7 @@ class ProductCrudController extends CrudController
             ->decimals(2)
             ->attributes(["step" => "any"])
             ->dec_point(',')
-            ->wrapper(['class' => 'form-group col-md-4'])
+            ->wrapper(['class' => 'form-group col-md-3'])
             ->tab('Financial');
 
         CRUD::field('competition_price')
@@ -131,17 +131,27 @@ class ProductCrudController extends CrudController
             ->decimals(2)
             ->attributes(["step" => "any"])
             ->dec_point(',')
-            ->wrapper(['class' => 'form-group col-md-4'])
+            ->wrapper(['class' => 'form-group col-md-3'])
             ->tab('Financial');
 
-         CRUD::field('sales_price')
+        CRUD::field('price_from')
+            ->label('Old price')
+            ->type('number')
+            ->prefix('€ ')
+            ->decimals(2)
+            ->attributes(["step" => "any"])
+            ->dec_point(',')
+            ->wrapper(['class' => 'form-group col-md-3'])
+            ->tab('Financial');
+
+        CRUD::field('sales_price')
             ->label('Sales Price')
             ->type('number')
             ->prefix('€ ')
             ->decimals(2)
             ->attributes(["step" => "any"])
             ->dec_point(',')
-            ->wrapper(['class' => 'form-group col-md-4'])
+            ->wrapper(['class' => 'form-group col-md-3'])
             ->tab('Financial');
 
 

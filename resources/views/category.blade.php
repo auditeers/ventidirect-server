@@ -366,7 +366,7 @@
                                             <div class="ventilation__product__like__blk none__phone">
                                                 @if(!empty($product->pros))
                                                 <div class="like__blk">
-                                                    <a href="/product/{{ $product->slug }}"><img src="/assets/img/LIKE.png" alt="">{{ $product->pros[0] }}</a>
+                                                    <a href="/product/{{ $product->slug }}"><img src="/assets/img/LIKE.png" alt="">{{ $product->pros[0]['value'] }}</a>
                                                 </div>
                                                 @endif
                                                 
@@ -375,7 +375,7 @@
                                                     <ul>
                                                         @for ($i = 1; $i < 4; $i++)
                                                             @if(!empty($product->pros[$i]))
-                                                            <li>{{ $product->pros[$i] }}</li>
+                                                            <li>{{ $product->pros[$i]['value'] }}</li>
                                                             @endif
                                                         @endfor
                                                     </ul>

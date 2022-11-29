@@ -452,18 +452,6 @@
 
                     {{ $category->products()->paginate(10)->links() }}
 
-                    <div class="pagination__blk">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">...</a></li>
-                                <li class="page-item"><a class="page-link" href="#">10</a></li>
-                                <li class="page-item"><a class="page-link" href="#">Volgende <i class="far fa-angle-right"></i></a></li>
-                            </ul>
-                        </nav>
-                    </div>
 
                     <div class="similar__main__title">
                         <p id="description">{!! $category->description !!}</p>

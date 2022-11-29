@@ -339,6 +339,7 @@
                             </div>
 
                             @foreach($category->products as $product)
+
                             <div class="ventilation__product__area">
                                 <div class="single__pricing__slide__blk">                                   
 
@@ -363,9 +364,11 @@
                                             </div>
                                             --}}
                                             <div class="ventilation__product__like__blk none__phone">
+                                                @if(!empty($product->pros))
                                                 <div class="like__blk">
-                                                    <a href="/product/{{ $product->slug }}"><img src="/assets/img/LIKE.png" alt="">De stilste en slimste in de markt</a>
+                                                    <a href="/product/{{ $product->slug }}"><img src="/assets/img/LIKE.png" alt="">{{ $product->pros[0] }}</a>
                                                 </div>
+                                                @endif
                                                 <div class="ventilation__list">
                                                     <ul>
                                                         <li>SET incl. afstandsbediening & vochtsensor</li>

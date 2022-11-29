@@ -342,7 +342,7 @@
                                 <li><img src="/assets/img/plus__icon.svg" alt="">{{ $pro['value'] }}</li>
                                 @endforeach
                                 @foreach($product->cons as $con)
-                                <li><img src="/assets/img/minus__icon.svg" alt="">{{ $can['value']}}</li>
+                                <li><img src="/assets/img/minus__icon.svg" alt="">{{ $con['value']}}</li>
                                 @endforeach
                             </ul>
                         </div>

@@ -36,6 +36,13 @@ class Product extends Model
             get: fn ($value, $attributes) => (($attributes['sales_price'] / 1.21) / ($attributes['price']))
         );
     }
+    
+    protected function vat(): Attribute
+    {
+        return Attribute::make(
+            get: fn ($value, $attributes) => (float)($attributes['sales_price'] * 0.21)
+        );
+    }
 
     public function setImageAttribute($value)
     {

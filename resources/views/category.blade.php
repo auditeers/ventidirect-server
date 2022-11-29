@@ -394,7 +394,7 @@
                                             <div class="price__content tab__none">
                                                 <span>Adviesprijs 454,97</span>
                                                 <h4>{{ $product->price }}</h4>
-                                                <span>284,30 excl. BTW</span>
+                                                <span>&euro; {{ $product->price - $product->vat }} excl. BTW</span>
                                             </div>
                                             <div class="cart__top__content">
                                                 <h5>Voor 23:59 besteld, morgen gratis bezorgd</h5>
@@ -402,7 +402,7 @@
                                             <div class="price__content tab__blk">
                                                 <span>Adviesprijs 454,97</span>
                                                 <h4>{{ $product->price }}</h4>
-                                                <span>284,30 excl. BTW</span>
+                                                <span>&euro; {{ $product->price - $product->vat }} excl. BTW</span>
                                             </div>
                                             <div class="cart__wrap none__phone">
                                                 <a href="/cart/add/{{ $product->id }}"><img src="/assets/img/cart_ico.svg" alt=""></a>

@@ -338,12 +338,16 @@
                         </div>
                         <div class="pros_and_cons_listing">
                             <ul>
+                                @if(!empty($product->pros))
                                 @foreach($product->pros as $pro)
                                 <li><img src="/assets/img/plus__icon.svg" alt="">{{ $pro['value'] }}</li>
                                 @endforeach
+                                @endif
+                                 @if(!empty($product->cons))
                                 @foreach($product->cons as $con)
                                 <li><img src="/assets/img/minus__icon.svg" alt="">{{ $can['value']}}</li>
                                 @endforeach
+                                @endif
                             </ul>
                         </div>
                     </div>

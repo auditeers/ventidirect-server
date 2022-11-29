@@ -301,7 +301,11 @@
                     <div class="ventilation__area">
                         <div class="ventilation__inner__blk">
                             <div class="categoti__top__link__text">
-                                <a href="#" class="active">VentiDirect.nl</a> <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">Categorieën</a> <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">Ventilatiesystemen en ventilatieboxen</a>                                <span><i class="fas fa-angle-right"></i></span> <a href="#">{{ $category->name }}</a>
+                                <a href="/" class="active">VentiDirect.nl</a> 
+                                <span><i class="fas fa-angle-right"></i></span> 
+                                <a href="#" class="active">Categorieën</a> 
+                                <span><i class="fas fa-angle-right"></i></span> 
+                                <a href="#">{{ $category->name }}</a>
                             </div>
 
                             <div class="similar__main__title">
@@ -380,7 +384,7 @@
                                                         @endfor
                                                     </ul>
                                                     @endif
-                                                    <span>Artikelnr.: 0000-4639</span>
+                                                    <span>Artikelnr.: {{ $product->ean }}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -405,8 +409,8 @@
                                                 @endfor
                                             </ul>
                                             @endif
-                                            
-                                            <span>Artikelnr.: 0000-4639</span>
+
+                                            <span>Artikelnr.: {{ $product->ean }}</span>
                                         </div>
                                     </div>
 
@@ -429,7 +433,7 @@
                                                 <a href="/cart/add/{{ $product->id }}"><img src="/assets/img/cart_ico.svg" alt=""></a>
                                             </div>
                                             <div class="price__bottom__text">
-                                                <span>Artikelnr.: 0000-4639</span>
+                                                <span>Artikelnr.: {{ $product->ean }}</span>
                                             </div>
                                         </div>
 

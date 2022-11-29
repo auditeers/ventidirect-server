@@ -46,21 +46,6 @@
                                 <div class="single__info__for__slide">
                                     <img src="/assets/img/slick_2.png" alt="">
                                 </div>
-                                <div class="single__info__for__slide">
-                                    <img src="/assets/img/slick_3.png" alt="">
-                                </div>
-                                <div class="single__info__for__slide">
-                                    <img src="/assets/img/slick_4.png" alt="">
-                                </div>
-                                <div class="single__info__for__slide">
-                                    <img src="/assets/img/slick_5.png" alt="">
-                                </div>
-                                <div class="single__info__for__slide">
-                                    <img src="/assets/img/slick_6.png" alt="">
-                                </div>
-                                <div class="single__info__for__slide">
-                                    <img src="/assets/img/slick_7.png" alt="">
-                                </div>
                             </div>
 
                             <div class="product__info__nav__slide slider-nav">
@@ -69,25 +54,6 @@
                                 </div>
                                 <div class="single__info__nav__slide">
                                     <img src="/assets/img/slick_2.png" alt="">
-                                </div>
-                                <div class="single__info__nav__slide">
-                                    <img src="/assets/img/slick_3.png" alt="">
-                                </div>
-                                <div class="single__info__nav__slide">
-                                    <img src="/assets/img/slick_4.png" alt="">
-                                </div>
-                                <div class="single__info__nav__slide">
-                                    <img src="/assets/img/slick_5.png" alt="">
-                                </div>
-                                <div class="single__info__nav__slide">
-                                    <img src="/assets/img/slick_6.png" alt="">
-                                </div>
-                                <div class="single__info__nav__slide">
-                                    <img src="/assets/img/slick_7.png" alt="">
-                                </div>
-                                <div class="single__info__nav__slide">
-                                    <a href="#"><img src="/assets/img/slick_8.png" alt=""></a>
-                                    <div class="more__btn"><a href="#">3+</a></div>
                                 </div>
                             </div>
                         </div>

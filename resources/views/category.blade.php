@@ -450,6 +450,8 @@
                         </div>
                     </div>
 
+                    {{ $category->products()->paginate(10)->links() }}
+
                     <div class="pagination__blk">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">

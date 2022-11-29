@@ -1798,7 +1798,7 @@ b {
     border-radius: 4px;
 }
 
-.pagination .page-item:last-child a {
+.pagination .page-item-text a {
     width: auto;
 }
 
@@ -1806,7 +1806,7 @@ b {
     margin: 0 4px;
 }
 
-.pagination .page-item:last-child a i {
+.pagination .page-item-text a i {
     font-size: 25px;
     margin-left: 10px;
 }

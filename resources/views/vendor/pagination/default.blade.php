@@ -5,7 +5,7 @@
                 @if ($paginator->onFirstPage())
                     {{-- nothing --}}
                 @else
-                    <li class="page-item">
+                    <li class="page-item page-item-text">
                         <a class="page-link" href="{{ $paginator->previousPageUrl() }}" rel="prev" aria-label="@lang('pagination.previous')">
                             <i class="far fa-angle-left"></i> Vorige
                         </a>
@@ -36,7 +36,7 @@
 
                     {{-- Next Page Link --}}
                     @if ($paginator->hasMorePages())
-                        <li class="page-item">
+                        <li class="page-item page-item-text">
                             <a class="page-link" href="{{ $paginator->nextPageUrl() }}" rel="next" aria-label="@lang('pagination.next')">
                                 Volgende <i class="far fa-angle-right"></i>
                             </a>

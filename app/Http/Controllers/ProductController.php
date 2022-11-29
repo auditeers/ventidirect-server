@@ -11,10 +11,6 @@ class ProductController extends Controller
     {
         $product = Product::where('slug', $slug)->firstOrFail();
 
-        $product->pros = json_decode($product->pros);
-        $product->cons = json_decode($product->cons);
-
-
         return view('product', ["product" => $product]);
     }
 }

@@ -73,7 +73,7 @@
                                             <div class="single__shopping__cart__details">
                                                 <div class="shopping__cart__details__thumb">
                                                     <img 
-                                                        src="/resources/{{ $cart_item->model->image ?? '/placeholder.jpg' }}" 
+                                                        src="/storage/{{ $cart_item->model->image ?? 'placeholder.jpg' }}" 
                                                         alt="{{ $cart_item->name }}">
                                                 </div>
                                                 <div class="shopping__cart__details__text">

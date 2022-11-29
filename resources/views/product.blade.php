@@ -13,11 +13,13 @@
         <div class="container">
             <div class="categoti__top__link__text none_link_mobile">
                 <a href="#" class="active">VentiDirect.nl</a> <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">Categorieën</a> 
-                <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">{{ $product->category->name ?? 'Overig' }}</a> <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">Mechanische ventilatieboxen</a> <span><i class="fas fa-angle-right"></i></span>
-                 <a href="#">Duco ventilatiebox</a>
+                <span><i class="fas fa-angle-right"></i></span> 
+                <a href="/producten/{{ $product->category->slug ?? 'Overig' }}" class="active">{{ $product->category->name ?? 'Overig' }}</a> 
+                <span><i class="fas fa-angle-right"></i>
+                <a href="#">{{ $product->name }}</a>
             </div>
             <div class="categoti__top__link__text mb-0 blue__ico black_link_mobile mb-15">
-                <span><i class="far fa-angle-left"></i></i></span> <a href="#" class="active">Mechanische ventilatie</a>
+                <span><i class="far fa-angle-left"></i></i></span> <a href="#" class="active">{{ $product->category->name ?? 'Overig' }}</a>
             </div>
             <div class="similar__main__title">
                 <h3>{{ $product->name }}</h3>

@@ -267,7 +267,7 @@
                             <div class="similar__title">
                                 <h5>Specificaties</h5>
                             </div>
-                            @foreach($features as $feature)
+                            @foreach($product->features as $feature)
                             <div class="single__specificaties bg__gray">
                                 <span>{{ $feature['name'] ?? ''}}</span>
                                 <span>{{ $feature['value'] ?? '' }}</span>

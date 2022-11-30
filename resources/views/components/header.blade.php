@@ -69,7 +69,7 @@
     </header>
     <!-- =================== HEADER AREA END ===================== -->
 
-
+    {{--}}
     <!-- =================== HEADER MENU AREA START ===================== -->
     <section class="menu__area__blk">
         <div class="container">
@@ -114,7 +114,377 @@
         </div>
     </section>
     <!-- =================== HEADER MENU AREA END ===================== -->
+    --}}
 
+    <!-- =================== HEADER MENU AREA START ===================== -->
+    <section class="menu__area__blk">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="menu__inner__blk">
+                        <div class="header__main__menu">
+                            <div class="header__select">
+                                <div class="open__megamenu">
+                                    <button>Categorieën <i class="far fa-angle-down"></i></button>
+                                </div>
+                                <div class="megamenu">
+                                    <div class="megamenu__inner__blk">
+                                        <div class="ventidirect__list megamenu__list">
+                                            <nav>
+                                                <ul>
+                                                    <li class="active"><a href="#">Ventilatoren <i class="far fa-angle-right"></i></a>
+                                                        <div class="ventidirect__list megamenu__list second__level">
+                                                            <nav>
+                                                                <ul>
+                                                                    <li><a href="#">Mechanische ventilatie <i class="far fa-angle-right"></i></a>
+                                                                        <div class="third__level__menu">
+                                                                            <nav>
+                                                                                <ul>
+                                                                                    <li><a href="#">Blauberg Sileo</a>
+                                                                                        <div class="fourth__level__menu">
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_1.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_2.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_3.svg" alt="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li><a href="#">Design badkamer ventilator</a></li>
+                                                                                    <li><a href="#">Automatisch open/dicht</a></li>
+                                                                                    <li><a href="#">S&P Badkamer ventilator</a></li>
+                                                                                    <li><a href="#">Alle badkamer ventilatoren</a></li>
+                                                                                </ul>
+                                                                            </nav>
+                                                                        </div>
+                                                                    </li>
+
+                                                                    <li class="active"><a href="#">Badkamer ventilator <i class="far fa-angle-right"></i></a>
+                                                                        <div class="third__level__menu">
+                                                                            <nav>
+                                                                                <ul>
+                                                                                    <li><a href="#">Blauberg Sileo</a>
+                                                                                        <div class="fourth__level__menu">
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_1.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_3.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_2.svg" alt="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li><a href="#">Automatisch open/dicht</a>
+                                                                                        <div class="fourth__level__menu">
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_2.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_1.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_3.svg" alt="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li><a href="#">S&P Badkamer ventilator</a></li>
+                                                                                    <li><a href="#">Design badkamer ventilator</a></li>
+                                                                                    <li class="active"><a href="#">Alle badkamer ventilatoren</a>
+                                                                                        <div class="fourth__level__menu">
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_1.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_2.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_3.svg" alt="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </nav>
+                                                                        </div>
+                                                                    </li>
+
+                                                                    <li><a href="#">Buisventilatoren <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Horeca & Box ventilatoren <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">WTW-Units <i class="far fa-angle-right"></i></a>
+                                                                        <div class="third__level__menu">
+                                                                            <nav>
+                                                                                <ul>
+                                                                                    <li><a href="#">Blauberg Sileo</a>
+                                                                                        <div class="fourth__level__menu">
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_1.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_3.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_2.svg" alt="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li><a href="#">Automatisch open/dicht</a>
+                                                                                        <div class="fourth__level__menu">
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_2.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_1.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_3.svg" alt="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li><a href="#">S&P Badkamer ventilator</a></li>
+                                                                                    <li><a href="#">Design badkamer ventilator</a></li>
+                                                                                    <li class="active"><a href="#">Alle badkamer ventilatoren</a>
+                                                                                        <div class="fourth__level__menu">
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_1.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_2.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_3.svg" alt="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </nav>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li><a href="#">Pijp/dakventilatoren  <i class="far fa-angle-right"></i></a>
+                                                                        <div class="third__level__menu">
+                                                                            <nav>
+                                                                                <ul>
+                                                                                    <li><a href="#">Blauberg Sileo</a>
+                                                                                        <div class="fourth__level__menu">
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_1.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_3.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_2.svg" alt="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li><a href="#">Automatisch open/dicht</a>
+                                                                                        <div class="fourth__level__menu">
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_2.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_1.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_3.svg" alt="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li><a href="#">S&P Badkamer ventilator</a></li>
+                                                                                    <li><a href="#">Design badkamer ventilator</a></li>
+                                                                                    <li class="active"><a href="#">Alle badkamer ventilatoren</a>
+                                                                                        <div class="fourth__level__menu">
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_1.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_2.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_3.svg" alt="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </nav>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li><a href="#">Regelaars en accessoires <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Filters <i class="far fa-angle-right"></i></a>
+                                                                        <div class="third__level__menu">
+                                                                            <nav>
+                                                                                <ul>
+                                                                                    <li><a href="#">Blauberg Sileo</a>
+                                                                                        <div class="fourth__level__menu">
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_1.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_3.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_2.svg" alt="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li><a href="#">Automatisch open/dicht</a>
+                                                                                        <div class="fourth__level__menu">
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_2.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_1.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_3.svg" alt="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li><a href="#">S&P Badkamer ventilator</a></li>
+                                                                                    <li><a href="#">Design badkamer ventilator</a></li>
+                                                                                    <li class="active"><a href="#">Alle badkamer ventilatoren</a>
+                                                                                        <div class="fourth__level__menu">
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_1.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_2.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_3.svg" alt="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </nav>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li><a href="#">Tafel & Staande ventilatoren <i class="far fa-angle-right"></i></a></li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    <li><a href="#">Ventilatieroosters & ventielen <i class="far fa-angle-right"></i></a>
+                                                        <div class="ventidirect__list megamenu__list second__level">
+                                                            <nav>
+                                                                <ul>
+                                                                    <li class="active"><a href="#">Mechanische ventilatie <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Badkamer ventilator <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Buisventilatoren <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Horeca & Box ventilatoren <i class="far fa-angle-right"></i></a>
+                                                                        <div class="third__level__menu">
+                                                                            <nav>
+                                                                                <ul>
+                                                                                    <li><a href="#">Blauberg Sileo</a></li>
+                                                                                    <li><a href="#">Design badkamer ventilator</a></li>
+                                                                                    <li><a href="#">Automatisch open/dicht</a></li>
+                                                                                    <li><a href="#">S&P Badkamer ventilator</a></li>
+                                                                                    <li><a href="#">Alle badkamer ventilatoren</a>
+                                                                                        <div class="fourth__level__menu">
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_1.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_2.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="single__megamenu__product">
+                                                                                                <img src="assets/img/mega_3.svg" alt="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </nav>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li><a href="#">WTW-Units <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Pijp/dakventilatoren  <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Regelaars en accessoires <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Filters <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Tafel & Staande ventilatoren <i class="far fa-angle-right"></i></a></li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                    </li>
+
+                                                    <li><a href="#">Spirobuizen & hulpstukken <i class="far fa-angle-right"></i></a>
+                                                        <div class="ventidirect__list megamenu__list second__level">
+                                                            <nav>
+                                                                <ul>
+                                                                    <li class="active"><a href="#">Ventilatoren <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Ventilatieroosters & ventielen <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Spirobuizen & hulpstukken <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Rechthoekige kanalen staal <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Kunststof ventilatiekanalen <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Flexibele slang & toebehoren <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Dakdoorvoeren <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Montagematerialen <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Brandwerend & overige <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Airconditioning <i class="far fa-angle-right"></i></a></li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                    </li>
+
+                                                    <li><a href="#">Rechthoekige kanalen staal <i class="far fa-angle-right"></i></a>
+                                                        <div class="ventidirect__list megamenu__list second__level">
+                                                            <nav>
+                                                                <ul>
+                                                                    <li class="active"><a href="#">Ventilatoren <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Ventilatieroosters & ventielen <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Spirobuizen & hulpstukken <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Rechthoekige kanalen staal <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Kunststof ventilatiekanalen <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Flexibele slang & toebehoren <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Dakdoorvoeren <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Montagematerialen <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Brandwerend & overige <i class="far fa-angle-right"></i></a></li>
+                                                                    <li><a href="#">Airconditioning <i class="far fa-angle-right"></i></a></li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                    </li>
+
+                                                    <li><a href="#">Kunststof ventilatiekanalen <i class="far fa-angle-right"></i></a></li>
+                                                    <li><a href="#">Flexibele slang & toebehoren <i class="far fa-angle-right"></i></a></li>
+                                                    <li><a href="#">Dakdoorvoeren <i class="far fa-angle-right"></i></a></li>
+                                                    <li><a href="#">Montagematerialen <i class="far fa-angle-right"></i></a></li>
+                                                    <li><a href="#">Brandwerend & overige <i class="far fa-angle-right"></i></a></li>
+                                                    <li><a href="#">Airconditioning <i class="far fa-angle-right"></i></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Klantenservice</a></li>
+                                    <li><a href="#">Bestsellers</a></li>
+                                    <li><a href="#">Aanbiedingen</a></li>
+                                    <li><a href="#">Top 10 Ventilatoren</a></li>
+                                    <li><a href="#">Design ventilatieroosters</a></li>
+                                    <li><a href="#">Advies</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header__switch__blk">
+                            <p>Prijzen Incl. BTW</p>
+                            <div class="switch">
+                                <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                            </div>
+                            <p>Excl. BTW</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =================== HEADER MENU AREA END ===================== -->
 
     <!-- =================== MAIN MENU BOTTOM AREA START ===================== -->
     <section class="main__menu__bottom__area">

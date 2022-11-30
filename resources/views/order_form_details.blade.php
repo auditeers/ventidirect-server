@@ -183,33 +183,18 @@
                             <h5>Winkelwagen</h5>
                         </div>
                         <div class="shopping__cart__details">
+
+                            @foreach($cart_items as $cart_item)
                             <div class="single__shopping__cart__details">
                                 <div class="shopping__cart__details__thumb">
                                     <img src="assets/img/pricing_2.png" alt="">
                                 </div>
                                 <div class="shopping__cart__details__text">
-                                    <p>DucoBox Silent All-In-One RH & BD
-                                        vocht boxsensor + bedienings-schakelaar RF batterij</p>
+                                    <p>{{ $cart_item->name }}</p>
                                 </div>
                             </div>
-                            <div class="single__shopping__cart__details">
-                                <div class="shopping__cart__details__thumb">
-                                    <img src="assets/img/product__added__img_2.png" alt="">
-                                </div>
-                                <div class="shopping__cart__details__text">
-                                    <p>Korte bocht 90º met afdichtingsrubber
-                                        geperst - Ø 100mm</p>
-                                </div>
-                            </div>
-                            <div class="single__shopping__cart__details border-0">
-                                <div class="shopping__cart__details__thumb">
-                                    <img src="assets/img/product__added__img_3.png" alt="">
-                                </div>
-                                <div class="shopping__cart__details__text">
-                                    <p>Duco Ducovent Design afgerond vierkant XL ventilatieventiel Ø125mm
-                                        WIT RAL9016</p>
-                                </div>
-                            </div>
+                            @endforeach
+
                         </div>
                     </div>
                 </div>
@@ -224,7 +209,7 @@
         <div class="container">
             <div class="delivery__shopping__cart__btn">
                 <div class="categoti__top__link__text mb-0 blue__ico">
-                    <span><i class="fas fa-angle-left"></i></span> <a href="#" class="active">Verder winkelen</a>
+                    <span><i class="fas fa-angle-left"></i></span> <a href="/" class="active">Verder winkelen</a>
                 </div>
                 <a href="#" class="global__btn">Doorgaan</a>
             </div>

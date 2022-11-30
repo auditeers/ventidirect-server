@@ -7,6 +7,8 @@
         </div>
         <div class="shopping__cart__details border-0">
             
+            <p class="mt-5 mb-5">Er zitten geen items in uw winkelmandje.</p>
+
             @foreach($cart_items as $cart_item)
             
             <div class="single__shopping__cart__details__wrap">

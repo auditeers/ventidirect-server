@@ -126,7 +126,9 @@
                                 <select>
                                     <option data-display="">Categorieën</option>
                                     @foreach($cats as $cat)
-                                    <option value="/producten/{{ $cat->slug }}">{{ $cat->name }}</option>
+                                    <option value="{{ $cat->slug }}">
+                                       <a href="/producten/{{ $cat->slug }}">Klantenservice</a>
+                                    </option>
                                     @endforeach
                                     
 

@@ -132,98 +132,17 @@
                                         <div class="ventidirect__list megamenu__list">
                                             <nav>
                                                 <ul>
-                                                    <li class="active">
-                                                        <a href="https://nu.nl">
-                                                            Ventilatoren <i class="far fa-angle-right"></i>
+                                                    
+                                                    @foreach($cats as $cat)
+
+                                                    <li class="">
+                                                        <a href="/producten/{{ $cat->slug }}">
+                                                           {{ $cat->name }} <i class="far fa-angle-right"></i>
                                                         </a>
                                                     </li>
-                                                    
-                                                    <li><a href="#">Ventilatieroosters & ventielen <i class="far fa-angle-right"></i></a>
-                                                        <div class="ventidirect__list megamenu__list second__level">
-                                                            <nav>
-                                                                <ul>
-                                                                    <li class="active"><a href="#">Mechanische ventilatie <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Badkamer ventilator <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Buisventilatoren <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Horeca & Box ventilatoren <i class="far fa-angle-right"></i></a>
-                                                                        <div class="third__level__menu">
-                                                                            <nav>
-                                                                                <ul>
-                                                                                    <li><a href="#">Blauberg Sileo</a></li>
-                                                                                    <li><a href="#">Design badkamer ventilator</a></li>
-                                                                                    <li><a href="#">Automatisch open/dicht</a></li>
-                                                                                    <li><a href="#">S&P Badkamer ventilator</a></li>
-                                                                                    <li><a href="#">Alle badkamer ventilatoren</a>
-                                                                                        <div class="fourth__level__menu">
-                                                                                            <div class="single__megamenu__product">
-                                                                                                <img src="assets/img/mega_1.svg" alt="">
-                                                                                            </div>
-                                                                                            <div class="single__megamenu__product">
-                                                                                                <img src="assets/img/mega_2.svg" alt="">
-                                                                                            </div>
-                                                                                            <div class="single__megamenu__product">
-                                                                                                <img src="assets/img/mega_3.svg" alt="">
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </nav>
-                                                                        </div>
-                                                                    </li>
-                                                                    <li><a href="#">WTW-Units <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Pijp/dakventilatoren  <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Regelaars en accessoires <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Filters <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Tafel & Staande ventilatoren <i class="far fa-angle-right"></i></a></li>
-                                                                </ul>
-                                                            </nav>
-                                                        </div>
-                                                    </li>
 
-                                                    <li><a href="#">Spirobuizen & hulpstukken <i class="far fa-angle-right"></i></a>
-                                                        <div class="ventidirect__list megamenu__list second__level">
-                                                            <nav>
-                                                                <ul>
-                                                                    <li class="active"><a href="#">Ventilatoren <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Ventilatieroosters & ventielen <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Spirobuizen & hulpstukken <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Rechthoekige kanalen staal <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Kunststof ventilatiekanalen <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Flexibele slang & toebehoren <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Dakdoorvoeren <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Montagematerialen <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Brandwerend & overige <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Airconditioning <i class="far fa-angle-right"></i></a></li>
-                                                                </ul>
-                                                            </nav>
-                                                        </div>
-                                                    </li>
+                                                    @endforeach
 
-                                                    <li><a href="#">Rechthoekige kanalen staal <i class="far fa-angle-right"></i></a>
-                                                        <div class="ventidirect__list megamenu__list second__level">
-                                                            <nav>
-                                                                <ul>
-                                                                    <li class="active"><a href="#">Ventilatoren <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Ventilatieroosters & ventielen <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Spirobuizen & hulpstukken <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Rechthoekige kanalen staal <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Kunststof ventilatiekanalen <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Flexibele slang & toebehoren <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Dakdoorvoeren <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Montagematerialen <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Brandwerend & overige <i class="far fa-angle-right"></i></a></li>
-                                                                    <li><a href="#">Airconditioning <i class="far fa-angle-right"></i></a></li>
-                                                                </ul>
-                                                            </nav>
-                                                        </div>
-                                                    </li>
-
-                                                    <li><a href="#">Kunststof ventilatiekanalen <i class="far fa-angle-right"></i></a></li>
-                                                    <li><a href="#">Flexibele slang & toebehoren <i class="far fa-angle-right"></i></a></li>
-                                                    <li><a href="#">Dakdoorvoeren <i class="far fa-angle-right"></i></a></li>
-                                                    <li><a href="#">Montagematerialen <i class="far fa-angle-right"></i></a></li>
-                                                    <li><a href="#">Brandwerend & overige <i class="far fa-angle-right"></i></a></li>
-                                                    <li><a href="#">Airconditioning <i class="far fa-angle-right"></i></a></li>
                                                 </ul>
                                             </nav>
                                         </div>

@@ -7,7 +7,29 @@
 
     <x-header/>
 
-    
+    <!-- ====================== STAPE AREA START ============================ -->
+    <section class="stape__area">
+        <div class="container">
+            <div class="stape__wrap">
+                <div class="stape__blk">
+                    <div class="single__stape__wrap active">
+                        <span>Gegevens <i class="far fa-check"></i></span>
+                    </div>
+                    <div class="single__stape__wrap">
+                        <span>Bezorging <i class="far fa-check"></i></span>
+                    </div>
+                    <div class="single__stape__wrap">
+                        <span>Overzicht <i class="far fa-check"></i></span>
+                    </div>
+                    <div class="single__stape__wrap">
+                        <span>Betalen <i class="far fa-check"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================== STAPE AREA END ============================ -->
+
     <!-- ====================== DELIVERY AREA START ============================ -->
     <section class="delivery__area">
         <form action="#">
@@ -196,7 +218,49 @@
     </section>
     <!-- ====================== DELIVERY AREA END ============================ -->
 
-    <x-footer/>
+    
+    <!-- ====================== SHOPPINGCART BOTTOM AREA START ============================ -->
+    <section class="shopping__cart__bottom__area">
+        <div class="container">
+            <div class="delivery__shopping__cart__btn">
+                <div class="categoti__top__link__text mb-0 blue__ico">
+                    <span><i class="fas fa-angle-left"></i></span> <a href="#" class="active">Verder winkelen</a>
+                </div>
+                <a href="#" class="global__btn">Doorgaan</a>
+            </div>
+        </div>
+    </section>
+    <!-- ====================== SHOPPINGCART BOTTOM AREA END ============================ -->
+    
+
+
+    <!-- =========================== SECONDARY FOOTER AREA STATR ============================== -->
+    <section class="secondary__footer__area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="secondary__footer__inner__bok">
+                        <div class="secondary__footer__top__content">
+                            <h4>Hulp nodig met bestellen? <br> <span>Bel ons op 020 2225546</span></h4>
+                            <a href="#" class="second_similar_btn m-0">Klantenservice</a>
+                        </div>
+                        <div class="secondary__footer__menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Algemene voorwaarden</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Cookies</a></li>
+                                    <li><a href="#">Sitemap</a></li>
+                                </ul>
+                                <p>© Opgericht in 2022 - VentiDirect B.V.</p>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========================== SECONDARY FOOTER AREA END ============================== -->
 
     <x-doc.script/>
 

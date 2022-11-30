@@ -54,7 +54,9 @@
                                                         </select>
                                                     </div>
                                                     <div class="delete__product">
-                                                        <span><img src="assets/img/delete.svg" alt=""></span>
+                                                        <a href="/cart/delete/{{ $cart_item->id }}">
+                                                            <span><img src="assets/img/delete.svg" alt=""></span>
+                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="shopping__cart__price d-none">

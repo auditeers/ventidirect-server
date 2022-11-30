@@ -132,7 +132,7 @@
                                         <div class="ventidirect__list megamenu__list">
                                             <nav>
                                                 <ul>
-                                                    
+
                                                     @foreach($cats as $cat)
 
                                                     <li class="">
@@ -151,12 +151,12 @@
                             </div>
                             <nav>
                                 <ul>
-                                    <li><a href="#">Klantenservice</a></li>
-                                    <li><a href="#">Bestsellers</a></li>
+                                    <li><a href="/service/klantenservice">Klantenservice</a></li>
+                                    <li><a href="">Bestsellers</a></li>
                                     <li><a href="#">Aanbiedingen</a></li>
                                     <li><a href="#">Top 10 Ventilatoren</a></li>
-                                    <li><a href="#">Design ventilatieroosters</a></li>
-                                    <li><a href="#">Advies</a></li>
+                                    <li><a href="/service/over-ventidirect">Over VentiDirect</a></li>
+                                    <li><a href="/service/klantenservice">Advies</a></li>
                                 </ul>
                             </nav>
                         </div>

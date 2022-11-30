@@ -88,11 +88,11 @@
                             <h5>VentiDirect</h5>
                             <div class="footer__list">
                                 <ul>
-                                    <li><a href="#">Mijn account</a></li>
-                                    <li><a href="#">Over VentiDirect</a></li>
-                                    <li><a href="#">jyiuBlogtiut</a></li>
-                                    <li><a href="#">Zakelijke klant worden</a></li>
-                                    <li><a href="#">Vacatures</a></li>
+                                    <li><a href="/service/over-ventidirect">Mijn account</a></li>
+                                    <li><a href="/service/over-ventidirect">Over VentiDirect</a></li>
+                                    <li><a href="/service/over-ventidirect">Blog</a></li>
+                                    <li><a href="/service/over-ventidirect">Zakelijke klant worden</a></li>
+                                    <li><a href="/service/vacatures">Vacatures</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                             <div class="accordion-body">
                                 <div class="footer__list">
                                     <ul>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="/service/over-ventidirect">Contact</a></li>
                                         <li><a href="#">Track &amp; Trace order</a></li>
                                         <li><a href="#">Bezorgen en afhalen</a></li>
                                         <li><a href="#">Same day delivery</a></li>

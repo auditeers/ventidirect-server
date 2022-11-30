@@ -187,7 +187,9 @@
                             @foreach($cart_items as $cart_item)
                             <div class="single__shopping__cart__details">
                                 <div class="shopping__cart__details__thumb">
-                                    <img src="assets/img/pricing_2.png" alt="">
+                                    <img 
+                                        src="/storage/{{  $cart_item->attributes["image"] ?? 'placeholder.jpg' }}" 
+                                        alt="{{ $cart_item->name }}">
                                 </div>
                                 <div class="shopping__cart__details__text">
                                     <p>{{ $cart_item->name }}</p>

@@ -208,6 +208,7 @@
                                 <a href="/product/{{ $product->slug }}">
                                     <p>{{ $product->name }}</p>
                                 </a>
+                                {{--
                                 <div class="five__star">
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
@@ -216,13 +217,17 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <small>241 reviews</small>
                                 </div>
+                                --}}
                             </div>
 
                             <div class="main__price">
                                 <div class="price__content">
-                                    <span>Adviesprijs 454,97</span>
+                                    @if(!empty($product->price_from))
+                                    <span>Adviesprijs &euro; {{ $product->price_from }}</span>
+                                    @endif
+
                                     <h4>{{ $product->price }}</h4>
-                                    <span>284,30 excl. BTW</span>
+                                     <span>&euro; {{ $product->price - $product->vat }} excl. BTW</span>
                                 </div>
                                 <div class="cart__wrap">
                                     <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>

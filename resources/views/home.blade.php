@@ -150,7 +150,7 @@
                             </div>
                             <div class="categorie__btn">
                                 <div class="nav nav-tabs" id="nav-tab">
-                                    @foreach($cat->products()->take(3)->inRandomOrder()->get() as $product)
+                                    @foreach($cat->products()->whereNotNull('image')->take(3)->inRandomOrder()->get() as $product)
                                     <button class="nav-link">
                                         <img src="/storage/{{ $product->image ?? "/placeholder.jpg"}}" alt="{{ $product->name }}">
                                     </button>

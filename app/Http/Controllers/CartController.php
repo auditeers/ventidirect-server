@@ -36,7 +36,7 @@ class CartController extends Controller
 
     }
 
-    public function delete(Int $cart_item_id)
+    public function delete(String $cart_item_id)
     {
 
        \Cart::remove($cart_item_id);

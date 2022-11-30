@@ -1,6 +1,10 @@
 <div class="header__right__single__item left_card_space open__shopping__cart">
-    <div class="cart__ico"><i class="fas fa-shopping-cart"></i></div> <i class="far fa-angle-down"></i>
+    <div class="cart__ico"><i class="fas fa-shopping-cart"></i></div> 
+    <i class="far fa-angle-down"></i>
 
+    @if(count($cart_items) > 0)
+    <span class="cart__notification">{{ count($cart_items) }}</span>
+    @endif
     <div class="cart__offcanvas__blk">
         <div class="similar__listing__title">
             <h5>Winkelwagen</h5>

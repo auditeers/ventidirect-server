@@ -12,7 +12,7 @@
     <section class="categorie__area">
         <div class="container">
             <div class="categoti__top__link__text none_link_mobile">
-                <a href="#" class="active">VentiDirect.nl</a> <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">Categorieën</a> 
+                <a href="/" class="active">VentiDirect.nl</a> <span><i class="fas fa-angle-right"></i></span> <a href="#" class="active">Categorieën</a> 
                 <span><i class="fas fa-angle-right"></i></span> 
                 <a href="/producten/{{ $product->category->slug ?? 'Overig' }}" class="active">{{ $product->category->name ?? 'Overig' }}</a> 
                 <span><i class="fas fa-angle-right"></i>

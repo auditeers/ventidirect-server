@@ -12,7 +12,7 @@ class HomeController extends Controller
     {
         $cats = Category::whereNull('parent_id')->get();
 
-        $popular = Product::whereNotNull('image')->whereNot('image', '')->inRandomOrder()->take(5)->get();
+        $popular = Product::whereNotNull('image')->whereNot('image', 'default-product.png')->inRandomOrder()->take(5)->get();
 
         return view('home', [
             "cats" => $cats,

@@ -342,7 +342,7 @@
                                 </div>
                             </div>
 
-                            @foreach($category->products()->paginate(10) as $product)
+                            @foreach($category->products()->orderBy('image', 'DESC')->paginate(10) as $product)
 
                             <div class="ventilation__product__area">
                                 <div class="single__pricing__slide__blk">                                   

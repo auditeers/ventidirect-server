@@ -270,6 +270,7 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="product__specificaties__blk">
+                        {{--
                         <div class="product__viceo">
                             <div class="similar__title">
                                 <h5>Productvideo</h5>
@@ -282,7 +283,8 @@
                                 <a class="second_similar_btn" href="#">Alle productvideo’s (3)</a>
                             </div>
                         </div>
-
+                        --}}
+                        
                         <div class="specificaties mt-30">
                             <div class="similar__title">
                                 <h5>Specificaties</h5>

@@ -157,7 +157,7 @@
 
                                 <a class="similar__view__btn mt-10" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2"><i class="fas fa-angle-down"></i> Bekijk meer</a>
                             </div>
-
+                            {{--
                             <div class="product__type__blk mt-25">
                                 <div class="similar__listing__title">
                                     <h5>Merk</h5>
@@ -214,6 +214,8 @@
 
                                 <a class="similar__view__btn mt-10" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3"><i class="fas fa-angle-down"></i> Bekijk meer</a>
                             </div>
+                        
+                            --}}
 
                             <div class="product__type__blk mt-25">
                                 <div class="similar__listing__title">

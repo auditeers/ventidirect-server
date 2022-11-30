@@ -125,10 +125,11 @@
                             <div class="header__select">
                                 <select>
                                     <option data-display="">Categorieën</option>
-                                    <option value="1">Some option</option>
-                                    <option value="2">Another option</option>
-                                    <option value="3" disabled>A disabled option</option>
-                                    <option value="4">Potato</option>
+                                    @foreach($cats as $cat)
+                                    <option value="/producten/{{ $cat->slug }}">{{ $cat->name }}</option>
+                                    @endforeach
+                                    
+
                                 </select>
                             </div>
                             <nav>

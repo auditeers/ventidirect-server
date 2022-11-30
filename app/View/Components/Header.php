@@ -26,10 +26,11 @@ class Header extends Component
     {
 
         $cart_items = \Cart::getContent();
-    
+        $cats = Category::whereNull('parent_id')->get();
 
         return view('components.header', [
-            "cart_items" => $cart_items
+            "cart_items" => $cart_items,
+            "cats" => $cats
         ]);
     }
 }

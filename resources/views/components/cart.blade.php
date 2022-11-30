@@ -48,7 +48,7 @@
                 </div>
                 <div class="subtotal__btn">
                     <a class="second_similar_btn" href="/cart">Wijzig winkelwagen</a>
-                    <a href="#" class="global__btn">Bestellen</a>
+                    <a href="/cart/order/details" class="global__btn">Bestellen</a>
                 </div>
             </div>
             @endif

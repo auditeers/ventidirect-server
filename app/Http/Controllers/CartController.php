@@ -46,5 +46,15 @@ class CartController extends Controller
     }
 
 
+    public function order_details()
+    {
+        $cart_items = \Cart::getContent();
+
+        return view('order_form_details', [
+            "cart_items" => $cart_items,
+        ]);
+    }
+
+
 
 }

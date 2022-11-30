@@ -28,3 +28,5 @@ Route::get('/product/{slug}', [App\Http\Controllers\ProductController::class, 's
 Route::get('/cart', [App\Http\Controllers\CartController::class, 'index']);
 Route::get('/cart/add/{product_id}', [App\Http\Controllers\CartController::class, 'add']);
 Route::get('/cart/delete/{cart_id}', [App\Http\Controllers\CartController::class, 'delete']);
+
+Route::get('/cart/order/details', [App\Http\Controllers\CartController::class, 'order_details']);

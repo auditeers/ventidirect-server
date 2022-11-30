@@ -98,7 +98,7 @@
                                     <h4>Totaal incl. btw <span>€ {{ \Cart::getTotal() }}</span></h4>
                                 </div>
                                 <div class="subtotal__btn">
-                                    <a href="#" class="global__btn">Bestelling afronden</a>
+                                    <a href="/cart/order/details" class="global__btn">Bestelling afronden</a>
                                 </div>
                             </div>
                         </div>

@@ -32,13 +32,15 @@
                             <div class="product__added__top__inner__blk">
                                 <div class="product__added__left__blk">
                                     <div class="product__added__thumb">
-                                        <img src="assets/img/product__added__img.png" alt="">
+                                        <img 
+                                            src="/storage/{{ $cart_item->model->image ?? 'placeholder.jpg' }}" 
+                                            alt="{{ $cart_item->name }}">
                                     </div>
                                     <div class="product__added__text">
                                         <div class="pricing__content">
                                             <p>{{ $cart_item->name }}</p>
                                             <div class="price__bottom__text mt-0">
-                                                <span>Artikelnr.: {{ $cart_item->model->ean}}</span>
+                                                <span>Artikelnr.: {{ $cart_item->model->ean ?? '' }}</span>
                                             </div>
                                             <div class="product__added__select__blk">
                                                 <div class="product__added__select">

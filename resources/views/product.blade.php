@@ -184,39 +184,6 @@
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Productvideo
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <div class="product__video__in__accordion">
-                                            <div class="row g-4">
-                                                <div class="col-md-6">
-                                                    <div class="product__viceo mt-20">
-                                                        <div class="youtube__video">
-                                                            <div class="ratio ratio-16x9">
-                                                                <iframe src="https://www.youtube.com/embed/WnzM5iOYoTE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="product__viceo mt-20">
-                                                        <div class="youtube__video">
-                                                            <div class="ratio ratio-16x9">
-                                                                <iframe src="https://www.youtube.com/embed/WnzM5iOYoTE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
-                                                            </div>
-                                                            <a class="second_similar_btn" href="#">Toon meer</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingThree">
@@ -260,30 +227,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        Specificaties
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <div class="download__blk mt-20">
-                                            <div class="similar__title">
-                                                <h5>Downloads</h5>
-                                            </div>
-                                            <ul>
-                                                <li class="bg__gray"><a href="#"><img src="/assets/img/pdf__ico.svg" alt="">Filename.pdf</a></li>
-                                                <li><a href="#"><img src="/assets/img/pdf__ico.svg" alt="">Filename.pdf</a></li>
-                                                <li class="bg__gray"><a href="#"><img src="/assets/img/pdf__ico.svg" alt="">Filename.pdf</a></li>
-                                                <li><a href="#"><img src="/assets/img/pdf__ico.svg" alt="">Filename.pdf</a></li>
-                                            </ul>
-                                            <a class="second_similar_btn" href="#">Toon meer</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -321,42 +264,8 @@
                         <div class="similar__listing__title">
                             <h5>Omschrijving</h5>
                         </div>
-                        <p>De DucoBox is niet alleen de motor, maar ook de belangrijkste unit van het kwaliteitsmerk DUCO uit Belgie. Deze compacte, krachtige en uiterst..</p>
+                        {!! $product->description !!}
                     </div>
-
-                    <div class="similar__pros_and_cons__content mt-20">
-                        <div class="similar__listing__title">
-                            <h5>Standaard meegeleverd</h5>
-                        </div>
-                        <p>De DucoBox is niet alleen de motor, maar ook de belangrijkste unit van het kwaliteitsmerk DUCO uit Belgie. Deze compacte, krachtige en uiterst..</p>
-                    </div>
-                    <div class="product__image__here" style="background-image: url(./assets/img/image__here.png);">
-                        <h4>Afbeelding hier bijv</h4>
-                    </div>
-                    <div class="similar__pros_and_cons__content mt-20">
-                        <div class="similar__listing__title">
-                            <h5>Nog een paragraph met title</h5>
-                        </div>
-                        <p>Het type SILENT is een akoestisch geisoleerde box en is daardoor de stilste in de markt, bovendien is er de keuze tussen enerzijds boxsensoren (interne opsteeksensoren in de box zelf) ofwel ruimtesensoren, allebei op basis van CO2- en/of vochtmetingen. Deze sensoren zijn zeer makkelijk te installeren en zorgen voor een optimale luchtafvoer, plug & play.</p>
-                        <p>Daarnaast werd deze nieuwe krachtige centrale afvoerventilator, de DucoBox Silent, door het ontwikkelingsteam van Duco naar een hoger niveau getild. Alle communicatie verloopt volledig draadloos. Het netwerk kan snel & eenvoudig opgebouwd worden dankzij het eigen ontwikkeld communicatieprotocol. De DucoBox Silent is van toepassing binnen het Duco CO2 System en het Duco Comfort System.</p>
-                    </div>
-
-                    <div class="similar__pros_and_cons__content mt-20">
-                        <div class="similar__listing__title">
-                            <h5>DucoBox specificaties op een rij:</h5>
-                        </div>
-                        <div class="ventilation__list">
-                            <ul>
-                                <li>Stilste en krachtigste mechanische ventilatiebox in de markt</li>
-                                <li>Maximale lucht opbrengst van 400 m3/h bij 150 Pa</li>
-                                <li>Energiezuinige gelijkstroom motor 230V (maar 10W verbruik in de laagste stand) piekvermogen 84W</li>
-                                <li>7 aansluitingen Ø 125 voor afzuiging en 1 afvoerkanaal 125mm</li>
-                                <li>Radiografisch aan te sturen (geheel) draadloos</li>
-                                <li>Breedte x Hoogte x Diepte : 480 x 480 x 194 mm</li>
-                            </ul>
-                        </div>
-                    </div>
-
 
                 </div>
                 <div class="col-lg-5">

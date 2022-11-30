@@ -150,9 +150,11 @@
                             </div>
                             <div class="categorie__btn">
                                 <div class="nav nav-tabs" id="nav-tab">
-                                    <button class="nav-link"><img src="assets/img/categorie__small_1.png" alt=""></button>
-                                    <button class="nav-link"><img src="assets/img/categorie__small_2.png" alt=""></button>
-                                    <button class="nav-link"><img src="assets/img/categorie__small_3.png" alt=""></button>
+                                    @foreach($cat->products()->take(3)->inRandomOrder()->get() as $product)
+                                    <button class="nav-link">
+                                        <img src="/storage/{{ $product->image ?? "/placeholder.jpg"}}" alt="{{ $product->name }}">
+                                    </button>
+                                    @endforeach
                                 </div>
                             </div>
                             <div class="categorie__content">

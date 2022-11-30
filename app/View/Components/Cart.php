@@ -2,12 +2,10 @@
 
 namespace App\View\Components;
 
-use App\Models\Category;
 use Illuminate\View\Component;
 
-class Header extends Component
+class Cart extends Component
 {
-
     /**
      * Create a new component instance.
      *
@@ -25,11 +23,10 @@ class Header extends Component
      */
     public function render()
     {
+        $cart_items = \Cart::getContent();
 
-        $cats = Category::whereNull('parent_id')->get();
-
-        return view('components.header', [
-            "cats" => $cats
+        return view('components.cart', [
+            "cart_items" => $cart_items,
         ]);
     }
 }

@@ -7,8 +7,10 @@
         </div>
         <div class="shopping__cart__details border-0">
             
+            @if(empty(count($cart_items)))
             <p class="mt-5 mb-5">Er zitten geen items in uw winkelmandje.</p>
-
+            @else
+            
             @foreach($cart_items as $cart_item)
             
             <div class="single__shopping__cart__details__wrap">
@@ -45,6 +47,8 @@
                     <a href="#" class="global__btn">Bestellen</a>
                 </div>
             </div>
+            @endif
+            
         </div>
     </div>
 </div>

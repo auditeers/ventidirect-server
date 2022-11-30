@@ -460,7 +460,7 @@
                         </div>
                     </div>
 
-                    {{ $category->products()->paginate(10)->links() }}
+                    {{ $category->products()->orderBy('image', 'DESC')->paginate(10)->links() }}
 
 
                     <div class="similar__main__title">

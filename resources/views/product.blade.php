@@ -194,34 +194,12 @@
                                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <div class="specificaties mt-20">
+                                            @foreach($features as $feature)
                                             <div class="single__specificaties bg__gray">
-                                                <span>Garantie</span>
-                                                <span>3 jaar</span>
+                                                <span>{{ $feature['name'] ?? ''}}</span>
+                                                <span>{{ $feature['value'] ?? '' }}</span>
                                             </div>
-                                            <div class="single__specificaties">
-                                                <span>Diameter</span>
-                                                <span>125 mm</span>
-                                            </div>
-                                            <div class="single__specificaties bg__gray">
-                                                <span>Stekker</span>
-                                                <span>Randaarde</span>
-                                            </div>
-                                            <div class="single__specificaties">
-                                                <span>Merk</span>
-                                                <span>Duco</span>
-                                            </div>
-                                            <div class="single__specificaties bg__gray">
-                                                <span>Functionaliteit</span>
-                                                <span>Vochtsensor <br> Met afstandbediening RF <br> Radiografisch ontvanger</span>
-                                            </div>
-                                            <div class="single__specificaties">
-                                                <span>Producttype</span>
-                                                <span>3 jaar</span>
-                                            </div>
-                                            <div class="single__specificaties bg__gray">
-                                                <span>Capaciteit m3/h</span>
-                                                <span>3 jaar</span>
-                                            </div>
+                                            @endforeach
                                             <a href="#" class="second_similar_btn">Toon meer</a>
                                         </div>
                                     </div>
@@ -289,35 +267,13 @@
                             <div class="similar__title">
                                 <h5>Specificaties</h5>
                             </div>
+                            @foreach($features as $feature)
+                            <div class="single__specificaties bg__gray">
+                                <span>{{ $feature['name'] ?? ''}}</span>
+                                <span>{{ $feature['value'] ?? '' }}</span>
+                            </div>
+                            @endforeach
                            
-                            <div class="single__specificaties bg__gray">
-                                <span>Garantie</span>
-                                <span>3 jaar</span>
-                            </div>
-                            <div class="single__specificaties">
-                                <span>Diameter</span>
-                                <span>125 mm</span>
-                            </div>
-                            <div class="single__specificaties bg__gray">
-                                <span>Stekker</span>
-                                <span>Randaarde</span>
-                            </div>
-                            <div class="single__specificaties">
-                                <span>Merk</span>
-                                <span>Duco</span>
-                            </div>
-                            <div class="single__specificaties bg__gray">
-                                <span>Functionaliteit</span>
-                                <span>Vochtsensor <br> Met afstandbediening RF <br> Radiografisch ontvanger</span>
-                            </div>
-                            <div class="single__specificaties">
-                                <span>Producttype</span>
-                                <span>3 jaar</span>
-                            </div>
-                            <div class="single__specificaties bg__gray">
-                                <span>Capaciteit m3/h</span>
-                                <span>3 jaar</span>
-                            </div>
                             <a href="#" class="second_similar_btn">Toon alle specificaties</a>
                         </div>
 

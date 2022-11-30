@@ -43,12 +43,12 @@
                     <h4>Totaal incl. btw <span>€ {{ \Cart::getTotal() }}</span></h4>
                 </div>
                 <div class="subtotal__btn">
-                    <a class="second_similar_btn" href="#">Wijzig winkelwagen</a>
+                    <a class="second_similar_btn" href="/cart">Wijzig winkelwagen</a>
                     <a href="#" class="global__btn">Bestellen</a>
                 </div>
             </div>
             @endif
-            
+
         </div>
     </div>
 </div>

@@ -8,6 +8,16 @@ use Illuminate\Http\Request;
 
 class CartController extends Controller
 {
+    public function index()
+    {
+        $cart_items = \Cart::getContent();
+
+        return view('cart_edit', [
+            "cart_items" => $cart_items,
+        ]);
+    }
+
+
     public function add(Int $product_id)
     {
         $product = Product::findOrFail($product_id);

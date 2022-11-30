@@ -207,6 +207,7 @@
                             <div class="pricing__content">
                                 <a href="/product/{{ $product->slug }}">
                                     <p>{{ $product->name }}</p>
+                                    
                                 </a>
                                 {{--
                                 <div class="five__star">
@@ -230,11 +231,11 @@
                                      <span>&euro; {{ $product->price - $product->vat }} excl. BTW</span>
                                 </div>
                                 <div class="cart__wrap">
-                                    <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
+                                    <a href="/cart/add/{{ $product->id }}"><img src="assets/img/cart_ico.svg" alt="Toevoegen aan winkelmand"></a>
                                 </div>
                             </div>
                             <div class="price__bottom__text">
-                                <span>Artikelnr.: 0000-4639</span>
+                                <span>Artikelnr.: {{ $product->ean }}</span>
                             </div>
                         </div>
 

@@ -23,6 +23,8 @@ Route::get('/producten/{slug}', [App\Http\Controllers\CategoryController::class,
 // Products
 Route::get('/product/{slug}', [App\Http\Controllers\ProductController::class, 'show']);
 
+// Pages
+Route::get('/service/{slug}', [App\Http\Controllers\PageController::class, 'show']);
 
 // Cart routes
 Route::get('/cart', [App\Http\Controllers\CartController::class, 'index']);

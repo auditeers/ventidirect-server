@@ -195,7 +195,7 @@
                                     <div class="accordion-body">
                                         <div class="specificaties mt-20">
                                             @foreach($product->features as $feature)
-                                            <div class="single__specificaties bg__gray">
+                                            <div class="single__specificaties @if($loop->odd) bg__gray @endif">
                                                 <span>{{ $feature['name'] ?? ''}}</span>
                                                 <span>{{ $feature['value'] ?? '' }}</span>
                                             </div>

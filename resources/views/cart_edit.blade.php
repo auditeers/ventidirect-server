@@ -33,7 +33,7 @@
                                 <div class="product__added__left__blk">
                                     <div class="product__added__thumb">
                                         <img 
-                                            src="/storage/{{ $cart_item->model->image ?? 'placeholder.jpg' }}" 
+                                            src="/storage/{{  $cart_item->attributes["image"] ?? 'placeholder.jpg' }}" 
                                             alt="{{ $cart_item->name }}">
                                     </div>
                                     <div class="product__added__text">

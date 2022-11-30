@@ -319,18 +319,6 @@
                             <a href="#" class="second_similar_btn">Toon alle specificaties</a>
                         </div>
 
-                        <div class="download__blk mt-40">
-                            <div class="similar__title">
-                                <h5>Downloads</h5>
-                            </div>
-                            <ul>
-                                <li class="bg__gray"><a href="#"><img src="/assets/img/pdf__ico.svg" alt="">Filename.pdf</a></li>
-                                <li><a href="#"><img src="/assets/img/pdf__ico.svg" alt="">Filename.pdf</a></li>
-                                <li class="bg__gray"><a href="#"><img src="/assets/img/pdf__ico.svg" alt="">Filename.pdf</a></li>
-                                <li><a href="#"><img src="/assets/img/pdf__ico.svg" alt="">Filename.pdf</a></li>
-                            </ul>
-                            <a class="second_similar_btn" href="#">Alle productvideo’s (10)</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -338,7 +326,7 @@
     </section>
     <!-- =================== Pros and cons END ===================== -->
 
-
+    {{--
     <!-- =================== REVIEWS AREA START ===================== -->
     <section class="reviews__area mt-25">
         <div class="container">
@@ -443,7 +431,7 @@
         </div>
     </section>
     <!-- =================== REVIEWS AREA END ===================== -->
-
+    
 
     <!-- ------------------- choose offcanvas start -->
     <div class="choose__offcanvas__area">
@@ -492,7 +480,7 @@
         </div>
     </div>
     <!-- ------------------- choose offcanvas end -->
-
+    --}}
 
     <!-- ------------------- choose offcanvas start -->
     <div class="allreview__offcanvas__area">

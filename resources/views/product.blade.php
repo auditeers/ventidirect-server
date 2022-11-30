@@ -120,7 +120,9 @@
                                         </select>
                                     </div>
                                     <div class="cart__wrap">
-                                        <a href="/cart/add/{{ $product->id }}"><img src="/assets/img/cart_ico.svg" alt=""> In mijn winkelwagen</a>
+                                        <a href="/cart/add/{{ $product->id }}">
+                                            <img src="/assets/img/cart_ico.svg" alt="Product in winkelwagen"> In mijn winkelwagen
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="check__listing__blk mt-20">
@@ -194,7 +196,7 @@
                                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <div class="specificaties mt-20">
-                                            @foreach($product->features as $feature)
+                                            @foreach($product->features ?? [] as $feature)
                                             <div class="single__specificaties @if($loop->odd) bg__gray @endif">
                                                 <span>{{ $feature['name'] ?? ''}}</span>
                                                 <span>{{ $feature['value'] ?? '' }}</span>
@@ -228,10 +230,10 @@
                         </div>
                         <div class="pros_and_cons_listing">
                             <ul>
-                                @foreach($product->pros as $pro)
+                                @foreach($product->pros ?? [] as $pro)
                                 <li><img src="/assets/img/plus__icon.svg" alt="">{{ $pro['value'] }}</li>
                                 @endforeach
-                                @foreach($product->cons as $con)
+                                @foreach($product->cons ?? [] as $con)
                                 <li><img src="/assets/img/minus__icon.svg" alt="">{{ $con['value']}}</li>
                                 @endforeach
                             </ul>
@@ -267,7 +269,7 @@
                             <div class="similar__title">
                                 <h5>Specificaties</h5>
                             </div>
-                            @foreach($product->features as $feature)
+                            @foreach($product->features ?? [] as $feature)
                             <div class="single__specificaties  @if($loop->odd) bg__gray @endif">
                                 <span>{{ $feature['name'] ?? ''}}</span>
                                 <span>{{ $feature['value'] ?? '' }}</span>

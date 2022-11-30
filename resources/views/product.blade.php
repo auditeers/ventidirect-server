@@ -166,11 +166,12 @@
                                             </div>
                                             <div class="pros_and_cons_listing">
                                                 <ul>
-                                                    <li><img src="/assets/img/plus__icon.svg" alt="">Stilste en krachtigste mechanische ventilatiebox in de markt</li>
-                                                    <li><img src="/assets/img/plus__icon.svg" alt="">Maximale lucht opbrengst van 400 m3/h bij 150 Pa</li>
-                                                    <li><img src="/assets/img/plus__icon.svg" alt="">Energiezuinige gelijkstroom motor 230V (maar 10W verbruik in de laagste stand) piekvermogen 84W</li>
-                                                    <li><img src="/assets/img/minus__icon.svg" alt="">Heeft maar 7 aansluitingen Ø 125 voor afzuiging en 1 afvoerkanaal 125mm</li>
-                                                    <li><img src="/assets/img/minus__icon.svg" alt="">Breedte x Hoogte x Diepte : 480 x 480 x 194 mm</li>
+                                                    @foreach($product->pros ?? [] as $pro)
+                                                    <li><img src="/assets/img/plus__icon.svg" alt="">{{ $pro['value'] }}</li>
+                                                    @endforeach
+                                                    @foreach($product->cons ?? [] as $con)
+                                                    <li><img src="/assets/img/minus__icon.svg" alt="">{{ $con['value']}}</li>
+                                                    @endforeach
                                                 </ul>
                                             </div>
                                         </div>

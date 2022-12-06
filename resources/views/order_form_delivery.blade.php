@@ -52,7 +52,7 @@
                                                     <p><img src="/assets/img/Carrier_Logo.svg" alt=""> Verzenden via PostNL</p>
                                                     <span class="free">Gratis</span>
                                                 </div>
-                                                <input type="checkbox" class="radio" value="postnl" name="delivery" >
+                                                <input type="checkbox" checked class="radio" value="postnl" name="delivery" >
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>

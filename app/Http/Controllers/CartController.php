@@ -237,5 +237,30 @@ class CartController extends Controller
     }
 
 
+    public function mollie_webhook(Request $request) {
+
+        $paymentId = $request->input('id');
+        $payment = Mollie::api()->payments->get($paymentId);
+        // Log::info('Payment #' . $paymentId . ' hook.');
+
+        if ($payment->isPaid())
+        {
+            $order_id = $payment->metadata->order_id;
+
+            Log::info('Order #' . $order_id . ' is paid.');
+            $order = Order::findOrfail($order_id);
+            
+            if($order->paid == false) {
+                
+                $order->external_id = $paymentId;
+                $order->paid = true;
+                $order->save();
+            
+                // email the confirmation.
+            }
+        }
+    }
+
+
 
 }

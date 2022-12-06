@@ -42,3 +42,7 @@ Route::get('/cart/order/overzicht', [App\Http\Controllers\CartController::class,
 Route::post('/cart/order/overzicht', [App\Http\Controllers\CartController::class, 'save_order_overview']);
 
 Route::get('/cart/order/done', [App\Http\Controllers\CartController::class, 'order_done']);
+
+
+// webhooks
+Route::get('/webhook/mollie', [App\Http\Controllers\CartController::class, 'mollie_webhook']);

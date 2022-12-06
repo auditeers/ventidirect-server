@@ -212,21 +212,6 @@
     </section>
     <!-- ====================== DELIVERY AREA END ============================ -->
 
-
-
-    
-    <!-- ====================== SHOPPINGCART BOTTOM AREA START ============================ -->
-    <section class="shopping__cart__bottom__area">
-        <div class="container">
-            <div class="delivery__shopping__cart__btn">
-                <div class="categoti__top__link__text mb-0 blue__ico">
-                    <span><i class="fas fa-angle-left"></i></span> <a href="/" class="active">Verder winkelen</a>
-                </div>
-                <a href="#" class="global__btn">Doorgaan</a>
-            </div>
-        </div>
-    </section>
-    <!-- ====================== SHOPPINGCART BOTTOM AREA END ============================ -->
     
 
 

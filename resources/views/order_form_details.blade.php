@@ -73,7 +73,7 @@
                                                     type="text" 
                                                     name="lastname" 
                                                     id="lastname"
-                                                    class="@error('firstname') is-invalid @enderror" 
+                                                    class="@error('lastname') is-invalid @enderror" 
                                                     value="{{ old('lastname') }}"  
                                                     placeholder="Achternaam">
                                             </div>
@@ -84,20 +84,38 @@
                                     <div class="row g-2">
                                         <div class="col-4">
                                             <div class="single__delivery__details">
-                                                <label for="#">Postcode</label>
-                                                <input type="text" placeholder="1111AA">
+                                                <label for="zip">Postcode</label>
+                                                <input 
+                                                    type="text" 
+                                                    name="zip" 
+                                                    id="zip"
+                                                    class="@error('zip') is-invalid @enderror" 
+                                                    value="{{ old('zip') }}"  
+                                                    placeholder="1111AA">
                                             </div>
                                         </div>
                                         <div class="col-4">
                                             <div class="single__delivery__details">
-                                                <label for="#">Huisnummer</label>
-                                                <input type="text" placeholder="Nr.">
+                                                <label for="streetnumber">Huisnummer</label>
+                                                <input 
+                                                    type="text" 
+                                                    name="streetnumber" 
+                                                    id="streetnumber"
+                                                    class="@error('streetnumber') is-invalid @enderror" 
+                                                    value="{{ old('streetnumber') }}"  
+                                                    placeholder="Nr.">
                                             </div>
                                         </div>
                                         <div class="col-4">
                                             <div class="single__delivery__details">
-                                                <label for="#">Toevoeging</label>
-                                                <input type="text" placeholder="Toev.">
+                                                <label for="streetaddition">Toevoeging</label>
+                                                <input 
+                                                    type="text"
+                                                    name="streetaddition" 
+                                                    id="streetaddition"
+                                                    class="@error('streetaddition') is-invalid @enderror" 
+                                                    value="{{ old('streetaddition') }}"   
+                                                    placeholder="Toev.">
                                             </div>
                                         </div>
                                     </div>
@@ -124,14 +142,26 @@
                                         <div class="row g-2">
                                             <div class="col-12">
                                                 <div class="single__delivery__details">
-                                                    <label for="#">Telefoonnummer</label>
-                                                    <input type="text" placeholder="0625505587">
+                                                    <label for="phone">Telefoonnummer</label>
+                                                    <input 
+                                                        type="text" 
+                                                        name="phone" 
+                                                        id="phone"
+                                                        class="@error('phone') is-invalid @enderror" 
+                                                        value="{{ old('phone') }}"   
+                                                        placeholder="0612345678">
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="single__delivery__details">
-                                                    <label for="#">E-mailadres</label>
-                                                    <input type="email" placeholder="Jouw e-mailadres">
+                                                    <label for="email">E-mailadres</label>
+                                                    <input 
+                                                        type="text" 
+                                                        name="email" 
+                                                        id="email"
+                                                        class="@error('email') is-invalid @enderror" 
+                                                        value="{{ old('email') }}"   
+                                                        placeholder="Jouw e-mailadres">
                                                 </div>
                                             </div>
                                         </div>

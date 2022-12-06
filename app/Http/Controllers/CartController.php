@@ -63,7 +63,7 @@ class CartController extends Controller
     public function save_order_details(Request $request)
     {
         $input = $request->all();
-        
+
         $rules = [
             'firstname' => 'required|min:2|max:255',
             'lastname' => 'required|min:2|max:255',
@@ -80,7 +80,7 @@ class CartController extends Controller
 
         $attributes = [
             'firstname' => 'voornaam',
-            'lastname' => 'voornaam',
+            'lastname' => 'achternaam',
             'zip' => 'postcode',
             'streetnumber' => 'huisnummer',
             'email' => 'e-mail adres',

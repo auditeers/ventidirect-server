@@ -154,14 +154,15 @@ class CartController extends Controller
         
         // all valid create the order
         $order_code = date('Y') . "-" . date('u') . "-" . strtoupper(Str::random(4));
+        $cart_total = \Cart::getTotal();
 
         $order = Order::create(
             [
                 'customer_id' => $input['customer_id'], 
                 'code' => $order_code, 
                 'shipping_date' => date('Y-m-d'), 
-                'subtotal' => \Cart::getTotal(), 
-                'total' => \Cart::getTotal(),
+                'subtotal' => number_format($cart_total, 2, '.', ''), 
+                'total' => number_format($cart_total, 2, '.', ''), 
             ]
         );
 

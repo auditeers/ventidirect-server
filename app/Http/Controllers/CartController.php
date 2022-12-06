@@ -8,6 +8,7 @@ use App\Models\Customer;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Mollie\Laravel\Facades\Mollie;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 

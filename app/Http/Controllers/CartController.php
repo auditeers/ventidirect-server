@@ -72,8 +72,14 @@ class CartController extends Controller
         ];
 
         $messages = [
-            'firstname.required' => 'Je hebt geen voornaam ingegeven.',
-            'lastname.required' => 'Je hebt geen achternaam ingegeven.',
+            'firstname' => 'voornaam',
+            'lastname' => 'voornaam',
+            'zip' => 'postcode',
+            'streetnumber' => 'huisnummer',
+            'email' => 'e-mail adres',
+            'required' => 'Je hebt geen :attribute ingegeven.',
+            'min' => 'Je opgegeven :attribute is te kort.',
+            'max' => 'Je opgegeven :attribute is te lang.'
         ];
 
         $validator = Validator::make($input, $rules, $messages)->validate();

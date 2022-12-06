@@ -96,13 +96,13 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="single__delivery__details">
-                                                <label for="streetnumber">Huisnummer</label>
+                                                <label for="streetnr">Huisnummer</label>
                                                 <input 
                                                     type="text" 
-                                                    name="streetnumber" 
-                                                    id="streetnumber"
-                                                    class="@error('streetnumber') is-invalid @enderror" 
-                                                    value="{{ old('streetnumber') }}"  
+                                                    name="streetnr" 
+                                                    id="streetnr"
+                                                    class="@error('streetnr') is-invalid @enderror" 
+                                                    value="{{ old('streetnr') }}"  
                                                     placeholder="Nr.">
                                             </div>
                                         </div>

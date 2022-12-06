@@ -83,7 +83,7 @@ class CustomerCrudController extends CrudController
             ->tab('details')
             ->wrapper(['class' => 'form-group col-md-6']);
 
-        CRUD::field('streetnumber')
+        CRUD::field('streetnr')
             ->label('Nr.')
             ->tab('details')
             ->wrapper(['class' => 'form-group col-md-3']);

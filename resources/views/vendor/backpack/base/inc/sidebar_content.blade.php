@@ -6,7 +6,7 @@
 <li class="nav-item"><a class="nav-link" href="#"><i class="nav-icon la la-truck"></i> Fulfillment</a></li>
 
 <li class="nav-title">CRM</li>
-<li class="nav-item"><a class="nav-link" href="{{ backpack_url('product') }}"><i class="nav-icon la la-user-tag"></i> Clients</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('customer') }}"><i class="nav-icon la la-user-tag"></i> Clients</a></li>
 <li class="nav-item"><a class="nav-link" href="#"><i class="nav-icon la la-envelope"></i> Emails</a></li>
 
 <li class="nav-title">Reports</li>

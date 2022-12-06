@@ -39,6 +39,8 @@ class CustomerCrudController extends CrudController
      */
     protected function setupListOperation()
     {
+        CRUD::setDefaultPageLength(50);
+        CRUD::denyAccess('show');
         
         CRUD::column('firstname');
         CRUD::column('lastname');

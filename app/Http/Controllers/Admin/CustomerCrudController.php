@@ -41,7 +41,7 @@ class CustomerCrudController extends CrudController
     {
         CRUD::setDefaultPageLength(50);
         CRUD::denyAccess('show');
-        
+
         CRUD::column('firstname');
         CRUD::column('lastname');
         CRUD::column('email');
@@ -66,13 +66,19 @@ class CustomerCrudController extends CrudController
             // 'name' => 'required|min:2',
         ]);
 
-        
+        CRUD::setOperationSetting('contentClass', 'col-md-12');
 
-        /**
-         * Fields can be defined using the fluent syntax or array syntax:
-         * - CRUD::field('price')->type('number');
-         * - CRUD::addField(['name' => 'price', 'type' => 'number'])); 
-         */
+        CRUD::field('firstname')
+            ->label('Firstname')
+            ->tab('details')
+            ->wrapper(['class' => 'form-group col-md-6']);
+
+        CRUD::field('lastname')
+            ->label('Lastname')
+            ->tab('details')
+            ->wrapper(['class' => 'form-group col-md-6']);
+
+    
     }
 
     /**

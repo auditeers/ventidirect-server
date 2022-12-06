@@ -148,7 +148,7 @@ class CartController extends Controller
 
         
 
-        $validator = Validator::make($input, $rules, $messages, $attributes)->validate();
+        $validator = Validator::make($input, $rules, $messages)->validate();
 
         
         

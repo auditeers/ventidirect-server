@@ -73,6 +73,7 @@ class CartController extends Controller
 
         $messages = [
             'firstname.required' => 'Je hebt geen voornaam ingegeven.',
+            'lastname.required' => 'Je hebt geen achternaam ingegeven.',
         ];
 
         $validator = Validator::make($input, $rules, $messages)->validate();

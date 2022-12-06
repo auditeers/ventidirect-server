@@ -57,7 +57,7 @@
                                         <div class="col-6">
                                             <div class="single__delivery__details">
                                                 <label for="#">Voornaam</label>
-                                                <input type="text" name="firstname" value="{{ old('firstname') }}" placeholder="Voornaam">
+                                                <input type="text" name="firstname" class="error" value="{{ old('firstname') }}" placeholder="Voornaam">
                                             </div>
                                         </div>
                                         <div class="col-6">

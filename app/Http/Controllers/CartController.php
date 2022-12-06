@@ -154,7 +154,7 @@ class CartController extends Controller
         
         // all valid create the order
         $order_code = date('Y') . "-" . date('u') . "-" . strtoupper(Str::random(4));
-        $cart_total = \Cart::getTotal();
+        $cart_total = (float)\Cart::getTotal();
 
         $order = Order::create(
             [

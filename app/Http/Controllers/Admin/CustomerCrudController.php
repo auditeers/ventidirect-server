@@ -78,6 +78,40 @@ class CustomerCrudController extends CrudController
             ->tab('details')
             ->wrapper(['class' => 'form-group col-md-6']);
 
+        CRUD::field('street')
+            ->label('Street')
+            ->tab('details')
+            ->wrapper(['class' => 'form-group col-md-6']);
+
+        CRUD::field('streetnumber')
+            ->label('Nr.')
+            ->tab('details')
+            ->wrapper(['class' => 'form-group col-md-3']);
+
+        CRUD::field('streetaddition')
+            ->label('add.')
+            ->tab('details')
+            ->wrapper(['class' => 'form-group col-md-3']);
+
+        CRUD::field('zip')
+            ->label('zipcode')
+            ->tab('details')
+            ->wrapper(['class' => 'form-group col-md-4']);
+
+        CRUD::field('city')
+            ->label('city')
+            ->tab('details')
+            ->wrapper(['class' => 'form-group col-md-4']);
+        
+        CRUD::field('email')
+            ->label('Email')
+            ->tab('details')
+            ->wrapper(['class' => 'form-group col-md-6']);
+
+        CRUD::field('phone')
+            ->label('Phone')
+            ->tab('details')
+            ->wrapper(['class' => 'form-group col-md-6']);
     
     }
 

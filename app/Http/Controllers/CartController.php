@@ -77,8 +77,7 @@ class CartController extends Controller
 
     public function save_order_delivery()
     {
-        
-
+        exit('ok la');
         return redirect('/cart/order/overzicht');
     }
 

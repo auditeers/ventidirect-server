@@ -12,7 +12,7 @@
         <form action="#">
             <div class="container">
                 <div class="categoti__top__link__text mb-10 mt-30 blue__ico">
-                    <span><i class="fas fa-angle-left"></i></span> <a href="#" class="active">Verder winkelen</a>
+                    <span><i class="fas fa-angle-left"></i></span> <a href="/" class="active">Verder winkelen</a>
                 </div>
                 <div class="similar__main__title">
                     <h3>Bestelling afgerond</h3>
@@ -22,7 +22,7 @@
                         <div class="delivery__wrap">
                             <div class="order__completed__blk">
                                 <div class="order__completed__content similar__border">
-                                    <p>Gelukt! Je ontvangt binnen een uur een orderbevestiging per e-mail. Hierin informeren we je verder over de status van jouw bestelling. <br> <br> Heb je na een uur geen e-mail ontvangen, neem dan contact op met onze <a class="second_similar_btn m-0" href="#">klantenservice.</a></p>
+                                    <p>Gelukt! Je ontvangt binnen een uur een orderbevestiging per e-mail. Hierin informeren we je verder over de status van jouw bestelling. <br> <br> Heb je na een uur geen e-mail ontvangen, neem dan contact op met onze <a class="second_similar_btn m-0" href="/service/contact">klantenservice.</a></p>
                                 </div>
 
                                 <div class="check__listing__blk mt-20">

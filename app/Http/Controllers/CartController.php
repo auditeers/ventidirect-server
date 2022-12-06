@@ -61,13 +61,20 @@ class CartController extends Controller
 
     public function save_order_details(Request $request)
     {
-        $validated = $request->validate([
+        $input = $request->all();
+        $rules = [
             'firstname' => 'required|min:2|max:255',
             'lastname' => 'required|min:2|max:255',
             'zip' => 'required|min:6|max:7',
             'streetnumber' => 'required',
             'email' => 'required|email',
-        ]);
+        ];
+
+        $messages = [
+            'firstname.required' => 'Je hebt geen voornaam ingegeven.',
+        ];
+
+        $validator = Validator::make($input, $rules, $messages);
 
         return redirect('/cart/order/bezorging');
     }

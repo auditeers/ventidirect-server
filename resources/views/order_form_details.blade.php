@@ -40,45 +40,6 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="delivery__wrap">
-                            <div class="delivery__single__item mb-10">
-                                <div class="delivery__similar__title">
-                                    <p>Inloggen als bestaande klant? <span>Optioneel</span></p>
-                                </div>
-                                <div class="delivary__radio__btn">
-                                    <div class="form-check mr_20">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                            Nee
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                        <label class="form-check-label" for="flexRadioDefault2">
-                                            Ja
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="delivery__single__item">
-                                <div class="delivery__similar__title">
-                                    <p>Inloggen als bestaande klant? <span>Optioneel</span></p>
-                                </div>
-                                <div class="delivary__radio__btn">
-                                    <div class="form-check mr_20">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault3" checked>
-                                        <label class="form-check-label" for="flexRadioDefault3">
-                                            Particulier
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault4">
-                                        <label class="form-check-label" for="flexRadioDefault4">
-                                            Zakelijk
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="delivery__details__form">
                                 <div class="delivery__details__inner__blk mt-15">
@@ -156,6 +117,7 @@
                                 </div>
                             </div>
 
+                            {{--
                             <div class="delivery__single__item mt-15">
                                 <div class="delivery__similar__title">
                                     <p>E-mailopties <span>Optioneel</span></p>
@@ -175,6 +137,7 @@
                                     </div>
                                 </div>
                             </div>
+                            --}}
 
                         </div>
                     </div>

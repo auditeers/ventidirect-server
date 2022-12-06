@@ -76,6 +76,9 @@
                                     <li><a href="#">Bezorgen en afhalen</a></li>
                                     <li><a href="#">Same day delivery</a></li>
                                     <li><a href="#">Ruilen en retourneren</a></li>
+                                    <li><a href="https://ventidirect.montareturns.com/da3887f0-de10-452e-b55c-60716aa21994?c=1" target="_blank">
+                                        Retour aanmelden
+                                    </a></li>
                                     <li><a href="#">Veelgestelde vragen</a></li>
                                 </ul>
                             </div>
@@ -120,10 +123,12 @@
                             <h5>Social Media</h5>
                             <div class="footer__list">
                                 <ul>
-                                    <li><a href="#"><i class="fab fa-facebook"></i> Volg ons op Facebook</a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i> Volg ons op Twitter</a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i> Volg ons op LinkedIn</a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest"></i> Volg ons op Pinterest</a></li>
+                                    <li><a href="https://www.facebook.com/ventidirect" target="_blank">
+                                        <i class="fab fa-facebook"></i> Volg ons op Facebook</a>
+                                    </li>
+                                    <li><a href="https://www.linkedin.com/company/ventidirect/">
+                                        <i class="fab fa-linkedin-in"></i> Volg ons op LinkedIn</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

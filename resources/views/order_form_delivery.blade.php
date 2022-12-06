@@ -38,7 +38,7 @@
             @csrf
             <div class="container">
                 <div class="similar__main__title">
-                    <h3>Bezorgen of ophalen?</h3>
+                    <h3>Kies je bezorgmethode</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-8">

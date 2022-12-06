@@ -34,7 +34,7 @@
     
     <!-- ====================== DELIVERY AREA START ============================ -->
     <section class="delivery__area similar__border pb-60 mb-30">
-        <form methos="POST">
+        <form methos="POST" id="order_form">
             @csrf
             <div class="container">
                 <div class="similar__main__title">
@@ -200,7 +200,7 @@
                             </div>
                             <div class="grt__on">
                                 <p class="none_link_mobile">Door verder te gaan ga je akkoord met onze <a class="second_similar_btn" href="#">algemene voorwaarden.</a></p>
-                                <a href="#" class="global__btn">Afrekenen</a>
+                                <a href="#" onclick="document.getElementById('order_form').submit();" class="global__btn">Afrekenen</a>
                                 <p class="text-center mt-10 none__desk">Door verder te gaan ga je akkoord met onze algemene voorwaarden.</p>
                             </div>
                         </div>

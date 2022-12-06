@@ -34,7 +34,7 @@
     
     <!-- ====================== DELIVERY AREA START ============================ -->
     <section class="delivery__area similar__border pb-60 mb-30">
-        <form methos="POST">
+        <form methos="POST" id="order_form">
             @csrf
             <div class="container">
                 <div class="similar__main__title">
@@ -124,7 +124,7 @@
                                 </div>
                             </div>
                             <div class="grt__on">
-                                <a href="#" class="global__btn">Doorgaan</a>
+                                <a href="#" onclick="document.getElementById('order_form').submit();" class="global__btn">Doorgaan</a>
                             </div>
                         </div>
                     </div>

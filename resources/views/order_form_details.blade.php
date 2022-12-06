@@ -32,7 +32,7 @@
 
     <!-- ====================== DELIVERY AREA START ============================ -->
     <section class="delivery__area">
-        <form method="post">
+        <form method="post" id="order_form">
             @csrf
             <div class="container">
                 <div class="similar__main__title">
@@ -177,7 +177,7 @@
                 <div class="categoti__top__link__text mb-0 blue__ico">
                     <span><i class="fas fa-angle-left"></i></span> <a href="/" class="active">Verder winkelen</a>
                 </div>
-                <a href="#" class="global__btn">Doorgaan</a>
+                <a href="#" onclick="document.getElementById('order_form').submit();" class="global__btn">Doorgaan</a>
             </div>
         </div>
     </section>

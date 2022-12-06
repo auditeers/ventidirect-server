@@ -57,13 +57,16 @@
                                         <div class="col-6">
                                             <div class="single__delivery__details">
                                                 <label for="#">Voornaam</label>
-                                                <input type="text" name="firstname" class="error" value="{{ old('firstname') }}" placeholder="Voornaam">
+                                                <input type="text" name="firstname" class="is-invalid" value="{{ old('firstname') }}" placeholder="Voornaam">
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="single__delivery__details">
                                                 <label for="#">Achternaam</label>
                                                 <input type="text" name="achternaam"  value="{{ old('achternaam') }}"  placeholder="Achternaam">
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid city.
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

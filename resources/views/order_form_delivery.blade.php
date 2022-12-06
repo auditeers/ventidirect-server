@@ -56,6 +56,7 @@
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
+                                        {{--
                                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                             <div class="card card-body">
                                                 <div class="delivery__pick__up__inner__contet">
@@ -72,9 +73,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        --}}
                                     </div>
                                 </div>
 
+                                {{--
                                 <div class="form-check mb-15">
                                     <div class="delivary__inner__checked">
                                         <div class="delivery_ckbox collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -104,6 +107,7 @@
                                         </div>
                                     </div>
                                 </div>
+                               
 
                                 <div class="form-check mb-15">
                                     <div class="delivary__inner__checked">
@@ -122,6 +126,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                --}}
                             </div>
                             <div class="grt__on">
                                 <a href="#" onclick="document.getElementById('order_form').submit();" class="global__btn">Doorgaan</a>

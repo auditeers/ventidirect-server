@@ -55,7 +55,7 @@
                                         <div class="shopping__cart__details">
                                             <div class="single__shopping__cart__details">
                                                 <div class="shopping__cart__details__thumb">
-                                                    <img src="assets/img/pricing_2.png" alt="">
+                                                    <img src="/assets/img/pricing_2.png" alt="">
                                                 </div>
                                                 <div class="shopping__cart__details__text">
                                                     <p>DucoBox Silent All-In-One RH & BD
@@ -64,7 +64,7 @@
                                             </div>
                                             <div class="single__shopping__cart__details">
                                                 <div class="shopping__cart__details__thumb">
-                                                    <img src="assets/img/product__added__img_2.png" alt="">
+                                                    <img src="/assets/img/product__added__img_2.png" alt="">
                                                 </div>
                                                 <div class="shopping__cart__details__text">
                                                     <p>Korte bocht 90º met afdichtingsrubber
@@ -73,7 +73,7 @@
                                             </div>
                                             <div class="single__shopping__cart__details border-0">
                                                 <div class="shopping__cart__details__thumb">
-                                                    <img src="assets/img/product__added__img_3.png" alt="">
+                                                    <img src="/assets/img/product__added__img_3.png" alt="">
                                                 </div>
                                                 <div class="shopping__cart__details__text">
                                                     <p>Duco Ducovent Design afgerond vierkant XL ventilatieventiel Ø125mm
@@ -116,7 +116,7 @@
                                         <div class="delivery_ckbox collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                             <label class="container-ck">
                                                 <div class="pick__up__content">
-                                                    <p><img src="assets/img/p_1.svg" alt=""> iDeal</p>
+                                                    <p><img src="/assets/img/p_1.svg" alt=""> iDeal</p>
                                                 </div>
                                                 <input type="checkbox" class="radio" value="1" name="fooby[1][]" >
                                                 <span class="checkmark"></span>
@@ -146,7 +146,7 @@
                                         <div class="delivery_ckbox collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                             <label class="container-ck">
                                                 <div class="pick__up__content">
-                                                    <p><img src="assets/img/p_2.svg" alt="">Klarna - achteraf betalen</p>
+                                                    <p><img src="/assets/img/p_2.svg" alt="">Klarna - achteraf betalen</p>
                                                 </div>
                                                 <input type="checkbox"  class="radio" value="1" name="fooby[1][]" >
                                                 <span class="checkmark"></span>
@@ -174,7 +174,7 @@
                                         <div class="delivery_ckbox collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                             <label class="container-ck">
                                                 <div class="pick__up__content">
-                                                    <p><img src="assets/img/p_3.svg" alt=""> PayPal</p>
+                                                    <p><img src="/assets/img/p_3.svg" alt=""> PayPal</p>
                                                 </div>
                                                 <input type="checkbox"  class="radio" value="1" name="fooby[1][]" >
                                                 <span class="checkmark"></span>
@@ -210,7 +210,7 @@
                         <div class="choose__offcanvas__top__blk">
                             <h4>Kies een PostNL-ophaalpunt</h4>
                             <div class="off__menu">
-                                <img src="assets/img/cros.png" alt="">
+                                <img src="/assets/img/cros.png" alt="">
                             </div>
                         </div>
                         <div class="choose__inner__offcanvas__blk">
@@ -255,7 +255,7 @@
                         <div class="shopping__cart__details">
                             <div class="single__shopping__cart__details">
                                 <div class="shopping__cart__details__thumb">
-                                    <img src="assets/img/pricing_2.png" alt="">
+                                    <img src="/assets/img/pricing_2.png" alt="">
                                 </div>
                                 <div class="shopping__cart__details__text">
                                     <p>DucoBox Silent All-In-One RH & BD
@@ -264,7 +264,7 @@
                             </div>
                             <div class="single__shopping__cart__details">
                                 <div class="shopping__cart__details__thumb">
-                                    <img src="assets/img/product__added__img_2.png" alt="">
+                                    <img src="/assets/img/product__added__img_2.png" alt="">
                                 </div>
                                 <div class="shopping__cart__details__text">
                                     <p>Korte bocht 90º met afdichtingsrubber
@@ -273,7 +273,7 @@
                             </div>
                             <div class="single__shopping__cart__details border-0">
                                 <div class="shopping__cart__details__thumb">
-                                    <img src="assets/img/product__added__img_3.png" alt="">
+                                    <img src="/assets/img/product__added__img_3.png" alt="">
                                 </div>
                                 <div class="shopping__cart__details__text">
                                     <p>Duco Ducovent Design afgerond vierkant XL ventilatieventiel Ø125mm

@@ -37,6 +37,15 @@
             <div class="container">
                 <div class="similar__main__title">
                     <h3>Bezorggegevens</h3>
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                 </div>
                 <div class="row">
                     <div class="col-lg-8">

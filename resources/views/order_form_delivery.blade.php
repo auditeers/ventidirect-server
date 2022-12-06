@@ -183,33 +183,20 @@
                             <h5>Winkelwagen</h5>
                         </div>
                         <div class="shopping__cart__details">
+
+                            @foreach($cart_items as $cart_item)
                             <div class="single__shopping__cart__details">
                                 <div class="shopping__cart__details__thumb">
-                                    <img src="/assets/img/pricing_2.png" alt="">
+                                    <img 
+                                        src="/storage/{{  $cart_item->attributes["image"] ?? 'placeholder.jpg' }}" 
+                                        alt="{{ $cart_item->name }}">
                                 </div>
                                 <div class="shopping__cart__details__text">
-                                    <p>DucoBox Silent All-In-One RH & BD
-                                        vocht boxsensor + bedienings-schakelaar RF batterij</p>
+                                    <p>{{ $cart_item->name }}</p>
                                 </div>
                             </div>
-                            <div class="single__shopping__cart__details">
-                                <div class="shopping__cart__details__thumb">
-                                    <img src="/assets/img/product__added__img_2.png" alt="">
-                                </div>
-                                <div class="shopping__cart__details__text">
-                                    <p>Korte bocht 90º met afdichtingsrubber
-                                        geperst - Ø 100mm</p>
-                                </div>
-                            </div>
-                            <div class="single__shopping__cart__details border-0">
-                                <div class="shopping__cart__details__thumb">
-                                    <img src="/assets/img/product__added__img_3.png" alt="">
-                                </div>
-                                <div class="shopping__cart__details__text">
-                                    <p>Duco Ducovent Design afgerond vierkant XL ventilatieventiel Ø125mm
-                                        WIT RAL9016</p>
-                                </div>
-                            </div>
+                            @endforeach
+
                         </div>
                     </div>
                 </div>

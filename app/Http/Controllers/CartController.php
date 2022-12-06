@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Order;
 use App\Models\Product;
 use App\Models\Customer;
 use Illuminate\Support\Str;
@@ -133,7 +134,7 @@ class CartController extends Controller
         ]);
     }
 
-    public function save_order_delivery()
+    public function save_order_delivery(Request $request)
     {
         $input = $request->all();
 
@@ -149,30 +150,48 @@ class CartController extends Controller
 
         $validator = Validator::make($input, $rules, $messages, $attributes)->validate();
 
-        // all valid create the customer
         
+        
+        // all valid create the order
+        $order_code = date('Y') . "-" . date('u') . "-" . strtoupper(Str::random(4));
+
         $order = Order::create(
             [
-                'firstname' => $input['firstname'], 
-                'lastname' => $input['lastname'], 
-                'zip' => $input['zip'], 
-                'streetnr' => $input['streetnr'], 
-                'email' => $input['email'], 
-                'phone' => $input['phone'], 
-                'city' => $input['city'], 
-                'streetaddition' => $input['streetaddition'], 
-                'street' => $input['street'],
-                'password' => Hash::make(Str::random(40))
+                'customer_id' => $input['customer_id'], 
+                'code' => $order_code, 
+                'shipping_date' => date('Y-m-d'), 
+                'subtotal' => \Cart::getTotal(), 
+                'total' => \Cart::getTotal(),
             ]
         );
 
-        return redirect('/cart/order/bezorging');
+        // add cart to order and empty cart
+        $cart_items = \Cart::getContent();
+
+        foreach($cart_items as $cart_item) {
+
+            $order->products()->attach($cart_item->attributes["product_id"], [
+                'price' => $cart_item->price,
+                'quantity' => $cart_item->quantity,
+                'name' => $cart_item->name,
+            ]);
+
+            // remove from cart
+            \Cart::remove($cart_item->id);
+        }
+
+        return redirect('/cart/order/overzicht')->with('order_id', $order->id);
     }
 
 
 
     public function order_overview()
     {
+        // check the order
+        if(empty($request->session()->get('order_id'))) {
+            return redirect('/cart/order/bezorging');
+        }
+
         return view('order_form_overview', [
             
         ]);

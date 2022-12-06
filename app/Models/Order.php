@@ -9,4 +9,11 @@ class Order extends Model
 {
     use \Backpack\CRUD\app\Models\Traits\CrudTrait;
     use HasFactory;
+
+    protected $guarded = [];
+
+    public function products()
+    {
+        return $this->belongsToMany(Product::class)->withPivot('quantity', 'price', 'product_name');
+    }
 }

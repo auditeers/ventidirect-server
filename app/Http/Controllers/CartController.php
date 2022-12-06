@@ -217,8 +217,8 @@ class CartController extends Controller
                 "value" => (string)$order->total,
             ],
             "description" => "Je ventidirect bestelling #" . $order->code,
-            "redirectUrl" => 'cart/order/done',
-            "webhookUrl" => 'payment/webhook/mollie',
+            "redirectUrl" => 'https://dev.ventidirect.nl/cart/order/done',
+            "webhookUrl" => 'https://dev.ventidirect.nl/payment/webhook/mollie',
             "metadata" => [
                 "order_id" => $order->id,
             ],

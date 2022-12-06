@@ -35,6 +35,7 @@
                                         <li><i class="far fa-check"></i> Altijd de laagste prijs</li>
                                     </ul>
                                 </div>
+                                {{--
                                 <div class="delivery__details__inner__blk mt-15">
                                     <div class="row">
                                         <div class="col-lg-6">
@@ -63,9 +64,11 @@
                                         <button type="button" class="third__btn">Maak account</button>
                                     </div>
                                 </div>
+                                --}}
                             </div>
                         </div>
                     </div>
+                    {{--
                     <div class="col-lg-4">
                         <div class="similar__listing__title">
                             <h5>Overzicht van je bestelling: {orderNmr}</h5>
@@ -125,6 +128,7 @@
                             <p>iDeal, Rabobank</p>
                         </div>
                     </div>
+                    --}}
                 </div>
             </div>
         </form>

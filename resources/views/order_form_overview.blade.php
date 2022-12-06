@@ -40,49 +40,28 @@
                 <div class="similar__main__title">
                     <h3>Overzicht</h3>
                 </div>
-
+                <input type="hidden" name="order_id" value="{{ $order->id }}">
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="summary__blk similar__border mb-30">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="summary__top_hidden_blk">
-                                        <div class="grt__on mt-15">
-                                            <a href="#" class="global__btn">Doorgaan</a>
-                                        </div>
                                         <div class="similar__listing__title mt-15">
-                                            <h5>Winkelwagen</h5>
+                                            <h5>Dit zit in je bestelling</h5>
                                         </div>
                                         <div class="shopping__cart__details">
+                                            @foreach($order->products as $product)
                                             <div class="single__shopping__cart__details">
                                                 <div class="shopping__cart__details__thumb">
-                                                    <img src="/assets/img/pricing_2.png" alt="">
+                                                    <img src="/storage/{{ $product->image ?? "/placeholder.jpg"}}" alt="{{ $product->seo_title ?? '' }}"></a>
                                                 </div>
                                                 <div class="shopping__cart__details__text">
-                                                    <p>DucoBox Silent All-In-One RH & BD
-                                                        vocht boxsensor + bedienings-schakelaar RF batterij</p>
+                                                    <p>{{ $product->name }}</p>
                                                 </div>
                                             </div>
-                                            <div class="single__shopping__cart__details">
-                                                <div class="shopping__cart__details__thumb">
-                                                    <img src="/assets/img/product__added__img_2.png" alt="">
-                                                </div>
-                                                <div class="shopping__cart__details__text">
-                                                    <p>Korte bocht 90º met afdichtingsrubber
-                                                        geperst - Ø 100mm</p>
-                                                </div>
-                                            </div>
-                                            <div class="single__shopping__cart__details border-0">
-                                                <div class="shopping__cart__details__thumb">
-                                                    <img src="/assets/img/product__added__img_3.png" alt="">
-                                                </div>
-                                                <div class="shopping__cart__details__text">
-                                                    <p>Duco Ducovent Design afgerond vierkant XL ventilatieventiel Ø125mm
-                                                        WIT RAL9016</p>
-                                                </div>
-                                            </div>
+                                            @endforeach
                                         </div>
-                                        <a href="#" class="similar__view__btn mt-15"><i class="fas fa-angle-right"></i> Wijzig winkelwagen</a>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-6">
@@ -90,8 +69,12 @@
                                                 <div class="similar__listing__title">
                                                     <h5>Bezorgadres</h5>
                                                 </div>
-                                                <p>VentiDirect BV <br> Raymond Wouters <br> Dinkelstraat 53 <br> 2314 AL Leiden</p>
-                                                <a href="#" class="similar__view__btn"><i class="fas fa-angle-right"></i> Wijzig bezorgadres</a>
+
+                                                <p>
+                                                    {{ $order->customer->firstname }} {{ $order->customer->lastname }}<br> 
+                                                    {{ $order->customer->street }} {{ $order->customer->streetnr }} {{ $order->customer->streetaddition ?? '' }} <br> 
+                                                    {{ $order->customer->zip }} {{ $order->customer->city }}
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
@@ -99,8 +82,7 @@
                                                 <div class="similar__listing__title">
                                                     <h5>Bezorging</h5>
                                                 </div>
-                                                <p>Morgen, woensdag (gratis bezorgd)</p>
-                                                <a href="#" class="similar__view__btn"><i class="fas fa-angle-right"></i> Wijzig bezorgmethode of dag</a>
+                                                <p>Morgen, met PostNL (gratis bezorgd)</p>
                                             </div>
                                         </div>
                                     </div>
@@ -119,10 +101,11 @@
                                                 <div class="pick__up__content">
                                                     <p><img src="/assets/img/p_1.svg" alt=""> iDeal</p>
                                                 </div>
-                                                <input type="checkbox" class="radio" value="1" name="fooby[1][]" >
+                                                <input type="checkbox" checked class="radio" value="ideal" name="payment_type" >
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
+                                        {{-- 
                                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                             <div class="card card-body">
                                                 <div class="delivery__pick__up__inner__contet">
@@ -139,9 +122,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        --}}
                                     </div>
                                 </div>
 
+                                {{--
                                 <div class="form-check mb-15">
                                     <div class="delivary__inner__checked">
                                         <div class="delivery_ckbox collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -186,16 +171,17 @@
                                         </div>
                                     </div>
                                 </div>
+                                --}}
                             </div>
                             <div class="summary__bottom__hidden__blk mb-10">
                                 <div class="subtotal__light__content mt-10 pb-10">
-                                    <p>Subtotaal <span>€ 425,00</span></p>
+                                    <p>Subtotaal <span>€ {{ $number_format($order->subtotal, 2, ",", ".") }}</span></p>
                                     <p>Verzending <span class="free">gratis</span></p>
                                 </div>
                                 <div class="subtotal__bold__content total__excl p-0 mt-10 ">
-                                    <h4>Totaal excl. btw <span>€ 325,00</span></h4>
+                                    <h4>Totaal excl. btw <span>€ {{ number_format(($order->subtotal - ($order->subtotal)), 2, ",", ".") }}</span></h4>
                                     <h3>BTW <span>€ 86</span></h3>
-                                    <h4>Totaal excl. btw <span>€ 325,00</span></h4>
+                                    <h4>Totaal excl. btw <span>€ {{ $number_format($order->subtotal, 2, ",", ".") }}</span></h4>
                                 </div>
                             </div>
                             <div class="grt__on">
@@ -206,81 +192,22 @@
                         </div>
                     </div>
 
-                    <!-- ------------------- choose offcanvas start -->
-                    <div class="choose__offcanvas__area">
-                        <div class="choose__offcanvas__top__blk">
-                            <h4>Kies een PostNL-ophaalpunt</h4>
-                            <div class="off__menu">
-                                <img src="/assets/img/cros.png" alt="">
-                            </div>
-                        </div>
-                        <div class="choose__inner__offcanvas__blk">
-                            <form action="#">
-                                <div class="address__blk">
-                                    <div class="single__delivery__details">
-                                        <label for="#">Adres</label>
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-
-                                <div class="similar__choose__text similar__border mt-20">
-                                    <h4>Spar Zeldenrust <span>(0,5 km) <br> Ijsselkade 45, Leiden</span></h4>
-                                    <a class="second_similar_btn mt-0" href="#">Morgen open tot 17:00</a>
-                                    <button type="button" class="third__btn  mt-15">Kies pakketpunt</button>
-                                </div>
-                                <div class="similar__choose__text similar__border mt-20">
-                                    <h4>Stomerij Jeanette <span>(0,5 km) <br> Kastanjelaan 1, Leiden</span></h4>
-                                    <a class="second_similar_btn mt-0" href="#">Morgen open tot 17:00</a>
-                                    <button type="button" class="third__btn  mt-15">Kies pakketpunt</button>
-                                </div>
-                                <div class="similar__choose__text similar__border mt-20">
-                                    <h4>Pakket- en briefautomaat <span>(0,5 km) <br> Hoge Rijndijk 5 PBA, Leiden</span></h4>
-                                    <a class="second_similar_btn mt-0" href="#">Morgen open tot 17:00</a>
-                                    <button type="button" class="third__btn  mt-15">Kies pakketpunt</button>
-                                </div>
-                                <div class="similar__choose__text similar__border mt-20">
-                                    <h4>KARWEI Leiderdorp <span>(0,5 km) <br> Vlasbaan 17, Leiden</span></h4>
-                                    <a class="second_similar_btn mt-0" href="#">Morgen open tot 17:00</a>
-                                    <button type="button" class="third__btn  mt-15">Kies pakketpunt</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="overlay"></div>
-                    <!-- ------------------- choose offcanvas end -->
 
                     <div class="col-lg-4">
                         <div class="similar__listing__title">
-                            <h5>Winkelwagen</h5>
+                            <h5>Jouw bestelling</h5>
                         </div>
                         <div class="shopping__cart__details">
+                            @foreach($order->products as $product)
                             <div class="single__shopping__cart__details">
                                 <div class="shopping__cart__details__thumb">
-                                    <img src="/assets/img/pricing_2.png" alt="">
+                                    <img src="/storage/{{ $product->image ?? "/placeholder.jpg"}}" alt="{{ $product->seo_title ?? '' }}"></a>
                                 </div>
                                 <div class="shopping__cart__details__text">
-                                    <p>DucoBox Silent All-In-One RH & BD
-                                        vocht boxsensor + bedienings-schakelaar RF batterij</p>
+                                    <p>{{ $product->name }}</p>
                                 </div>
                             </div>
-                            <div class="single__shopping__cart__details">
-                                <div class="shopping__cart__details__thumb">
-                                    <img src="/assets/img/product__added__img_2.png" alt="">
-                                </div>
-                                <div class="shopping__cart__details__text">
-                                    <p>Korte bocht 90º met afdichtingsrubber
-                                        geperst - Ø 100mm</p>
-                                </div>
-                            </div>
-                            <div class="single__shopping__cart__details border-0">
-                                <div class="shopping__cart__details__thumb">
-                                    <img src="/assets/img/product__added__img_3.png" alt="">
-                                </div>
-                                <div class="shopping__cart__details__text">
-                                    <p>Duco Ducovent Design afgerond vierkant XL ventilatieventiel Ø125mm
-                                        WIT RAL9016</p>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                         <div class="subtotal__light__content mt-10 pb-10">
                             <p>Subtotaal <span>€ 425,00</span></p>

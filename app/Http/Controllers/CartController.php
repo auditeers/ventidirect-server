@@ -7,6 +7,7 @@ use App\Models\Product;
 use App\Models\Customer;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Mollie\Laravel\Facades\Mollie;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
@@ -153,7 +154,7 @@ class CartController extends Controller
         
         
         // all valid create the order
-        $order_code = date('Y') . "-" . date('u') . "-" . strtoupper(Str::random(4));
+        $order_code = date('Y') . "-" . strtoupper(Str::random(5)) . "-" . strtoupper(Str::random(4));
         $cart_total = (float)\Cart::getTotal();
 
         $order = Order::create(
@@ -193,14 +194,39 @@ class CartController extends Controller
             return redirect('/cart/order/bezorging');
         }
 
+        $order = Order::find($request->session()->get('order_id'));
+
+
         return view('order_form_overview', [
-            
+            "order" => $order
         ]);
     }
 
-    public function save_order_overview()
+    public function save_order_overview(Request $request)
     {
-        return redirect('cart/order/done');
+        $order_id = $request->get('order_id');
+
+        if(empty($order_id)) return redirect('/cart/order/overzicht');
+
+        $order = Order::findOrFail($order_id);
+
+        // create the payment
+        $payment = Mollie::api()->payments->create([
+            "amount" => [
+                "currency" => "EUR",
+                "value" => (string)$order->total,
+            ],
+            "description" => "Je ventidirect bestelling #" . $order->code,
+            "redirectUrl" => 'cart/order/done',
+            "webhookUrl" => 'payment/webhook/mollie',
+            "metadata" => [
+                "order_id" => $order->id,
+            ],
+        ]);
+
+        // redirect customer to Mollie checkout page
+        return redirect($payment->getCheckoutUrl(), 303);
+
     }
 
      public function order_done()

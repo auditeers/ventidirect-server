@@ -120,8 +120,36 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="delivery__details__inner__blk mt-15">
+                                    <div class="row g-2">
+                                        <div class="col-8">
+                                            <div class="single__delivery__details">
+                                                <label for="street">Straatnaam</label>
+                                                <input 
+                                                    type="street" 
+                                                    name="street" 
+                                                    id="street"
+                                                    class="@error('street') is-invalid @enderror" 
+                                                    value="{{ old('street') }}"  
+                                                    placeholder="Straatnaam">
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="single__delivery__details">
+                                                <label for="city">Plaatsnaam</label>
+                                                <input 
+                                                    type="text" 
+                                                    name="city" 
+                                                    id="city"
+                                                    class="@error('city') is-invalid @enderror" 
+                                                    value="{{ old('city') }}"  
+                                                    placeholder="Plaatsnaam">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
+                            {{--
                             <div class="delivery__single__item mt-15">
                                 <div class="delivery__similar__title">
                                     <p>Factuuradres <span>Optioneel</span></p>
@@ -135,7 +163,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                            --}}
                             <div class="delivery__details__form">
                                 <div class="delivery__details__inner__blk mt-15">
                                     <div class="col-lg-6">

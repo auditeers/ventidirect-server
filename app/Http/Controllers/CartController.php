@@ -70,6 +70,9 @@ class CartController extends Controller
             'zip' => 'required|min:6|max:7',
             'streetnumber' => 'required',
             'email' => 'required|email',
+            'phone' => 'required',
+            'city' => 'required',
+            'street' => 'required',
         ];
 
         $messages = [
@@ -84,9 +87,30 @@ class CartController extends Controller
             'zip' => 'postcode',
             'streetnumber' => 'huisnummer',
             'email' => 'e-mail adres',
+            'phone' => 'telefoonnummer',
+            'city' => 'plaatsnaam',
+            'street' => 'straatnaam',
         ];
 
         $validator = Validator::make($input, $rules, $messages, $attributes)->validate();
+
+        // all valid create the customer
+        $customer = Customer::updateOrCreate(
+            [
+                'email' => $input['email']
+            ],
+            [
+                'firstname' => $input['firstname'], 
+                'lastname' => $input['lastname'], 
+                'zip' => $input['zip'], 
+                'streetnumber' => $input['streetnumber'], 
+                'email' => $input['email'], 
+                'phone' => $input['phone'], 
+                'city' => $input['city'], 
+                'streetaddition' => $input['streetaddition'], 
+                'street' => $input['street']
+            ]
+        );
 
         return redirect('/cart/order/bezorging');
     }

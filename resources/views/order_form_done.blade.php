@@ -73,7 +73,7 @@
                         <div class="shopping__cart__details">
                             <div class="single__shopping__cart__details">
                                 <div class="shopping__cart__details__thumb">
-                                    <img src="assets/img/pricing_2.png" alt="">
+                                    <img src="/assets/img/pricing_2.png" alt="">
                                 </div>
                                 <div class="shopping__cart__details__text">
                                     <p>DucoBox Silent All-In-One RH & BD
@@ -82,7 +82,7 @@
                             </div>
                             <div class="single__shopping__cart__details">
                                 <div class="shopping__cart__details__thumb">
-                                    <img src="assets/img/product__added__img_2.png" alt="">
+                                    <img src="/assets/img/product__added__img_2.png" alt="">
                                 </div>
                                 <div class="shopping__cart__details__text">
                                     <p>Korte bocht 90º met afdichtingsrubber
@@ -91,7 +91,7 @@
                             </div>
                             <div class="single__shopping__cart__details">
                                 <div class="shopping__cart__details__thumb">
-                                    <img src="assets/img/product__added__img_3.png" alt="">
+                                    <img src="/assets/img/product__added__img_3.png" alt="">
                                 </div>
                                 <div class="shopping__cart__details__text">
                                     <p>Duco Ducovent Design afgerond vierkant XL ventilatieventiel Ø125mm
@@ -130,211 +130,6 @@
         </form>
     </section>
     <!-- ====================== DELIVERY AREA END ============================ -->
-
-    <!-- =============================== ORDER COMPLETED SLIDER AREA START =================== -->
-    <section class="order__completed__slider mb-50">
-        <div class="container">
-            <div class="finish__ventilation__blk">
-                <div class="single__geid__view__slide mt-25">
-                    <div class="finish__ventilation__slide__blk owl-carousel">
-                        <div class="single__pricing__slide__blk">
-                            <div class="pricing__slide__thumb">
-                                <img src="assets/img/grid_1.png" alt="">
-                            </div>
-
-                            <div class="pricing__content">
-                                <p>Design ventilatierooster vierkant (afvoer & toevoer) Ø125mm - RVS..</p>
-                                <div class="five__star">
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <small>241 reviews</small>
-                                </div>
-                            </div>
-
-                            <div class="main__price">
-                                <div class="price__content">
-                                    <span>Adviesprijs 454,97</span>
-                                    <h4>344,00</h4>
-                                    <span>284,30 excl. BTW</span>
-                                </div>
-                                <div class="cart__wrap">
-                                    <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="price__bottom__text">
-                                <span>Artikelnr.: 0000-4639</span>
-                            </div>
-                        </div>
-
-                        <div class="single__pricing__slide__blk">
-                            <div class="pricing__slide__thumb">
-                                <img src="assets/img/grid_2.png" alt="">
-                            </div>
-
-                            <div class="pricing__content">
-                                <p>Design ventilatierooster vierkant (afvoer & toevoer) Ø100mm - vlak..</p>
-                                <div class="five__star">
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <small>241 reviews</small>
-                                </div>
-                            </div>
-
-                            <div class="main__price">
-                                <div class="price__content">
-                                    <span>Adviesprijs 454,97</span>
-                                    <h4>344,00</h4>
-                                    <span>284,30 excl. BTW</span>
-                                </div>
-                                <div class="cart__wrap">
-                                    <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="price__bottom__text">
-                                <span>Artikelnr.: 0000-4639</span>
-                            </div>
-                        </div>
-
-                        <div class="single__pricing__slide__blk">
-                            <div class="pricing__slide__thumb">
-                                <img src="assets/img/grid_3.png" alt="">
-                            </div>
-
-                            <div class="pricing__content">
-                                <p>Ventilatiestrip aluminium LxH 400 x 60mm (G61-4006B) BRUIN RAL8022</p>
-                                <div class="five__star">
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <small>241 reviews</small>
-                                </div>
-                            </div>
-
-                            <div class="main__price">
-                                <div class="price__content">
-                                    <span>Adviesprijs 454,97</span>
-                                    <h4>344,00</h4>
-                                    <span>284,30 excl. BTW</span>
-                                </div>
-                                <div class="cart__wrap">
-                                    <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="price__bottom__text">
-                                <span>Artikelnr.: 0000-4639</span>
-                            </div>
-                        </div>
-
-                        <div class="single__pricing__slide__blk">
-                            <div class="pricing__slide__thumb">
-                                <img src="assets/img/grid_4.png" alt="">
-                            </div>
-
-                            <div class="pricing__content">
-                                <p>Vasco - Design ventiel dubbel rond - 
-                                    Ø 125mm</p>
-                                <div class="five__star">
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <small>241 reviews</small>
-                                </div>
-                            </div>
-
-                            <div class="main__price">
-                                <div class="price__content">
-                                    <span>Adviesprijs 454,97</span>
-                                    <h4>344,00</h4>
-                                    <span>284,30 excl. BTW</span>
-                                </div>
-                                <div class="cart__wrap">
-                                    <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="price__bottom__text">
-                                <span>Artikelnr.: 0000-4639</span>
-                            </div>
-                        </div>
-
-                        <div class="single__pricing__slide__blk">
-                            <div class="pricing__slide__thumb">
-                                <img src="assets/img/grid_5.png" alt="">
-                            </div>
-
-                            <div class="pricing__content">
-                                <p>Itho woonhuisventilator met vochtsensor CVE-S ECO RFT SE - ..</p>
-                                <div class="five__star">
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <small>241 reviews</small>
-                                </div>
-                            </div>
-
-                            <div class="main__price">
-                                <div class="price__content">
-                                    <span>Adviesprijs 454,97</span>
-                                    <h4>344,00</h4>
-                                    <span>284,30 excl. BTW</span>
-                                </div>
-                                <div class="cart__wrap">
-                                    <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="price__bottom__text">
-                                <span>Artikelnr.: 0000-4639</span>
-                            </div>
-                        </div>
-
-                        <div class="single__pricing__slide__blk">
-                            <div class="pricing__slide__thumb">
-                                <img src="assets/img/grid_6.png" alt="">
-                            </div>
-
-                            <div class="pricing__content">
-                                <p>Itho woonhuisventilator met vochtsensor CVE-S ECO RFT SE - ..</p>
-                                <div class="five__star">
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <span><i class="fas fa-star"></i></span>
-                                    <small>241 reviews</small>
-                                </div>
-                            </div>
-
-                            <div class="main__price">
-                                <div class="price__content">
-                                    <span>Adviesprijs 454,97</span>
-                                    <h4>344,00</h4>
-                                    <span>284,30 excl. BTW</span>
-                                </div>
-                                <div class="cart__wrap">
-                                    <a href="#"><img src="assets/img/cart_ico.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="price__bottom__text">
-                                <span>Artikelnr.: 0000-4639</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- =============================== ORDER COMPLETED SLIDER AREA END =================== -->
 
     <x-doc.script/>
 

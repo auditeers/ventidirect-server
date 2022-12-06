@@ -186,7 +186,7 @@ class CartController extends Controller
 
 
 
-    public function order_overview()
+    public function order_overview(Request $request)
     {
         // check the order
         if(empty($request->session()->get('order_id'))) {

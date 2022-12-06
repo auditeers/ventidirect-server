@@ -57,13 +57,25 @@
                                         <div class="col-6">
                                             <div class="single__delivery__details">
                                                 <label for="firstname">Voornaam</label>
-                                                <input type="text" id="firstname" name="firstname" class="is-invalid" value="{{ old('firstname') }}" placeholder="Voornaam">
+                                                <input 
+                                                    type="text" 
+                                                    id="firstname" 
+                                                    name="firstname" 
+                                                    class="@error('firstname') is-invalid @enderror" 
+                                                    value="{{ old('firstname') }}" 
+                                                    placeholder="Voornaam">
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="single__delivery__details">
                                                 <label for="lastname">Achternaam</label>
-                                                <input type="text" name="achternaam" id="lastname" value="{{ old('achternaam') }}"  placeholder="Achternaam">
+                                                <input 
+                                                    type="text" 
+                                                    name="lastname" 
+                                                    id="lastname"
+                                                    class="@error('firstname') is-invalid @enderror" 
+                                                    value="{{ old('lastname') }}"  
+                                                    placeholder="Achternaam">
                                             </div>
                                         </div>
                                     </div>

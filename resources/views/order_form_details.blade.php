@@ -56,17 +56,14 @@
                                     <div class="row g-2">
                                         <div class="col-6">
                                             <div class="single__delivery__details">
-                                                <label for="#">Voornaam</label>
-                                                <input type="text" name="firstname" class="is-invalid" value="{{ old('firstname') }}" placeholder="Voornaam">
+                                                <label for="firstname">Voornaam</label>
+                                                <input type="text" id="firstname" name="firstname" class="is-invalid" value="{{ old('firstname') }}" placeholder="Voornaam">
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="single__delivery__details">
-                                                <label for="#">Achternaam</label>
-                                                <input type="text" name="achternaam"  value="{{ old('achternaam') }}"  placeholder="Achternaam">
-                                                <div class="invalid-feedback">
-                                                    Please provide a valid city.
-                                                </div>
+                                                <label for="lastname">Achternaam</label>
+                                                <input type="text" name="achternaam" id="lastname" value="{{ old('achternaam') }}"  placeholder="Achternaam">
                                             </div>
                                         </div>
                                     </div>

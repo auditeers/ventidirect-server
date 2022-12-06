@@ -2896,6 +2896,14 @@ b {
     transition: .3s all;
 }
 
+.single__delivery__details input.is-invalid {
+    border: 1px solid var(--error_900);
+}
+
+.single__delivery__details input.is-valid {
+    border: 1px solid var(--Success_active);
+}
+
 .shopping__cart__details__thumb {
     width: 64px;
     height: 64px;

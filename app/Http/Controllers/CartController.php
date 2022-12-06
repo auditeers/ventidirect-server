@@ -75,7 +75,7 @@ class CartController extends Controller
             'firstname.required' => 'Je hebt geen voornaam ingegeven.',
         ];
 
-        $validator = Validator::make($input, $rules, $messages);
+        $validator = Validator::make($input, $rules, $messages)->validate();
 
         return redirect('/cart/order/bezorging');
     }

@@ -34,7 +34,7 @@
     
     <!-- ====================== DELIVERY AREA START ============================ -->
     <section class="delivery__area similar__border pb-60 mb-30">
-        <form methos="POST" id="order_form">
+        <form method="POST" id="order_form">
             @csrf
             <div class="container">
                 <div class="similar__main__title">

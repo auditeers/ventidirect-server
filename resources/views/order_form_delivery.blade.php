@@ -52,7 +52,7 @@
                                                     <p><img src="/assets/img/Carrier_Logo.svg" alt=""> Verzenden via PostNL</p>
                                                     <span class="free">Gratis</span>
                                                 </div>
-                                                <input type="checkbox" class="radio" value="1" name="fooby[1][]" >
+                                                <input type="checkbox" class="radio" value="postnl" name="delivery" >
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -87,7 +87,7 @@
                                                         17:30 en 22:00 uur</p>
                                                     <span class="black__price">2,99</span>
                                                 </div>
-                                                <input type="checkbox"  class="radio" value="1" name="fooby[1][]" >
+                                                <input type="checkbox"  class="radio" value="1" name="delivery" >
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -117,7 +117,7 @@
                                                     <p><img src="/assets/img/Carrier_Logo.svg" alt=""> Morgen ophalen bij PostNL- <br> ophaalpunt vanaf 15:00</p>
                                                     <span class="free">Gratis</span>
                                                 </div>
-                                                <input type="checkbox"  class="radio" value="1" name="fooby[1][]" >
+                                                <input type="checkbox"  class="radio" value="1" name="delivery" >
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>

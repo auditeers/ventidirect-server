@@ -115,7 +115,7 @@ class CartController extends Controller
             ]
         );
 
-        return redirect('/cart/order/bezorging');
+        return redirect('/cart/order/bezorging')->with('customer_id', $customer->id);
     }
 
     
@@ -134,40 +134,20 @@ class CartController extends Controller
         $input = $request->all();
 
         $rules = [
-            'firstname' => 'required|min:2|max:255',
-            'lastname' => 'required|min:2|max:255',
-            'zip' => 'required|min:6|max:7',
-            'streetnr' => 'required',
-            'email' => 'required|email',
-            'phone' => 'required',
-            'city' => 'required',
-            'street' => 'required',
+            'delivery' => 'required',
         ];
 
         $messages = [
-            'required' => 'Je hebt geen :attribute ingegeven.',
-            'min' => 'Je opgegeven :attribute is te kort.',
-            'max' => 'Je opgegeven :attribute is te lang.'
+            'delivery.required' => 'Kies een bezorgmethode.',
         ];
 
-        $attributes = [
-            'firstname' => 'voornaam',
-            'lastname' => 'achternaam',
-            'zip' => 'postcode',
-            'streetnr' => 'huisnummer',
-            'email' => 'e-mail adres',
-            'phone' => 'telefoonnummer',
-            'city' => 'plaatsnaam',
-            'street' => 'straatnaam',
-        ];
+        
 
         $validator = Validator::make($input, $rules, $messages, $attributes)->validate();
 
         // all valid create the customer
-        $customer = Customer::updateOrCreate(
-            [
-                'email' => $input['email']
-            ],
+        
+        $order = Order::create(
             [
                 'firstname' => $input['firstname'], 
                 'lastname' => $input['lastname'], 

@@ -36,6 +36,9 @@
     <section class="delivery__area similar__border pb-60 mb-30">
         <form method="POST" id="order_form">
             @csrf
+
+            <input type="hidden" name="customer_id" value="{{ session('customer_id') }}">
+
             <div class="container">
                 <div class="similar__main__title">
                     <h3>Kies je bezorgmethode</h3>

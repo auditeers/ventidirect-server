@@ -122,6 +122,10 @@ class CartController extends Controller
     
     public function order_delivery()
     {
+        if(empty($request->session()->get('customer_id'))) {
+            return redirect('/cart/order/details');
+        }
+
         $cart_items = \Cart::getContent();
 
         return view('order_form_delivery', [

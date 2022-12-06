@@ -6,6 +6,7 @@ use App\Models\Product;
 use App\Models\Customer;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
 class CartController extends Controller
@@ -109,7 +110,8 @@ class CartController extends Controller
                 'phone' => $input['phone'], 
                 'city' => $input['city'], 
                 'streetaddition' => $input['streetaddition'], 
-                'street' => $input['street']
+                'street' => $input['street'],
+                'password' => Hash::make(Str::random(40))
             ]
         );
 

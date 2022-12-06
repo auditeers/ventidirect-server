@@ -175,7 +175,7 @@
                             </div>
                             <div class="summary__bottom__hidden__blk mb-10">
                                 <div class="subtotal__light__content mt-10 pb-10">
-                                    <p>Subtotaal <span>€ {{ $number_format($order->subtotal, 2, ",", ".") }}</span></p>
+                                    <p>Subtotaal <span>€ {{ number_format($order->subtotal, 2, ",", ".") }}</span></p>
                                     <p>Verzending <span class="free">gratis</span></p>
                                 </div>
                                 <div class="subtotal__bold__content total__excl p-0 mt-10 ">

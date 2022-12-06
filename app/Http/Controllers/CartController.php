@@ -59,5 +59,50 @@ class CartController extends Controller
     }
 
 
+    public function save_order_details()
+    {
+        
+        return redirect('/cart/order/bezorging');
+    }
+
+    
+    
+    public function order_delivery()
+    {
+       
+        return view('order_form_delivery', [
+            
+        ]);
+    }
+
+    public function save_order_delivery()
+    {
+        
+
+        return redirect('/cart/order/overzicht');
+    }
+
+
+
+    public function order_overview()
+    {
+        return view('order_form_overview', [
+            
+        ]);
+    }
+
+    public function save_order_overview()
+    {
+        return redirect('cart/order/done');
+    }
+
+     public function order_done()
+    {
+        return view('order_form_done', [
+            
+        ]);
+    }
+
+
 
 }

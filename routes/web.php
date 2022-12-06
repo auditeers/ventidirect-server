@@ -45,4 +45,4 @@ Route::get('/cart/order/done', [App\Http\Controllers\CartController::class, 'ord
 
 
 // webhooks
-Route::get('/webhook/mollie', [App\Http\Controllers\CartController::class, 'mollie_webhook']);
+Route::post('/webhook/mollie', [App\Http\Controllers\CartController::class, 'mollie_webhook']);

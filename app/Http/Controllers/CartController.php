@@ -63,6 +63,7 @@ class CartController extends Controller
     public function save_order_details(Request $request)
     {
         $input = $request->all();
+        
         $rules = [
             'firstname' => 'required|min:2|max:255',
             'lastname' => 'required|min:2|max:255',
@@ -72,17 +73,20 @@ class CartController extends Controller
         ];
 
         $messages = [
-            'firstname' => 'voornaam',
-            'lastname' => 'voornaam',
-            'zip' => 'postcode',
-            'streetnumber' => 'huisnummer',
-            'email' => 'e-mail adres',
             'required' => 'Je hebt geen :attribute ingegeven.',
             'min' => 'Je opgegeven :attribute is te kort.',
             'max' => 'Je opgegeven :attribute is te lang.'
         ];
 
-        $validator = Validator::make($input, $rules, $messages)->validate();
+        $attributes = [
+            'firstname' => 'voornaam',
+            'lastname' => 'voornaam',
+            'zip' => 'postcode',
+            'streetnumber' => 'huisnummer',
+            'email' => 'e-mail adres',
+        ];
+
+        $validator = Validator::make($input, $rules, $messages, $attributes)->validate();
 
         return redirect('/cart/order/bezorging');
     }

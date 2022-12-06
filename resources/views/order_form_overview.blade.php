@@ -34,7 +34,8 @@
     
     <!-- ====================== DELIVERY AREA START ============================ -->
     <section class="delivery__area similar__border pb-60 mb-30">
-        <form action="#">
+        <form methos="POST">
+            @csrf
             <div class="container">
                 <div class="similar__main__title">
                     <h3>Overzicht</h3>

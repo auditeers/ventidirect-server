@@ -174,7 +174,7 @@ class CartController extends Controller
             $order->products()->attach($cart_item->attributes["product_id"], [
                 'price' => $cart_item->price,
                 'quantity' => $cart_item->quantity,
-                'name' => $cart_item->name,
+                'product_name' => $cart_item->name,
             ]);
 
             // remove from cart

@@ -59,7 +59,7 @@
 
 
 
-@if(session('cart') == "added")
+@if(session('cart') == "added" || session('cart') == "deleted")
 <script>
     gtag("event", "add_to_cart", {
         currency: "EUR",
@@ -71,7 +71,7 @@
             item_name: "{{ $cart_item->name }}",
             currency: "EUR",
             price: {{ $cart_item->price }},
-            quantity: {{ {{ $cart_item->quantity }}}}
+            quantity: {{ $cart_item->quantity }}
             },
             @endforeach
         ]

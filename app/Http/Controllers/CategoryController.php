@@ -11,7 +11,7 @@ class CategoryController extends Controller
     {
         $category = Category::where('slug', $slug)->firstOrFail();
 
-        $products = $category->products;
+        $products = Product::where('category_id', $category->id);
 
         if(!empty($request->input('price_min'))) {
             $products = $products->where('price', ">", $request->input('price_min'));

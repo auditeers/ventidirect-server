@@ -22,6 +22,7 @@
                                 </div>
                             </div>
 
+                            {{--
                             <div class="filter__store__link">
                                 <div class="similar__listing__title">
                                     <h5>Sorteer op</h5>
@@ -35,7 +36,8 @@
                                     </div>
                                 </div>
                             </div>
-
+                            --}}
+                            {{--
                             <div class="product__listing__top__blk">
                                 <div class="product__listing__accordion__blk">
                                     <div class="accordion" id="accordionExample">
@@ -157,6 +159,7 @@
 
                                 <a class="similar__view__btn mt-10" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2"><i class="fas fa-angle-down"></i> Bekijk meer</a>
                             </div>
+                            --}}
                             {{--
                             <div class="product__type__blk mt-25">
                                 <div class="similar__listing__title">
@@ -217,6 +220,9 @@
                         
                             --}}
 
+
+                            {{--
+
                             <div class="product__type__blk mt-25">
                                 <div class="similar__listing__title">
                                     <h5>Functionaliteit</h5>
@@ -274,6 +280,7 @@
 
                                 <a class="similar__view__btn mt-10" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4"><i class="fas fa-angle-down"></i> Bekijk meer</a>
                             </div>
+                            --}}
 
                             <div class="price__filter mt-25">
                                 <div class="similar__listing__title">
@@ -305,9 +312,9 @@
                             <div class="categoti__top__link__text">
                                 <a href="/" class="active">VentiDirect.nl</a> 
                                 <span><i class="fas fa-angle-right"></i></span> 
-                                <a href="#" class="active">Categorieën</a> 
+                                <a href="/" class="active">Categorieën</a> 
                                 <span><i class="fas fa-angle-right"></i></span> 
-                                <a href="#">{{ $category->name }}</a>
+                                <a href="/producten/{{ $category->slug }}">{{ $category->name }}</a>
                             </div>
 
                             <div class="similar__main__title">
@@ -329,16 +336,14 @@
                                     <div class="page__filter__right__blk">
                                         <span>Sorteer op</span>
                                         <div class="page__filter__select extra__width__filter__select">
-                                            <select>
+                                            <select name="sort">
                                                 <option data-display="">Populairiteit</option>
-                                                <option value="1">Some option</option>
-                                                <option value="2">Another option</option>
-                                                <option value="3" disabled>A disabled option</option>
-                                                <option value="4">Potato</option>
+                                                <option value="price_asc">Prijs Oplopend</option>
+                                                 <option value="price_desc">Prijs Aflopend</option>
                                             </select>
                                         </div>
                                         <div class="filter__btn">
-                                            <span><img src="/assets/img/filter_1.png" alt=""></span>
+                                            <span><img src="/assets/img/filter_1.png" alt="sorteer"></span>
                                         </div>
                                     </div>
                                 </div>

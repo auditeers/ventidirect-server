@@ -301,7 +301,7 @@
                         </div>
 
                         <div class="listing__product__bottom__btn">
-                            <a href="#">Toon 12 producten</a>
+                            <a href="#">Toon {{ count($products) }} producten</a>
                         </div>
                     </div>
                 </div>
@@ -331,7 +331,7 @@
                                         <div class="filter__open__btn">
                                             <span><img src="/assets/img/open__filter.png" alt=""> Filter</span>
                                         </div>
-                                        <span>{{ $category->products->count() }} resultaten</span>
+                                        <span>{{ $products->count() }} resultaten</span>
                                     </div>
                                     <div class="page__filter__right__blk">
                                         <span>Sorteer op</span>
@@ -349,7 +349,7 @@
                                 </div>
                             </div>
 
-                            @foreach($category->products()->orderBy('image', 'DESC')->paginate(10) as $product)
+                            @foreach($products as $product)
 
                             <div class="ventilation__product__area">
                                 <div class="single__pricing__slide__blk">                                   
@@ -465,7 +465,7 @@
                         </div>
                     </div>
 
-                    {{ $category->products()->orderBy('image', 'DESC')->paginate(10)->links() }}
+                    {{ $products->links() }}
 
 
                     <div class="similar__main__title">

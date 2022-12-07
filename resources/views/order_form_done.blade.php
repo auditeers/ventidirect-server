@@ -7,6 +7,35 @@
 
     <x-header/>
 
+    @if(count($order->products) > 0)
+    <script>
+        dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+        dataLayer.push({
+        event: "purchase",
+        ecommerce: {
+            transaction_id: "{{ $order->code }}",
+            value: {{ $order->total }},
+            tax: {{ $order->total * 0.21 }},
+            shipping: 0,
+            currency: "EUR",
+            items: [
+            @foreach($order->products as $key=>$product)
+            {
+                item_id: "{{ $product->id }}",
+                item_name: "{{ $product->name }}",
+                currency: "EUR",
+                discount: 0,
+                index: $key,
+                price: {{ $product->price }},
+                quantity: {{ $roduct->pivor->quantity }}
+            },
+            @endforeach
+            ]
+        }
+        });
+    </script>
+    @endif
+
     <!-- ====================== DELIVERY AREA START ============================ -->
     <section class="delivery__area block__phone">
         <form action="#">

@@ -218,7 +218,7 @@ class CartController extends Controller
                 "value" => (string)$order->total,
             ],
             "description" => "Je ventidirect bestelling #" . $order->code,
-            "redirectUrl" => 'https://dev.ventidirect.nl/cart/order/done',
+            "redirectUrl" => 'https://dev.ventidirect.nl/cart/order/done?code=' . $order->code,
             "webhookUrl" => 'https://dev.ventidirect.nl/webhook/mollie',
             "metadata" => [
                 "order_id" => $order->id,
@@ -230,10 +230,11 @@ class CartController extends Controller
 
     }
 
-     public function order_done()
+     public function order_done(Request $request)
     {
+        $order = Order::where('code', $request->input('code'))->firstOrFail();
         return view('order_form_done', [
-            
+            "order" => $order
         ]);
     }
 

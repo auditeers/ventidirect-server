@@ -601,6 +601,27 @@
     </section>
     <!-- =================== PRICING AREA END ===================== -->
 
+    <script>
+        // product view
+        dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+        dataLayer.push({
+        event: "view_item",
+        ecommerce: {
+            items: [
+            {
+                item_id: "{{ $product->id }}",
+                item_name: "{{ $product->name }}",
+                currency: "EUR",
+                discount: 0,
+                index: 0,
+                price: {{ $product->price }},
+                quantity: 1
+            }
+            ]
+        }
+        });
+    </script>
+
 
     <x-footer/>
 

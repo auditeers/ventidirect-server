@@ -15,11 +15,11 @@ class CategoryController extends Controller
         $products = Product::where('category_id', $category->id);
 
         if(!empty($request->input('price_min'))) {
-            $products = $products->where('price', ">", $request->input('price_min'));
+            $products = $products->where('price', ">", (int)$request->input('price_min'));
         }
 
         if(!empty($request->input('price_max'))) {
-            $products = $products->where('price', "<", $request->input('price_min'));
+            $products = $products->where('price', "<", (int)$request->input('price_max'));
         }
 
 

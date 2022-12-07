@@ -56,3 +56,25 @@
         </div>
     </div>
 </div>
+
+
+
+@if(session('cart') == "added")
+<script>
+    gtag("event", "add_to_cart", {
+        currency: "EUR",
+        value: {{ \Cart::getTotal() }},
+        items: [
+            @foreach($cart_items as $cart_item)
+            {
+            item_id: "{{ $cart_item->attributes['product_id'] }}",
+            item_name: "{{ $cart_item->name }}",
+            currency: "EUR",
+            price: {{ $cart_item->price }},
+            quantity: {{ {{ $cart_item->quantity }}}}
+            },
+            @endforeach
+        ]
+    });
+</script>
+@endif

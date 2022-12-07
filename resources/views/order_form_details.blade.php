@@ -7,6 +7,27 @@
 
     <x-header/>
 
+    <script>
+        // datalayer begin checkout
+        dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+        dataLayer.push({
+        event: "begin_checkout",
+        ecommerce: {
+            @foreach($cart_items as $cart_item)
+            items: [
+            {
+                item_id: "{{ $cart_item->attributes['product_id'] }}",
+                item_name: "{{ $cart_item->name }}",
+                currency: "EUR",
+                price: {{ $cart_item->price }},
+                quantity: {{ $cart_item->quantity }}
+            },
+            @endofreach
+            ]
+        }
+        });
+    </script>
+
     <!-- ====================== STAPE AREA START ============================ -->
     <section class="stape__area">
         <div class="container">

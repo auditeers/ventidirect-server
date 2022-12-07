@@ -58,9 +58,9 @@
 </div>
 
 
-
 @if(session('cart') == "added" || session('cart') == "deleted")
 <script>
+    // datalayer events for cart
     dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
     dataLayer.push({
         event: "add_to_cart",

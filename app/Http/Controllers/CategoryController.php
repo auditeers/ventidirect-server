@@ -22,7 +22,7 @@ class CategoryController extends Controller
         }
 
 
-        $products = $products->orderBy('image', 'DESC')->paginate(10);
+        $products = $products->paginate(10);
 
         return view('category', [
             "category" => $category,

@@ -19,7 +19,7 @@
     <link href="/assets/css/owl.carousel.min.css" rel="stylesheet" />
     <link href="/assets/css/nice-select.css" rel="stylesheet" />
     <link href="/assets/css/default.css" rel="stylesheet" />
-    <link href="/assets/fonts/stylesheet.css" rel="stylesheet" />
+    {{-- <link href="/assets/fonts/stylesheet.css" rel="stylesheet" /> --}}
     <link href="/assets/fonts/subfont/stylesheet.css" rel="stylesheet" />
     <link href="/assets/css/style.css" rel="stylesheet" />
     <link href="/assets/css/responsive.css" rel="stylesheet" />

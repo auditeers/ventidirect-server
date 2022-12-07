@@ -179,8 +179,8 @@
                                     <p>Verzending <span class="free">gratis</span></p>
                                 </div>
                                 <div class="subtotal__bold__content total__excl p-0 mt-10 ">
-                                    <h4>Totaal excl. btw <span>€ {{ number_format(($order->subtotal - ($order->subtotal)), 2, ",", ".") }}</span></h4>
-                                    <h3>BTW <span>€ 86</span></h3>
+                                    <h4>Totaal excl. btw <span>€ {{ number_format(($order->subtotal - ($order->subtotal  * 0.21)), 2, ",", ".") }}</span></h4>
+                                    <h3>BTW <span>€ {{ number_format($order->subtotal * 0.21, 2, ",", ".") }}</span></h3>
                                     <h4>Totaal excl. btw <span>€ {{ number_format($order->subtotal, 2, ",", ".") }}</span></h4>
                                 </div>
                             </div>
@@ -214,9 +214,9 @@
                             <p>Verzending <span class="free">gratis</span></p>
                         </div>
                         <div class="subtotal__bold__content total__excl p-0 mt-10 ">
-                            <h4>Totaal excl. btw <span>€ 325,00</span></h4>
-                            <h3>BTW <span>€ 86</span></h3>
-                            <h4>Totaal excl. btw <span>€ 325,00</span></h4>
+                            <h4>Totaal excl. btw <span>€ {{ number_format(($order->subtotal - ($order->subtotal  * 0.21)), 2, ",", ".") }}</span></h4>
+                            <h3>BTW <span>€ {{ number_format($order->subtotal * 0.21, 2, ",", ".") }}</span></h3>
+                            <h4>Totaal excl. btw <span>€ {{ number_format($order->subtotal, 2, ",", ".") }}</span></h4>
                         </div>
                     </div>
                 </div>

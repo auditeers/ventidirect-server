@@ -286,16 +286,16 @@
                                 <div class="similar__listing__title">
                                     <h5>Prijs</h5>
                                 </div>
-                                <form action="#">
+                                <form method="GET" id="filter_form">
                                     <div class="single__price__blk">
                                         <label for="#">€</label>
-                                        <input type="number" placeholder="" value="{{  floor($category->products()->min('price')) }}">
+                                        <input type="number" placeholder="" name="price_min" value="{{  floor($category->products()->min('price')) }}">
                                     </div>
                                     <div class="single__price__blk">
                                         <label for="#">tot</label>
-                                        <input  type="number"  placeholder="" value="{{  ceil($category->products()->max('price')) }}">
+                                        <input  type="number"  placeholder="" name="price_max" value="{{  ceil($category->products()->max('price')) }}">
                                     </div>
-                                    <button type="button"><i class="far fa-angle-right"></i></button>
+                                    <button type="button" onclick="document.getElementById('filter_form').submit();"><i class="far fa-angle-right"></i></button>
                                 </form>
                             </div>
                         </div>

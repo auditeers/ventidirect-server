@@ -27,7 +27,7 @@
                 discount: 0,
                 index: $key,
                 price: {{ $product->price }},
-                quantity: {{ $roduct->pivor->quantity }}
+                quantity: {{ $product->pivot->quantity }}
             },
             @endforeach
             ]

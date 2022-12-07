@@ -11,14 +11,14 @@ class CategoryController extends Controller
     {
         $category = Category::where('slug', $slug)->firstOrFail();
 
-        $products = $category->products();
+        $products = $category->products;
 
         if(!empty($request->input('price_min'))) {
-            $products = $products->where('price', ">=", $request->input('price_min'));
+            $products = $products->where('price', ">", $request->input('price_min'));
         }
 
         if(!empty($request->input('price_max'))) {
-            $products = $products->where('price', "<=", $request->input('price_min'));
+            $products = $products->where('price', "<", $request->input('price_min'));
         }
 
 

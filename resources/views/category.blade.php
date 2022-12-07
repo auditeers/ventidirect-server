@@ -289,11 +289,11 @@
                                 <form action="#">
                                     <div class="single__price__blk">
                                         <label for="#">€</label>
-                                        <input type="text" placeholder="254" value="{{  $products->min('price') }}">
+                                        <input type="text" placeholder="254" value="{{  $category->products()->min('price') }}">
                                     </div>
                                     <div class="single__price__blk">
                                         <label for="#">tot</label>
-                                        <input type="text" placeholder="494" value="{{  $products->max('price') }}">
+                                        <input type="text" placeholder="494" value="{{  $category->products()->max('price') }}">
                                     </div>
                                     <button type="button"><i class="far fa-angle-right"></i></button>
                                 </form>

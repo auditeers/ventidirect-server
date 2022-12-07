@@ -113,6 +113,7 @@
 
 
     <!-- =================== ORDER TOGRTHER AREA START ===================== -->
+    {{--
     <section class="order__together__area mb-70">
         <div class="order__together__inner__wrapper">
             <div class="container">
@@ -196,7 +197,30 @@
             </div>
         </div>
     </section>
+    --}}
     <!-- =================== ORDER TOGRTHER AREA END ===================== -->
+
+    <script>
+        dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+        dataLayer.push({
+        event: "view_cart",
+        ecommerce: {
+            currency: "EUR",
+            value: {{ \Cart::getTotal() }},
+            items: [
+            @foreach($cart_items as $cart_item)
+            {
+                item_id: "{{ $cart_item->attributes['product_id'] }}",
+                item_name: "{{ $cart_item->name }}",
+                currency: "EUR",
+                price: {{ $cart_item->price }},
+                quantity: {{ $cart_item->quantity }}
+            },
+            @endforeach
+            ]
+        }
+        });
+    </script>
 
 
     <x-footer/>

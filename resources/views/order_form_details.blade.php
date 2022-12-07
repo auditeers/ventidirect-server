@@ -22,7 +22,7 @@
                 price: {{ $cart_item->price }},
                 quantity: {{ $cart_item->quantity }}
             },
-            @endofreach
+            @endforeach
             ]
         }
         });

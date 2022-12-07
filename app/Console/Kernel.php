@@ -17,7 +17,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')->hourly();
 
-        $schedule->commant('venti:cleanorders')->hourly();
+        $schedule->command('venti:cleanorders')->hourly();
     }
 
     /**

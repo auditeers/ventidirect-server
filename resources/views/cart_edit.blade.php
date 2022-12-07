@@ -93,8 +93,8 @@
                                     <p>Verzending <span class="free">gratis</span></p>
                                 </div>
                                 <div class="subtotal__bold__content">
-                                    <h4>Totaal excl. btw <span>€ {{ (float)\Cart::getTotal() - ((float)\Cart::getTotal() * 0.21) }}</span></h4>
-                                    <h3>BTW <span>€ {{ (float)\Cart::getTotal() * 0.21 }}</span></h3>
+                                    <h4>Totaal excl. btw <span>€ {{ round((float)\Cart::getTotal() - ((float)\Cart::getTotal() * 0.21), 2) }}</span></h4>
+                                    <h3>BTW <span>€ {{ round((float)\Cart::getTotal() * 0.21, 2) }}</span></h3>
                                     <h4>Totaal incl. btw <span>€ {{ \Cart::getTotal() }}</span></h4>
                                 </div>
                                 <div class="subtotal__btn">

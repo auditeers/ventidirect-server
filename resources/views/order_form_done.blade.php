@@ -19,13 +19,13 @@
             shipping: 0,
             currency: "EUR",
             items: [
-            @foreach($order->products as $key=>$product)
+            @foreach($order->products as $product)
             {
                 item_id: "{{ $product->id }}",
                 item_name: "{{ $product->name }}",
                 currency: "EUR",
                 discount: 0,
-                index: $key,
+                index: {{ $loop->index }},
                 price: {{ $product->price }},
                 quantity: {{ $product->pivot->quantity }}
             },

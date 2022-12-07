@@ -58,12 +58,36 @@
 </div>
 
 
-@if(session('cart') == "added" || session('cart') == "deleted")
+@if(session('cart') == "added")
 <script>
     // datalayer events for cart
     dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
     dataLayer.push({
         event: "add_to_cart",
+        ecommerce: {
+            items: [
+            @foreach($cart_items as $cart_item)
+            {
+                item_id: "{{ $cart_item->attributes['product_id'] }}",
+                item_name: "{{ $cart_item->name }}",
+                currency: "EUR",
+                price: {{ $cart_item->price }},
+                quantity: {{ $cart_item->quantity }}
+            },
+            @endforeach
+            ]
+        }
+    });
+
+</script>
+@endif
+
+@if(session('cart') == "deleted")
+<script>
+    // datalayer events for cart
+    dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+    dataLayer.push({
+        event: "remove_to_cart",
         ecommerce: {
             items: [
             @foreach($cart_items as $cart_item)

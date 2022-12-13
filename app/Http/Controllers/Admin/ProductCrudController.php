@@ -46,7 +46,9 @@ class ProductCrudController extends CrudController
 
         CRUD::column('name');
 
-        CRUD::column('short_description');
+        CRUD::column('internal_id')
+            ->label('SKU');
+            
         CRUD::column('marge')
             ->label('factor')
             ->type('number')

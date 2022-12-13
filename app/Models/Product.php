@@ -39,9 +39,15 @@ class Product extends Model
 
     private function getMarge($attributes)
     {
-        if(empty($attributes['sales_price']) || empty($attributes['price'])) return 0;
+        if(empty($attributes['sales_price']) || empty($attributes['price'])) {
 
-        return ($attributes['sales_price'] / 1.21) / ($attributes['price']);
+            return 0;
+
+        } else {
+            
+            return ($attributes['sales_price'] / 1.21) / ($attributes['price']);
+        }
+   
     }
     
     protected function vat(): Attribute

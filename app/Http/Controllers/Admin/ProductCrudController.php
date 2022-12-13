@@ -69,7 +69,7 @@ class ProductCrudController extends CrudController
 
 
         CRUD::column('ean');
-        CRUD::column('price')->typo('number')->prefix('€ ')->decimals(2)->dec_point('.');
+        CRUD::column('sales_price')->typo('number')->prefix('€ ')->decimals(2)->dec_point('.');
         CRUD::column('stock');
   
 

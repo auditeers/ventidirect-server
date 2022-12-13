@@ -425,24 +425,24 @@
                                         <div class="main__price">
                                             <div class="price__content tab__none">
 
-                                                @if(!empty($product->price_from))
-                                                <span>Adviesprijs &euro; {{ $product->price_from }}</span>
+                                                @if(!empty($product->sales_price_from))
+                                                <span>Adviesprijs &euro; {{ $product->sales_price_from }}</span>
                                                 @endif
 
-                                                <h4>&euro; {{ $product->price }}</h4>
-                                                <span>&euro; {{ $product->price - $product->vat }} excl. BTW</span>
+                                                <h4>&euro; {{ $product->sales_price }}</h4>
+                                                <span>&euro; {{ $product->sales_price - $product->vat }} excl. BTW</span>
                                             </div>
                                             <div class="cart__top__content">
                                                 <h5>Voor 23:59 besteld, morgen gratis bezorgd</h5>
                                             </div>
                                             <div class="price__content tab__blk">
                                                 
-                                                @if(!empty($product->price_from))
-                                                <span>Adviesprijs &euro; {{ $product->price_from }}</span>
+                                                @if(!empty($product->sales_price_from))
+                                                <span>Adviesprijs &euro; {{ $product->sales_price_from }}</span>
                                                 @endif
                                                 
-                                                <h4>&euro;  {{ $product->price }}</h4>
-                                                <span>&euro; {{ $product->price - $product->vat }} excl. BTW</span>
+                                                <h4>&euro;  {{ $product->sales_price }}</h4>
+                                                <span>&euro; {{ $product->sales_price - $product->vat }} excl. BTW</span>
                                             </div>
                                             <div class="cart__wrap none__phone">
                                                 <a href="/cart/add/{{ $product->id }}"><img src="/assets/img/cart_ico.svg" alt=""></a>

@@ -32,7 +32,7 @@ class CartController extends Controller
         \Cart::add([
             'id' => $cart_item_id,
             'name' => $product->name,
-            'price' => $product->price,
+            'price' => $product->sales_price,
             'quantity' => 1,
             'attributes' => [
                 "image" => $product->image,

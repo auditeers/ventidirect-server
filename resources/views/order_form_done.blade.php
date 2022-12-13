@@ -26,7 +26,7 @@
                 currency: "EUR",
                 discount: 0,
                 index: {{ $loop->index }},
-                price: {{ $product->price }},
+                price: {{ $product->sales_price }},
                 quantity: {{ $product->pivot->quantity }}
             },
             @endforeach

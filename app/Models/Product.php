@@ -39,7 +39,7 @@ class Product extends Model
 
     private function getMarge($attributes)
     {
-        if(empty($attributes['sales_price']) || empty($attributes['price'])) {
+        if(empty($attributes['sales_price']) || empty($attributes['price']) || $attributes['price'] < 1) {
 
             return 0;
 

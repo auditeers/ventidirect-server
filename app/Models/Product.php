@@ -33,8 +33,15 @@ class Product extends Model
     protected function marge(): Attribute
     {
         return Attribute::make(
-            get: fn ($value, $attributes) => (($attributes['sales_price'] / 1.21) / ($attributes['price']))
+            get: fn ($value, $attributes) => $this->getMarge($attributes)
         );
+    }
+
+    private function getMarge($attributes)
+    {
+        if(empty($attributes['sales_price']) || empty($attributes['price'])) return 0;
+
+        return ($attributes['sales_price'] / 1.21) / ($attributes['price']);
     }
     
     protected function vat(): Attribute

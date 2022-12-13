@@ -17,18 +17,18 @@ class CartController extends Controller
     public function index()
     {
         $cart_items = \Cart::getContent();
-
+        
         return view('cart_edit', [
             "cart_items" => $cart_items,
         ]);
     }
-
-
+    
+    
     public function add(Int $product_id)
     {
         $product = Product::findOrFail($product_id);
         $cart_item_id = Str::random(9);
-
+        
         \Cart::add([
             'id' => $cart_item_id,
             'name' => $product->name,
@@ -40,35 +40,35 @@ class CartController extends Controller
             ],
             'associatedModel' => $product
         ]);
-
+        
         return back()->with('cart', 'added');
-
+        
     }
-
+    
     public function delete(String $cart_item_id)
     {
-
-       \Cart::remove($cart_item_id);
-
-       return back()->with('cart', 'deleted');
-
+        
+        \Cart::remove($cart_item_id);
+        
+        return back()->with('cart', 'deleted');
+        
     }
-
-
+    
+    
     public function order_details()
     {
         $cart_items = \Cart::getContent();
-
+        
         return view('order_form_details', [
             "cart_items" => $cart_items,
         ]);
     }
-
-
+    
+    
     public function save_order_details(Request $request)
     {
         $input = $request->all();
-
+        
         $rules = [
             'firstname' => 'required|min:2|max:255',
             'lastname' => 'required|min:2|max:255',
@@ -79,13 +79,13 @@ class CartController extends Controller
             'city' => 'required',
             'street' => 'required',
         ];
-
+        
         $messages = [
             'required' => 'Je hebt geen :attribute ingegeven.',
             'min' => 'Je opgegeven :attribute is te kort.',
             'max' => 'Je opgegeven :attribute is te lang.'
         ];
-
+        
         $attributes = [
             'firstname' => 'voornaam',
             'lastname' => 'achternaam',
@@ -96,9 +96,9 @@ class CartController extends Controller
             'city' => 'plaatsnaam',
             'street' => 'straatnaam',
         ];
-
+        
         $validator = Validator::make($input, $rules, $messages, $attributes)->validate();
-
+        
         // all valid create the customer
         $customer = Customer::updateOrCreate(
             [
@@ -115,12 +115,12 @@ class CartController extends Controller
                 'streetaddition' => $input['streetaddition'], 
                 'street' => $input['street'],
                 'password' => Hash::make(Str::random(40))
-            ]
+                ]
         );
-
+        
         return redirect('/cart/order/bezorging')->with('customer_id', $customer->id);
     }
-
+    
     
     
     public function order_delivery(Request $request)
@@ -129,88 +129,111 @@ class CartController extends Controller
             return redirect('/cart/order/details');
         }
 
+        $customer = Customer::findOrFail($request->session()->get('customer_id'));
+        
+        // get the shipping options at Monta
+        $monta_user = 
+        
         $cart_items = \Cart::getContent();
+        
+        $montaData = [
+            "Origin" => "ventidirect.nl",
+            "OrderValueInclVat" => (float)\Cart::getTotal(),
+            "Currency" => "EUR",
+            "Language" => "nl",
+            "Address"  => [
+                "Street" => $customer->street,
+                "HouseNumber" => $customer->streetnr,
+                "HouseNumberAddition" => $customer->streetaddition,
+                "PostalCode" => $customer->zip,
+                "City" => $customer->city,
+                "CountryCode" => "nl",
+            ],
+        ];
+
+        $delivery_options = $this->callMonta('GET', 'shippingoptions', $montaData);
+
+        print_r($delivery_options);
+        exit();
 
         return view('order_form_delivery', [
             "cart_items" => $cart_items,
         ]);
     }
-
+    
     public function save_order_delivery(Request $request)
     {
         $input = $request->all();
-
+        
         $rules = [
             'delivery' => 'required',
         ];
-
+        
         $messages = [
             'delivery.required' => 'Kies een bezorgmethode.',
         ];
-
         
-
+        
+        
         $validator = Validator::make($input, $rules, $messages)->validate();
-
+        
         
         
         // all valid create the order
         $order_code = date('Y') . "-" . strtoupper(Str::random(5)) . "-" . strtoupper(Str::random(4));
         $cart_total = (float)\Cart::getTotal();
-
-        $order = Order::create(
-            [
-                'customer_id' => $input['customer_id'], 
-                'code' => $order_code, 
-                'shipping_date' => date('Y-m-d'), 
-                'subtotal' => number_format($cart_total, 2, '.', ''), 
-                'total' => number_format($cart_total, 2, '.', ''), 
-            ]
-        );
-
+        
+        $order = Order::create([
+            'customer_id' => $input['customer_id'], 
+            'code' => $order_code, 
+            'shipping_date' => date('Y-m-d'), 
+            'subtotal' => number_format($cart_total, 2, '.', ''), 
+            'total' => number_format($cart_total, 2, '.', ''), 
+        ]);
+        
         // add cart to order and empty cart
         $cart_items = \Cart::getContent();
-
+        
         foreach($cart_items as $cart_item) {
-
+            
             $order->products()->attach($cart_item->attributes["product_id"], [
                 'price' => $cart_item->price,
                 'quantity' => $cart_item->quantity,
                 'product_name' => $cart_item->name,
             ]);
-
+            
             // remove from cart
             \Cart::remove($cart_item->id);
         }
-
+        
         return redirect('/cart/order/overzicht')->with('order_id', $order->id);
     }
-
-
-
+    
+    
+    
     public function order_overview(Request $request)
     {
         // check the order
         if(empty($request->session()->get('order_id'))) {
             return redirect('/cart/order/bezorging');
         }
-
+        
         $order = Order::find($request->session()->get('order_id'));
-
-
+        
+        
         return view('order_form_overview', [
             "order" => $order
         ]);
     }
-
+    
     public function save_order_overview(Request $request)
     {
         $order_id = $request->get('order_id');
-
+        
         if(empty($order_id)) return redirect('/cart/order/overzicht');
-
+        
         $order = Order::findOrFail($order_id);
-
+        
         // create the payment
         $payment = Mollie::api()->payments->create([
             "amount" => [
@@ -224,31 +247,31 @@ class CartController extends Controller
                 "order_id" => $order->id,
             ],
         ]);
-
+        
         // redirect customer to Mollie checkout page
         return redirect($payment->getCheckoutUrl(), 303);
-
+        
     }
-
-     public function order_done(Request $request)
+    
+    public function order_done(Request $request)
     {
         $order = Order::where('code', $request->input('code'))->firstOrFail();
         return view('order_form_done', [
             "order" => $order
         ]);
     }
-
-
+    
+    
     public function mollie_webhook(Request $request) {
-
+        
         $paymentId = $request->input('id');
         $payment = Mollie::api()->payments->get($paymentId);
         // Log::info('Payment #' . $paymentId . ' hook.');
-
+        
         if ($payment->isPaid())
         {
             $order_id = $payment->metadata->order_id;
-
+            
             Log::info('Order #' . $order_id . ' is paid.');
             $order = Order::findOrfail($order_id);
             
@@ -257,12 +280,62 @@ class CartController extends Controller
                 $order->external_id = $paymentId;
                 $order->paid = true;
                 $order->save();
-            
+                
                 // email the confirmation.
             }
         }
     }
+    
+    
+    function callMonta($method, $service, array $data)
+    {
+        $monta_endpoint = "https://api.montapacking.nl/rest/v5/";
+        $monta_user = "ventidirectMAURICE";
+        $monta_pass = "7$78EUH#OOFU";
 
+        $url = $monta_endpoint . $service;
 
+        $curl = curl_init();
 
+        // data is an array
+        $data = json_encode($data);
+
+        switch ($method){
+            case "POST":
+                curl_setopt($curl, CURLOPT_POST, 1);
+                if ($data)
+                curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+                break;
+
+            case "PUT":
+                curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "PUT");
+                if ($data)
+                curl_setopt($curl, CURLOPT_POSTFIELDS, $data);			 					
+                break;
+
+            default:
+                if ($data)
+                $url = sprintf("%s?%s", $url, http_build_query($data));
+        }
+                
+        // OPTIONS:
+        curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_HTTPHEADER, array(
+            'Content-Type: application/json',
+        ));
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl, CURLOPT_USERPWD, $monta_user . ":" . $monta_pass);
+        curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+        // EXECUTE:
+        $result = curl_exec($curl);
+        
+        if(!$result){die("Connection Failure");}
+        
+        curl_close($curl);
+        
+        return $result;
+    }
+            
+            
 }
+        

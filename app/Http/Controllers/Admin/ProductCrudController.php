@@ -112,7 +112,13 @@ class ProductCrudController extends CrudController
         
 
         CRUD::field('ean')
-            ->tab('General');
+            ->tab('General')
+            ->wrapper(['class' => 'form-group col-md-6']);
+
+        CRUD::field('internal_id')
+            ->label('SKU')
+            ->tab('General')
+            ->wrapper(['class' => 'form-group col-md-6']);
         
         CRUD::field('price')
             ->label('Purchase Price')

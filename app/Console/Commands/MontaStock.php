@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Models\Product;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Log;
 
 class MontaStock extends Command
 {
@@ -99,9 +100,10 @@ class MontaStock extends Command
         
         curl_close($curl);
 
-        $this->info($result);
-        $this->newLine();
-        
+
+        Log::debug(json_decode($result));
+
+       
         return json_decode($result);
     }
 }

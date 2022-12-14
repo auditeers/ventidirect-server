@@ -63,19 +63,19 @@ class MontaStock extends Command
         $curl = curl_init();
 
         // data is an array
-        $data = json_encode($data);
+        $data_json = json_encode($data);
 
         switch ($method){
             case "POST":
                 curl_setopt($curl, CURLOPT_POST, 1);
-                if ($data)
-                curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+                if ($data_json)
+                curl_setopt($curl, CURLOPT_POSTFIELDS, $data_json);
                 break;
 
             case "PUT":
                 curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "PUT");
-                if ($data)
-                curl_setopt($curl, CURLOPT_POSTFIELDS, $data);			 					
+                if ($data_json)
+                curl_setopt($curl, CURLOPT_POSTFIELDS, $data_json);			 					
                 break;
 
             default:

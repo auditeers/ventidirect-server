@@ -136,6 +136,7 @@ class CartController extends Controller
         
         $cart_items = \Cart::getContent();
         
+        /*
         $montaData = [
             "Origin" => "ventidirect.nl",
             "OrderValueInclVat" => (float)\Cart::getTotal(),
@@ -155,7 +156,8 @@ class CartController extends Controller
 
         print_r($delivery_options);
         exit();
-
+        */
+        
         return view('order_form_delivery', [
             "cart_items" => $cart_items,
         ]);

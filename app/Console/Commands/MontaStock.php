@@ -39,13 +39,11 @@ class MontaStock extends Command
 
             if(!empty($product_stock["Stock"]["StockAvailable"])) {
                 
-                $this->info($product_stock["Stock"]["StockAvailable"]);
+                $this->info($product_stock->Stock->StockAvailable);
                 $this->newLine();
 
-                $product->stock = $$product_stock["Stock"]["StockAvailable"];
-            
+                $product->stock = $product_stock->Stock->StockAvailable;
             } else {
-            
                 $product->stock = 0;
             }
 
@@ -101,7 +99,7 @@ class MontaStock extends Command
         
         curl_close($curl);
 
-
+        $this->info($result);
         
         return json_decode($result);
     }

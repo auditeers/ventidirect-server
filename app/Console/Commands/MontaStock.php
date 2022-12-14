@@ -38,15 +38,17 @@ class MontaStock extends Command
             $product_stock = $this->callMonta('GET', 'product/' . $product->internal_id . '/stock' , $montaData);
 
 
-            if(!empty($product_stock->Stock->StockAvailable)) {
+            if(!empty($product_stock->Stock->StockInboundForecasted)) {
                 
-                $this->info($product_stock->Stock->StockAvailable);
+                $this->info($product_stock->Stock->StockInboundForecasted);
                 $this->newLine();
 
-                $product->stock = $product_stock->Stock->StockAvailable;
+                $product->stock = $product_stock->Stock->StockInboundForecasted;
             } else {
                 $product->stock = 0;
             }
+
+            $product->save();
 
         }
         
@@ -101,7 +103,7 @@ class MontaStock extends Command
         curl_close($curl);
 
 
-        Log::debug($result);
+        // Log::debug($result);
 
        
         return json_decode($result);

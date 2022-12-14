@@ -36,11 +36,14 @@ class MontaStock extends Command
 
             $product_stock = $this->callMonta('GET', 'product/' . $product->internal_id . '/stock' , $montaData);
 
-            $this->info($product_stock->Stock->StockAvailable);
-            $this->newLine();
+           
 
 
             if(!empty($product_stock->Stock->StockAvailable)) {
+                
+                $this->info($product_stock->Stock->StockAvailable);
+                $this->newLine();
+
                 $product->stock = $product_stock->Stock->StockAvailable;
             } else {
                 $product->stock = 0;

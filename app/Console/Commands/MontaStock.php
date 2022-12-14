@@ -101,7 +101,7 @@ class MontaStock extends Command
         curl_close($curl);
 
 
-        Log::debug(json_decode($result));
+        Log::debug($result);
 
        
         return json_decode($result);

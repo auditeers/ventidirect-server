@@ -37,18 +37,19 @@ class MontaStock extends Command
 
             $product_stock = $this->callMonta('GET', 'product/' . $product->internal_id . '/stock' , $montaData);
 
+            $edit_product = Product::find($product->id);
 
             if(!empty($product_stock->Stock->StockInboundForecasted)) {
                 
                 $this->info($product_stock->Stock->StockInboundForecasted);
                 $this->newLine();
 
-                $product->stock = $product_stock->Stock->StockInboundForecasted;
+                $edit_product->stock = $product_stock->Stock->StockInboundForecasted;
             } else {
-                $product->stock = 0;
+                $edit_product->stock = 0;
             }
 
-            $product->save();
+            $edit_product->save();
 
         }
         

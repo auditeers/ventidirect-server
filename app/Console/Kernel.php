@@ -16,8 +16,13 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
-
         $schedule->command('venti:cleanorders')->hourly();
+
+        // get stock at Monta on an hourly base
+        $schedule->command('monta:stock')->hourlyAt(17);
+
+        // get orders info
+        
     }
 
     /**
@@ -28,7 +33,6 @@ class Kernel extends ConsoleKernel
     protected function commands()
     {
         $this->load(__DIR__.'/Commands');
-
         require base_path('routes/console.php');
     }
 }

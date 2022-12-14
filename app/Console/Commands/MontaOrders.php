@@ -2,25 +2,23 @@
 
 namespace App\Console\Commands;
 
-use App\Models\Product;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Log;
 
-class MontaStock extends Command
+class MontaOrders extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'monta:stock';
+    protected $signature = 'monta:order';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'get available stock at Monta';
+    protected $description = 'Get Order info from Monta and act on order status change';
 
     /**
      * Execute the console command.
@@ -29,35 +27,16 @@ class MontaStock extends Command
      */
     public function handle()
     {
-        $products = Product::whereNotNull('internal_id')->get();
-
-        foreach($products as $product) {
-
-            $montaData = [];
-
-            $product_stock = $this->callMonta('GET', 'product/' . $product->internal_id . '/stock' , $montaData);
-            
-
-            if(!empty($product_stock->Stock->StockInboundForecasted)) {
-                
-                $this->info($product_stock->Stock->StockInboundForecasted);
-                $this->newLine();
-
-                $product->stock = $product_stock->Stock->StockInboundForecasted;
-            } else {
-                $product->stock = 0;
-            }
-
-            $product->save();
-
-        }
         
-        return 0;
+        
+
+
+        return;
     }
 
-    
     private function callMonta($method, $service, array $data)
     {
+        // TODO: Monta to env file.
         $monta_endpoint = "https://api.montapacking.nl/rest/v5/";
         $monta_user = "ventidirectMAURICE";
         $monta_pass = "7$78EUH#OOFU";
